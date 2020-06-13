@@ -1,2 +1,4 @@
-# SSI-Marketing-Legendary
-Legend about: HTTP; HTML5 &amp; CSS3; ES6+; React Ecosystem; Unit Testing; Performance; Behavior
+# SSI Marketing Legendary
+
+> One man goes fast. A team goes further.  
+> -- Dante Von Alcatraz
