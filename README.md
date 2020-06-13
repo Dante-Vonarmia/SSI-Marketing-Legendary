@@ -18,7 +18,7 @@ Moreover, It shall become a **symbol**, a **guidance**, and a **faith**.
 ## Preface
 
 The only three factors you shall be marked in mind before you start coding is:  
-学编程前你只需要记住的3件事:
+实践编程前，你只需要记住3个基本要素:
 
 * _**object 对象**_
 * _**attribution 属性**_
