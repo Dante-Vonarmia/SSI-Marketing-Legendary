@@ -159,11 +159,25 @@ An outstanding staff is never about how flawless himself/herself. It’s about t
 
 #### Testing Tool
 
+#### Build & Release
+
 #### Version Control
+
+#### Feedback and Improvement
 
 ## Standards
 
+### Behavior and Performance
 
+> TAKING notes seriously!
+
+> No AWOL \(Absent without official leaving\)
+
+> Good Tools, Good Habits, Good Mood, & Practice a lot.
+
+> Practice is the only shortcut.
+
+> Expose Your Ignorance Daily
 
 ### \*\*\*\*
 
