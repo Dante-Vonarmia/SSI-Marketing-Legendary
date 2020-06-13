@@ -4,12 +4,12 @@ description: Background Knowledge
 
 # HTTP
 
-#### 1. What is HTTP?
+### 1. What is HTTP?
 
 * HTTP stands for Hypertext Transfer Protocol. 
 * It is a set of rules for transferring of data on WWW \(World Wide Web\).
 
-#### 2. What are the basic Features of HTTP?
+### 2. What are the basic Features of HTTP?
 
 The basic features of HTTP are as follows:
 
@@ -17,7 +17,7 @@ The basic features of HTTP are as follows:
 * HTTP is a media independent protocol.
 * HTTP is a stateless protocol.
 
-#### 3. What are request methods in HTTP?
+### 3. What are request methods in HTTP?
 
 Following are the request methods:
 
@@ -69,7 +69,7 @@ Option method describes communication options for target resource.
 
 It performs message loop-back test along the path to the target resource.
 
-#### 4. What are the differences between GET and POST method?
+### 4. What are the differences between GET and POST method?
 
 Following are the differences between GET and POST method:
 
@@ -79,7 +79,7 @@ Following are the differences between GET and POST method:
 | It receives data using url in the browser. | It does not send data into the url. |
 | It can receive limited amount of data to the server. | We can send data in bulk to the server. |
 
-#### 5. What is status code in HTTP?
+### 5. What is status code in HTTP?
 
 It is a Standard response code given by web server on Internet.  
 It helps to identify the cause of problem when web page or other resource does not load properly.
@@ -89,7 +89,7 @@ There are two major group of HTTP [status code](https://www.restapitutorial.com/
 * 4xx Client Error
 * 5xx Server Error
 
-#### _6. What are the header fields in HTTP?_
+### _6. What are the header fields in HTTP?_
 
 HTTP headers fields allow the client and server to pass information with the request and response message.
 
@@ -111,22 +111,22 @@ It is used to contain response header information sent by the web server.
 
 It is used to contain more information about the body of the entity.
 
-#### _7. What is URI?_
+### _7. What is URI?_
 
 URI \(Uniform Resource Identifier\) is used to define the identity of something on the web. It can represent a piece of a url.
 
-#### _8. What are_ [_Idempotent_](https://sofish.github.io/restcookbook/http%20methods/idempotency/) _methods?_
+### _8. What are_ [_Idempotent_](https://sofish.github.io/restcookbook/http%20methods/idempotency/) _methods?_
 
 In idempotent methods, for the multiple requests, we get exact same result.  
 It would no matter if the request is called one or ten times, the result should be same.
 
-#### _9. What is secure HTTP?_
+### _9. What is secure HTTP?_
 
 * The secure HTTP is secure version of HTTP. 
 * In this protocol, data transfer over the World Wide Web is secure and encrypted. 
 * It is used to execute highly confidential online transaction like financial transactions.
 
-#### _10. What are the benefits of HTTPS certificate?_
+### _10. What are the benefits of HTTPS certificate?_
 
 The major benefits of HTTPS certificate are:
 
@@ -134,11 +134,11 @@ The major benefits of HTTPS certificate are:
 * Customers trust and prefer to purchase from the sites that use HTTPS protocol.  
 * This protocol shows authenticate register domain as secure connection.  
 
-#### _11. What is cURL in HTTP?_
+### _11. What is cURL in HTTP?_
 
 cURL is command line tool. It is available on all major operating systems.
 
-#### 12. What is [REST](https://sofish.github.io/restcookbook/)?
+### 12. What is [REST](https://sofish.github.io/restcookbook/)?
 
 REST stands for Representational State Transfer. It is a set of constraints that ensure a scalable, fault-tolerant and easily adaptable system. It relies on a stateless, client server and cacheable communications protocol.
 

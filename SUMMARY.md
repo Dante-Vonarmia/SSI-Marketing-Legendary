@@ -5,9 +5,9 @@
 
 ## HTML5 - Structuring the Web
 
-* [HTTP](html5-structuring-the-web/http.md)
 * [Basic Concept](html5-structuring-the-web/untitled.md)
-* [Frequent Asked Interview Questions](html5-structuring-the-web/frequent-asked-interview-questions.md)
+* [Advanced FAQs](html5-structuring-the-web/frequent-asked-interview-questions.md)
+* [HTTP](html5-structuring-the-web/http.md)
 
 ## CSS 3 - Styling the Web
 

@@ -10,7 +10,7 @@ _"When things come too easy, then people won't cherish them. Cuz there is someth
 
 1. [Be a Programmer](before-time.md#episode-1-be-a-programmer)
 2. [Build thy Own Skills Tree](before-time.md#build-thy-own-skills-tree)
-3. Standards
+3. [Standards](before-time.md#standards)
 
 ## Be a Programmer
 
@@ -143,22 +143,25 @@ It helps to get the specific purpose title step by step without deviation.
 {% endtab %}
 {% endtabs %}
 
-### **Work Flow**
+### **Work Flow - Agile Development**
 
-#### **Agile Development**
+#### Prototype Tool
 
 #### **Task’s Management**
 
-This part is not exactly about coding itself. But it’s also quite important.  
-****Because if you want to be a professional one you must be act like one.
-
-### **Notification & Communication**
-
-#### **Chat**
+#### **Notification & Communication**
 
 [Slack](https://slack.com) is one of the most efficient, famous and authorized chatting tool in occupation environment. Any further discussion would be only access through it.
 
 An outstanding staff is never about how flawless himself/herself. It’s about the team work. It’s about letting people know what’s your progress that you’re working on and how do they cooperate with you. This is why we use tasks management such as Notion or Jira.
+
+#### Coding Environment
+
+#### Testing Tool
+
+#### Version Control
+
+## Standards
 
 
 

@@ -2,7 +2,7 @@
 description: Uncommon or advanced problems
 ---
 
-# Frequent Asked Interview Questions
+# Advanced FAQs
 
 ## Index
 
