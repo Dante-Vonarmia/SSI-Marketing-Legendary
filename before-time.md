@@ -37,20 +37,11 @@ _Why we use it? Can we improve it? \(The future\)_
 
 ### Tools & Habits
 
-> Coding is just like a tool. It's not any kind of theory.  
-> 编程不是理论，是工具。
->
-> —— DVA89
+> Coding is just like a tool. It's not any kind of theory.
 
-> Do NOT from dread to coding, to discard coding.  
-> 不要从惧写，到拒写。
->
-> —— DVA89
+> Do NOT from dread to coding, to discard coding.
 
-> Utilize the tools. Don't just read them.  
-> 工具要用，不要光看。
->
-> —— DVA89
+> Utilize the tools. Don't just read them.
 
 ## **Build thy Own Skill Set**
 
