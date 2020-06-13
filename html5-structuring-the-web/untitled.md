@@ -85,17 +85,17 @@ description: Structuring the Web
 
 ## Video and audio content
 
-### advantages of html5 video and audio compare with the flash.
+### Advantages of html5 video and audio compare with the flash.
 
-### how do use html5 video and audio to get video from the youtube?
+### How do use html5 video and audio to get video from the youtube?
 
 ## Embedding technologies: `<object>`; `<iframe>`; etc
 
-### what is iframe and how do you use it?
+### What is iframe and how do you use it?
 
 ### How do you make multi media?
 
 ## Adding vector graphics to the Web
 
-### what is vector image and what is the advantage.
+### What is vector image and what is the advantage.
 
