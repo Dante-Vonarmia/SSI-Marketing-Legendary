@@ -33,19 +33,69 @@ description: Structuring the Web
 
 ## HTML `<head>` and Metadata
 
+### How do you apply CSS styles to a web page?
+
+### How do you apply JavaScript to a web page?
+
+### What you can do with a `<meta>` tag?
+
 ## HTML text fundamentals / Advanced text formatting
+
+### Headline with the h2 Element
+
+### Inform with the Paragraph Element
+
+### Delete HTML Elements
 
 ## Creating hyperlinks
 
+### Link to External Pages with Anchor Elements
+
+### Link to Internal Sections of a Page with Anchor Elements
+
+### Nest an Anchor Element within a Paragraph
+
+### Make Dead Links Using the Hash Symbol
+
+### What you can do with an `<a>` tag?
+
 ## Document and website structure
+
+### Declare the Doctype of an HTML Document
+
+### Say Hello to HTML Elements
+
+### What’s the difference between a block-level element and an inline element?
+
+### How is an HTML document structured? \(hint: What is DOCTYPE tag; HTML tag; Head tag; Body tag\)
 
 ## Debugging HTML
 
+### Uncomment HTML
+
+### Comment out HTML
+
+### When should you use comments?
+
 ## Images in HTML / Responsive images
+
+### Add Images to Your Website
+
+### Turn an Image into a Link
 
 ## Video and audio content
 
-## Embedding technologies: `<object>`, `<iframe>`, etc
+### advantages of html5 video and audio compare with the flash.
+
+### how do use html5 video and audio to get video from the youtube?
+
+## Embedding technologies: `<object>`; `<iframe>`; etc
+
+### what is iframe and how do you use it?
+
+### How do you make multi media?
 
 ## Adding vector graphics to the Web
+
+### what is vector image and what is the advantage.
 
