@@ -7,7 +7,7 @@
 
 * [Basic Concept](html5-structuring-the-web/untitled.md)
 * [Advanced FAQs](html5-structuring-the-web/frequent-asked-interview-questions.md)
-* [HTTP](html5-structuring-the-web/http.md)
+* [HTTP FAQs](html5-structuring-the-web/http-faqs.md)
 
 ## CSS 3 - Styling the Web
 

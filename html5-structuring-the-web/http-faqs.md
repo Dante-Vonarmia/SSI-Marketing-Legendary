@@ -2,7 +2,7 @@
 description: Background Knowledge
 ---
 
-# HTTP
+# HTTP FAQs
 
 ### 1. What is HTTP?
 
