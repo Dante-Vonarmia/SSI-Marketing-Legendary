@@ -1,4 +1,2 @@
-# SSI Marketing Legendary
+# Initial page
 
-> One man goes fast. A team goes further.  
-> -- Dante Von Alcatraz
