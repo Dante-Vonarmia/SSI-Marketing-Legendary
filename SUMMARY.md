@@ -10,7 +10,6 @@
   * [Basic structure](html5-structuring-the-web/untitled/basic-structure.md)
   * [Basic text-level semantics](html5-structuring-the-web/untitled/basic-text-level-semantics.md)
   * [Hyperlinks](html5-structuring-the-web/untitled/hyperlinks.md)
-  * [Scripting & styling](html5-structuring-the-web/untitled/scripting-and-styling.md)
   * [Embedded content](html5-structuring-the-web/untitled/embedded-content.md)
   * [Images & multimedia](html5-structuring-the-web/untitled/images-and-multimedia.md)
   * [Debugging](html5-structuring-the-web/untitled/debugging.md)

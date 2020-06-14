@@ -8,5 +8,3 @@
 
 ## Make Dead Links Using the Hash Symbol
 
-## What you can do with an `<a>` tag?
-
