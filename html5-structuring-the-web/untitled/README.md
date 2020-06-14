@@ -11,7 +11,7 @@ description: Structuring the Web
 3. [Hyperlinks](./#hyperlinks)[ ](./#html-text-fundamentals-advanced-text-formatting)
 4. [Embedded content](./#embedded-content)
 5. [Images & multimedia](./#images-and-multimedia)
-6. Debugging
+6. [Debugging](./#debugging)
 
 ## Basic structure
 
