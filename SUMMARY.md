@@ -48,4 +48,5 @@
 * [API Template](misc/api-template.md)
 * [Guide Template](misc/guide-template.md)
 * [Log Template](misc/log-template.md)
+* [Reference](misc/reference.md)
 
