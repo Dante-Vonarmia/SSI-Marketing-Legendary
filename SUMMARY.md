@@ -12,6 +12,7 @@
   * [Hyperlinks](html5-structuring-the-web/untitled/hyperlinks.md)
   * [Embedded content](html5-structuring-the-web/untitled/embedded-content.md)
   * [Images & multimedia](html5-structuring-the-web/untitled/images-and-multimedia.md)
+  * [Internationalization](html5-structuring-the-web/untitled/internationalization.md)
   * [Debugging](html5-structuring-the-web/untitled/debugging.md)
 * [HTML5 New Features](html5-structuring-the-web/html5-new-features/README.md)
   * [Semantic Tags](html5-structuring-the-web/html5-new-features/semantic-tags.md)
@@ -19,7 +20,7 @@
   * [Performance and integration](html5-structuring-the-web/html5-new-features/performance-and-integration.md)
   * [Offline and storage](html5-structuring-the-web/html5-new-features/offline-and-storage.md)
   * [Device access](html5-structuring-the-web/html5-new-features/device-access.md)
-  * [2D/3D GRAPHICS AND EFFECTS](html5-structuring-the-web/html5-new-features/2d-3d-graphics-and-effects.md)
+  * [2D/3D Graphics and effects](html5-structuring-the-web/html5-new-features/2d-3d-graphics-and-effects.md)
 * [Advanced FAQs](html5-structuring-the-web/frequent-asked-interview-questions/README.md)
   * [HTML Forms](html5-structuring-the-web/frequent-asked-interview-questions/html-forms.md)
   * [Tabular information](html5-structuring-the-web/frequent-asked-interview-questions/tabular-information.md)
@@ -27,7 +28,6 @@
   * [Advanced text semantics](html5-structuring-the-web/frequent-asked-interview-questions/advanced-text-semantics.md)
   * [Internationalization](html5-structuring-the-web/frequent-asked-interview-questions/internationalization.md)
   * [Performance & SEO](html5-structuring-the-web/frequent-asked-interview-questions/performance-and-seo.md)
-  * [Behavior Questions](html5-structuring-the-web/frequent-asked-interview-questions/behavior-questions.md)
 * [HTTP FAQs](html5-structuring-the-web/http-faqs.md)
 
 ## CSS 3 - Styling the Web
@@ -41,6 +41,11 @@
 ## React - View Layer Revolution
 
 * [Content](react-view-layer-revolution/content.md)
+
+## Behavior
+
+* [Role and Responsibilities](behavior/role-and-responsibilities.md)
+* [Project and Development](behavior/project-and-development.md)
 
 ## Misc
 

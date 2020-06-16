@@ -1,2 +1,2 @@
-# 2D/3D GRAPHICS AND EFFECTS
+# 2D/3D Graphics and effects
 
