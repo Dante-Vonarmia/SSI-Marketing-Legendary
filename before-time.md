@@ -11,6 +11,7 @@ _"As things come too easy, then people won't cherish them. Cuz there is somethin
 1. [Be a Programmer](before-time.md#episode-1-be-a-programmer)
 2. [Build thy Own Skills Tree](before-time.md#build-thy-own-skills-tree)
 3. [Standards](before-time.md#standards)
+4. [Start Interview Questions](before-time.md#start-interview-questions)
 
 ## Be a Programmer
 
@@ -170,5 +171,16 @@ An outstanding staff is never about how flawless himself/herself. It’s about t
 
 > Expose Your Ignorance Daily
 
-### \*\*\*\*
+## Start Interview Questions
+
+In our interview question, we cover: HTML5, CSS3, JavaScript, React, and common Behavior questions. You don't have to go through all of them but remember whenever you feel like to do some self-test. This is exactly the right place for you. And it is always encouraged to contribute your own questions to us.
+
+Lets' build an empire together!
+
+GL;HF   
+:\)
+
+{% page-ref page="content.md" %}
+
+
 

@@ -3,6 +3,7 @@
 * [Cover](README.md)
 * [Before Time](before-time.md)
 * [Contributors List](contributors-list.md)
+* [Content](content.md)
 
 ## HTML5 - Structuring the Web
 
@@ -32,15 +33,9 @@
 
 ## CSS 3 - Styling the Web
 
-* [Content](css-3-styling-the-web/untitled.md)
-
 ## JS ES6+ - Dynamic Client-side Scripting
 
-* [Content](js-es6+-dynamic-client-side-scripting/untitled.md)
-
 ## React - View Layer Revolution
-
-* [Content](react-view-layer-revolution/content.md)
 
 ## Behavior
 
