@@ -9,8 +9,8 @@ description: Structuring the Web
 1. [Basic structure](./#basic-structure)
 2. [Basic text-level semantics](./#basic-text-level-semantics)
 3. [Hyperlinks](./#hyperlinks)[ ](./#html-text-fundamentals-advanced-text-formatting)
-4. [Embedded content](./#embedded-content)
-5. [Images & multimedia](./#images-and-multimedia)
+4. [Images & multimedia](./#images-and-multimedia)
+5. [Embedded content](./#embedded-content)
 6. [Internationalization](./#internationalization)
 7. [Debugging](./#debugging)
 
@@ -51,15 +51,6 @@ One of the main reasons for HTML is making navigation easy with hyperlinks, whic
 
 {% page-ref page="hyperlinks.md" %}
 
-## Embedded content
-
-#### Key Concept:
-
-* [Iframes in detail](https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Other_embedding_technologies#Iframes_in_detail)
-* [The &lt;embed&gt; and &lt;object&gt; elements](https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Other_embedding_technologies#The_%3Cembed%3E_and_%3Cobject%3E_elements)
-
-{% page-ref page="embedded-content.md" %}
-
 ## Images & multimedia
 
 #### Key Concept:
@@ -79,6 +70,15 @@ HTML is not monolingual. It provides tools to handle common internationalization
 
 {% page-ref page="internationalization.md" %}
 
+## Embedded content
+
+#### Key Concept:
+
+* [Iframes in detail](https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Other_embedding_technologies#Iframes_in_detail)
+* [The &lt;embed&gt; and &lt;object&gt; elements](https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Other_embedding_technologies#The_%3Cembed%3E_and_%3Cobject%3E_elements)
+
+{% page-ref page="embedded-content.md" %}
+
 ## Debugging
 
 Debugging doesn't have to be scary though — the key to being comfortable with writing and debugging any programming language or code is familiarity with both the language and the tools.
@@ -90,6 +90,4 @@ Debugging doesn't have to be scary though — the key to being comfortable with 
 * Syntax / Logic errors
 
 {% page-ref page="debugging.md" %}
-
-
 

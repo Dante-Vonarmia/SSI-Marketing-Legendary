@@ -18,5 +18,5 @@
 
 ## [How to define terms with HTML](https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Define_terms_with_HTML)
 
-## 
+## Describe the difference between `<script>`, `<script async>` and `<script defer>`.
 
