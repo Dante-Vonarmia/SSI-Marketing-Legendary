@@ -23,11 +23,11 @@
   * [Design and accessibility](html5-structuring-the-web/frequent-asked-interview-questions/design-and-accessibility.md)
 * [HTML5 New Features](html5-structuring-the-web/html5-new-features/README.md)
   * [Semantic Tags](html5-structuring-the-web/html5-new-features/semantic-tags.md)
-  * [Multimedia](html5-structuring-the-web/html5-new-features/multimedia.md)
-  * [Performance and integration](html5-structuring-the-web/html5-new-features/performance-and-integration.md)
   * [Offline and storage](html5-structuring-the-web/html5-new-features/offline-and-storage.md)
-  * [Device access](html5-structuring-the-web/html5-new-features/device-access.md)
+  * [Multimedia](html5-structuring-the-web/html5-new-features/multimedia.md)
   * [2D/3D Graphics and effects](html5-structuring-the-web/html5-new-features/2d-3d-graphics-and-effects.md)
+  * [Performance and integration](html5-structuring-the-web/html5-new-features/performance-and-integration.md)
+  * [Device access](html5-structuring-the-web/html5-new-features/device-access.md)
 * [HTTP FAQs](html5-structuring-the-web/http-faqs.md)
 
 ## CSS 3 - Styling the Web
