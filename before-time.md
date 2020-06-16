@@ -4,7 +4,7 @@ description: Intro
 
 # Before Time
 
-_"As objects come too easy, then people won't cherish them. Cuz there is something to gain after pain."_
+_"As things come too easy, then people won't cherish them. Cuz there is something to gain after pain."_
 
 ## Index
 
