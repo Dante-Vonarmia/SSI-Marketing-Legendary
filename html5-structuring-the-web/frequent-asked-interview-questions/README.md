@@ -19,59 +19,13 @@ description: Uncommon or advanced problems
 
 ## HTML Forms
 
-### Fill in the Blank with Placeholder Text
-
-### Create a Text Field
-
-### Add a Submit Button to a Form
-
-### Create a Set of Radio Buttons
-
-### Create a Set of Checkboxes
-
-### Add Placeholder Text to a Text Field
-
-### Create a Form Element
-
-### Use the value attribute with Radio Buttons and Checkboxes
-
-### Check Radio Buttons and Checkboxes by Default
-
-### What is a Boolean attribution of an `<input>` tag?
-
 ## Tabular information
-
-### how do you make a table in html?
-
-### how do you make a table heading?
-
-### what id td?
 
 ## Data representation
 
-### Create a Bulleted Unordered List
-
-### Create an Ordered List
-
-### Use HTML5 to Require a Field
-
-### Nest Many Elements within a Single div Element
-
 ## Advanced text semantics
 
-### Introduction to HTML5 Elements
-
-### What do you know about HTML5's new features?
-
-### What elements are abandoned in HTML5?
-
 ## Advanced images & multimedia
-
-### How to add a responsive image to a webpage 
-
-### How to add vector image to a webpage 
-
-### How to add a hit map on top of an image
 
 ## Internationalization 
 
