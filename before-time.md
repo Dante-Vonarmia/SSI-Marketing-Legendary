@@ -9,7 +9,7 @@ _"As things come too easy, then people won't cherish them. Cuz there is somethin
 ## Index
 
 1. [Be a Programmer](before-time.md#episode-1-be-a-programmer)
-2. [Build thy Own Skills Tree](before-time.md#build-thy-own-skills-tree)
+2. [Build your Own Skills Tree](before-time.md#build-your-own-skill-set)
 3. [Standards](before-time.md#standards)
 4. [Start Interview Questions](before-time.md#start-interview-questions)
 
@@ -44,7 +44,7 @@ _Why we use it? Can we improve it? \(The future\)_
 
 > Utilize the tools. Don't just read them.
 
-## **Build thy Own Skill Set**
+## **Build your Own Skill Set**
 
 ### **Road-map**
 
