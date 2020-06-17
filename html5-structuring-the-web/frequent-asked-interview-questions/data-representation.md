@@ -8,9 +8,5 @@ These days, using `data-` attributes is generally not encouraged. One reason is 
 
 However, one perfectly valid use of data attributes, is to add a hook for _end to end_ testing frameworks such as Selenium and Capybara without having to create a meaningless classes or ID attributes. The element needs a way to be found by a particular Selenium spec and something like `data-selector='the-thing'` is a valid way to do so without convoluting the semantic markup otherwise.
 
-## Create a Bulleted Unordered List
 
-## Create an Ordered List
-
-## Nest Many Elements within a Single div Element
 

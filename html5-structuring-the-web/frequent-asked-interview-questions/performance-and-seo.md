@@ -4,8 +4,6 @@
 
 ## What browsers support HTML5? \(hint: Explain Browser Compatibility\)
 
-## What's the difference between `<div>` and `<p>`? \(hint: coding standards\)
-
 ## Why is it generally a good idea to position CSS `<link>`s between `<head></head>` and JS `<script>`s just before `</body>`? Do you know any exceptions?
 
 **Placing `<link>`s in the `<head>`**
