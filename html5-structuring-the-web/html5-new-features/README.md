@@ -13,11 +13,25 @@
 
 Allowing you to describe more precisely what your content is.
 
+#### Key concepts:
+
+* New semantic elements
+* Forms improvements
+* Using HTML5 audio and video
+* Sections and outlines in HTML5
+
 {% page-ref page="semantic-tags.md" %}
 
 ## Offline and storage
 
 Allowing webpages to store data on the client-side locally and operate offline more efficiently.
+
+#### Key concepts:
+
+* Offline resources: The application cache
+* Online and offline events
+* DOM storage
+* Using files from web applications
 
 {% page-ref page="offline-and-storage.md" %}
 
@@ -25,11 +39,21 @@ Allowing webpages to store data on the client-side locally and operate offline m
 
 Making video and audio first-class citizens in the Open Web.
 
+#### Key concepts:
+
+* Using HTML5 audio and video
+
 {% page-ref page="multimedia.md" %}
 
 ## 2D/3D graphics and effects
 
 Allowing a much more diverse range of presentation options.
+
+#### Key concepts:
+
+* Canvas
+* WebGL
+* SVG
 
 {% page-ref page="2d-3d-graphics-and-effects.md" %}
 
@@ -37,11 +61,26 @@ Allowing a much more diverse range of presentation options.
 
 Providing greater speed optimization and better usage of computer hardware.
 
+#### Key concepts:
+
+* [Web Workers](https://developer.mozilla.org/en-US/docs/DOM/Using_web_workers)
+* [`XMLHttpRequest`](https://developer.mozilla.org/en-US/docs/DOM/XMLHttpRequest) level 2
+* History API
+* Fullscreen API
+* Pointer Lock API
+
 {% page-ref page="performance-and-integration.md" %}
 
 ## Device access
 
 Allowing for the usage of various input and output devices.
+
+#### Key concepts:
+
+* Using the Camera API
+* Touch events
+* Using geolocation
+* Detecting device orientation
 
 {% page-ref page="device-access.md" %}
 
