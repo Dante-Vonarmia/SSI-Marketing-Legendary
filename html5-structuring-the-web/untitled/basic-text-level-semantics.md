@@ -1,5 +1,7 @@
 # Basic text-level semantics
 
+## What is semantic HTML?
+
 ## The Div VS the Paragraph element, what's the difference?
 
 ## How to create a list of items with HTML

@@ -2,6 +2,8 @@
 
 ## What will happened if you don't add DOCTYPE for HTML5
 
+## What is the advantage of collapsing white space?
+
 ## What browsers support HTML5? \(hint: Explain Browser Compatibility\)
 
 ## Why is it generally a good idea to position CSS `<link>`s between `<head></head>` and JS `<script>`s just before `</body>`? Do you know any exceptions?

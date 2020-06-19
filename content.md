@@ -12,11 +12,15 @@
 
 ## CSS3 - Styling the Web
 
-{% page-ref page="content.md" %}
+{% page-ref page="css-3-styling-the-web/basic-concept/" %}
+
+
 
 ## JavaScript ES6+ - Dynamic Client-side Scripting
 
-{% page-ref page="content.md" %}
+{% page-ref page="js-es6+-dynamic-client-side-scripting/basic-concept.md" %}
+
+
 
 
 

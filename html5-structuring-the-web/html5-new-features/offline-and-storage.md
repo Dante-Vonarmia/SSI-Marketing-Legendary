@@ -15,3 +15,7 @@ All the above-mentioned technologies are key-value storage mechanisms on the cli
 
 _Note: If the user decides to clear browsing data via whatever mechanism provided by the browser, this will clear out any `cookie`, `localStorage`, or `sessionStorage` stored. It's important to keep this in mind when designing for local persistance, especially when comparing to alternatives such as server side storing in a database or similar \(which of course will persist despite user actions\)._
 
+## What is the Application Cache in HTML5 and why it is used?
+
+## Tell me two benefits of HTML5 Web Storage_._
+

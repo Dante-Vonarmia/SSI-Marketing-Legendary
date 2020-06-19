@@ -8,3 +8,7 @@
 
 ## Make Dead Links Using the Hash Symbol
 
+## How do you create links\(anchor\) to a section within the same page?
+
+## How do you create text on a webpage that will allow you to send an email when clicked?
+

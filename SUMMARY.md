@@ -32,13 +32,17 @@
 
 ## CSS 3 - Styling the Web
 
-* [Basic Concept](css-3-styling-the-web/basic-concept.md)
-* [CSS3 New Features](css-3-styling-the-web/css3-new-features.md)
+* [Basic Syntax](css-3-styling-the-web/basic-concept/README.md)
+  * [Working Principles](css-3-styling-the-web/basic-concept/working-principles.md)
+  * [Cascade and inheritance](css-3-styling-the-web/basic-concept/cascade-and-inheritance.md)
+  * [CSS Selectors](css-3-styling-the-web/basic-concept/css-selectors.md)
+  * [Styling Syntax](css-3-styling-the-web/basic-concept/styling-syntax.md)
+  * [The box model and Layouts](css-3-styling-the-web/basic-concept/the-box-model-and-layouts.md)
 * [Advanced FAQs](css-3-styling-the-web/advanced-faqs.md)
 
 ## JS ES6+ - Dynamic Client-side Scripting
 
-* [Basic Concept](js-es6+-dynamic-client-side-scripting/basic-concept.md)
+* [Core Mechanism](js-es6+-dynamic-client-side-scripting/basic-concept.md)
 * [Functional Programming](js-es6+-dynamic-client-side-scripting/functional-programming.md)
 * [Asynchronous](js-es6+-dynamic-client-side-scripting/asynchronous.md)
 * [ES6+](js-es6+-dynamic-client-side-scripting/es6+.md)

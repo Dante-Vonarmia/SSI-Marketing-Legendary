@@ -4,7 +4,7 @@
 
 **HTML** \(HyperText Markup Language\) is the most basic building block of the Web. It defines the meaning and structure of web content. 
 
-## What does a doctype do?
+## What does a doctype do? Explain DOCTYPE and why need it?
 
 In HTML, the doctype is the required "`<!DOCTYPE html>`" preamble found at the top of all documents. 
 
@@ -88,4 +88,6 @@ There are meta tags beyond just _description_ and _keywords_, though those two a
 ```text
 <meta name=viewport content="width=device-width, initial-scale=1">
 ```
+
+## Explain Document Flow of HTML.
 

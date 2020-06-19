@@ -1,2 +1,2 @@
-# Basic Concept
+# Core Mechanism
 
