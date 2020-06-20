@@ -48,8 +48,6 @@ An inline element will not cause a new line to appear in the document; they woul
 
 ## How is an HTML document structured? \(hint: What is DOCTYPE tag; HTML tag; Head tag; Body tag\)
 
-
-
 1. `<!DOCTYPE html>`: The doctype. When HTML was young \(1991-1992\), doctypes were meant to act as links to a set of rules that the HTML page had to follow to be considered good HTML. Doctypes used to look something like this:
 
    ```text
@@ -90,4 +88,6 @@ There are meta tags beyond just _description_ and _keywords_, though those two a
 ```
 
 ## Explain Document Flow of HTML.
+
+Document flow is the arrangement of page elements as defined by positioning statements and the order of html statements; that is, how the different elements take up space and arrange themselves around each other.
 

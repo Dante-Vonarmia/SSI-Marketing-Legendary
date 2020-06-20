@@ -1,4 +1,4 @@
-# Performance & SEO
+# Performance & SEO \[unfinished\]
 
 ## What will happened if you don't add DOCTYPE for HTML5
 

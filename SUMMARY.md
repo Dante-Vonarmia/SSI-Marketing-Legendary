@@ -2,26 +2,25 @@
 
 * [Cover](README.md)
 * [Before Time](before-time.md)
-* [Contributors List](contributors-list.md)
 * [Content](content.md)
 
 ## HTML5 - Structuring the Web
 
 * [Basic Concept](html5-structuring-the-web/untitled/README.md)
   * [Basic structure](html5-structuring-the-web/untitled/basic-structure.md)
-  * [Basic text-level semantics](html5-structuring-the-web/untitled/basic-text-level-semantics.md)
-  * [Hyperlinks](html5-structuring-the-web/untitled/hyperlinks.md)
-  * [Images & multimedia](html5-structuring-the-web/untitled/images-and-multimedia.md)
+  * [Basic text-level semantics \[unfinished\]](html5-structuring-the-web/untitled/basic-text-level-semantics.md)
+  * [Hyperlinks \[unfinished\]](html5-structuring-the-web/untitled/hyperlinks.md)
+  * [Images & multimedia \[unfinished\]](html5-structuring-the-web/untitled/images-and-multimedia.md)
   * [Internationalization](html5-structuring-the-web/untitled/internationalization.md)
-  * [Embedded content](html5-structuring-the-web/untitled/embedded-content.md)
-  * [Debugging](html5-structuring-the-web/untitled/debugging.md)
+  * [Embedded content \[unfinished\]](html5-structuring-the-web/untitled/embedded-content.md)
+  * [Debugging \[unfinished\]](html5-structuring-the-web/untitled/debugging.md)
 * [Advanced FAQs](html5-structuring-the-web/frequent-asked-interview-questions/README.md)
-  * [HTML Forms](html5-structuring-the-web/frequent-asked-interview-questions/html-forms.md)
-  * [Tabular information](html5-structuring-the-web/frequent-asked-interview-questions/tabular-information.md)
+  * [HTML Forms \[unfinished\]](html5-structuring-the-web/frequent-asked-interview-questions/html-forms.md)
+  * [Tabular information \[unfinished\]](html5-structuring-the-web/frequent-asked-interview-questions/tabular-information.md)
   * [Data representation](html5-structuring-the-web/frequent-asked-interview-questions/data-representation.md)
-  * [Performance & SEO](html5-structuring-the-web/frequent-asked-interview-questions/performance-and-seo.md)
-  * [Design and accessibility](html5-structuring-the-web/frequent-asked-interview-questions/design-and-accessibility.md)
-* [HTML5 New Features](html5-structuring-the-web/html5-new-features/README.md)
+  * [Performance & SEO \[unfinished\]](html5-structuring-the-web/frequent-asked-interview-questions/performance-and-seo.md)
+  * [Design and accessibility \[unfinished\]](html5-structuring-the-web/frequent-asked-interview-questions/design-and-accessibility.md)
+* [HTML5 New Features \[unfinished\]](html5-structuring-the-web/html5-new-features/README.md)
   * [Semantic Tags](html5-structuring-the-web/html5-new-features/semantic-tags.md)
   * [Offline and storage](html5-structuring-the-web/html5-new-features/offline-and-storage.md)
   * [Multimedia](html5-structuring-the-web/html5-new-features/multimedia.md)
@@ -32,13 +31,13 @@
 
 ## CSS 3 - Styling the Web
 
-* [Basic Syntax](css-3-styling-the-web/basic-concept/README.md)
+* [Basic Syntax \[unfinished\]](css-3-styling-the-web/basic-concept/README.md)
   * [Working Principles](css-3-styling-the-web/basic-concept/working-principles.md)
   * [Cascade and inheritance](css-3-styling-the-web/basic-concept/cascade-and-inheritance.md)
   * [CSS Selectors](css-3-styling-the-web/basic-concept/css-selectors.md)
   * [Styling Syntax](css-3-styling-the-web/basic-concept/styling-syntax.md)
   * [The box model and Layouts](css-3-styling-the-web/basic-concept/the-box-model-and-layouts.md)
-* [Advanced FAQs](css-3-styling-the-web/advanced-faqs/README.md)
+* [Advanced FAQs \[unfinished\]](css-3-styling-the-web/advanced-faqs/README.md)
   * [CSS3 New features](css-3-styling-the-web/advanced-faqs/css3-new-features.md)
   * [Project & Methodology](css-3-styling-the-web/advanced-faqs/project-and-methodology.md)
   * [Responsive Design](css-3-styling-the-web/advanced-faqs/responsive-design.md)
@@ -70,9 +69,6 @@
 
 ## Misc
 
-* [FAQ Template](misc/faq-template.md)
-* [API Template](misc/api-template.md)
-* [Guide Template](misc/guide-template.md)
-* [Log Template](misc/log-template.md)
+* [Contributors List](misc/contributors-list.md)
 * [Reference](misc/reference.md)
 

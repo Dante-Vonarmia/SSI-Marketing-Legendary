@@ -1,4 +1,4 @@
-# Design and accessibility
+# Design and accessibility \[unfinished\]
 
 ## How do you solve Browser compatibility?
 
