@@ -14,6 +14,8 @@
 
 {% page-ref page="css-3-styling-the-web/basic-concept/" %}
 
+{% page-ref page="css-3-styling-the-web/advanced-faqs/" %}
+
 
 
 ## JavaScript ES6+ - Dynamic Client-side Scripting
