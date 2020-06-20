@@ -2,12 +2,6 @@
 
 > [https://developer.mozilla.org/en-US/docs/Learn/CSS/Howto/CSS\_FAQ](https://developer.mozilla.org/en-US/docs/Learn/CSS/Howto/CSS_FAQ)
 
-## What are new features in CSS3?
-
-## Why doesn't my CSS, which is valid, render correctly?
-
-## How do I assign multiple classes to an element?
-
 ## Why don't my style rules work properly?
 
 #### HTML elements hierarchy <a id="HTML_elements_hierarchy"></a>
@@ -20,19 +14,7 @@
 
 #### Specificity in CSS <a id="Specificity_in_CSS"></a>
 
-## What do the -moz-\*, -ms-\*, -webkit-\*, -o-\* and -khtml-\* properties do?
-
-## How does z-index relate to positioning?
-
 ## How to define responsive design by using media queries?
-
-## Explain BEM? OOCSS?
-
-## How to check and supporting older browsers?
-
-## **How to debugging CSS? What kind of tools do you use?**
-
-## How to debug CSS in the browser?
 
 ## What's the difference between "resetting" and "normalizing" CSS? Which would you choose, and why?How to use filters in CSS
 

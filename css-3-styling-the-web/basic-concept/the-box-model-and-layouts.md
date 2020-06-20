@@ -1,8 +1,25 @@
 # The box model and Layouts
 
-## What is a CSS Box Model?
+## Explain your understanding of the box model and how you would tell the browser in CSS to render your layout in different box models.
 
-## Describe `float`s and how they work.
+The CSS box model describes the rectangular boxes that are generated for elements in the document tree and laid out according to the visual formatting model. Each box has a content area \(e.g. text, an image, etc.\) and optional surrounding `padding`, `border`, and `margin` areas.
+
+The CSS box model is responsible for calculating:
+
+* How much space a block element takes up.
+* Whether or not borders and/or margins overlap, or collapse.
+* A box's dimensions.
+
+The box model has the following rules:
+
+* The dimensions of a block element are calculated by `width`, `height`, `padding`, `border`s, and `margin`s.
+* If no `height` is specified, a block element will be as high as the content it contains, plus `padding` \(unless there are floats, for which see below\).
+* If no `width` is specified, a non-floated block element will expand to fit the width of its parent minus `padding`.
+* The `height` of an element is calculated by the content's `height`.
+* The `width` of an element is calculated by the content's `width`.
+* By default, `padding`s and `border`s are not part of the `width` and `height` of an element.
+
+## Describe `float` and how they work.
 
 Float is a CSS positioning property. Floated elements remain a part of the flow of the page, and will affect the positioning of other elements \(e.g. text will flow around floated elements\), unlike `position: absolute` elements, which are removed from the flow of the page.
 
@@ -23,6 +40,26 @@ The `.clearfix` hack uses a clever CSS [pseudo selector](https://github.com/yang
 ```
 
 Alternatively, give `overflow: auto` or `overflow: hidden` property to the parent element which will establish a new block formatting context inside the children and it will expand to contain its children.
+
+## Describe `z-index` and how stacking context is formed.
+
+The `z-index` property in CSS controls the vertical stacking order of elements that overlap. `z-index` only affects elements that have a `position` value which is not `static`.
+
+Without any `z-index` value, elements stack in the order that they appear in the DOM \(the lowest one down at the same hierarchy level appears on top\). Elements with non-static positioning \(and their children\) will always appear on top of elements with default static positioning, regardless of HTML hierarchy.
+
+A stacking context is an element that contains a set of layers. Within a local stacking context, the `z-index` values of its children are set relative to that element rather than to the document root. Layers outside of that context — i.e. sibling elements of a local stacking context — can't sit between layers within it. If an element B sits on top of element A, a child element of element A, element C, can never be higher than element B even if element C has a higher `z-index` than element B.
+
+Each stacking context is self-contained - after the element's contents are stacked, the whole element is considered in the stacking order of the parent stacking context. A handful of CSS properties trigger a new stacking context, such as `opacity` less than 1, `filter` that is not `none`, and `transform` that is not`none`.
+
+_Note: What exactly qualifies an element to create a stacking context is listed in this long set of_ [_rules_](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Positioning/Understanding_z_index/The_stacking_context#The_stacking_context)_._
+
+## Have you played around with the new CSS Flexbox or Grid specs?
+
+Yes. Flexbox is mainly meant for 1-dimensional layouts while Grid is meant for 2-dimensional layouts.
+
+Flexbox solves many common problems in CSS, such as vertical centering of elements within a container, sticky footer, etc. Bootstrap and Bulma are based on Flexbox, and it is probably the recommended way to create layouts these days. Have tried Flexbox before but ran into some browser incompatibility issues \(Safari\) in using `flex-grow`, and I had to rewrite my code using `inline-blocks` and math to calculate the widths in percentages, it wasn't a nice experience.
+
+Grid is by far the most intuitive approach for creating grid-based layouts \(it better be!\) but browser support is not wide at the moment.
 
 ## How many ways to make an elements's position is center to its parent elements?
 
@@ -52,9 +89,15 @@ Alternatively, give `overflow: auto` or `overflow: hidden` property to the paren
 
 ## How to create fancy boxes \(also see the Styling boxes module, generally\).?
 
-## How to use background-clip to control how much of the box your background image covers.?
+## How to use background-clip to control how much of the box your background image covers?
 
-## How to change the box model completely using box-sizing?
+## What does `* { box-sizing: border-box; }` do? What are its advantages?
+
+* By default, elements have `box-sizing: content-box` applied, and only the content size is being accounted for.
+* `box-sizing: border-box` changes how the `width` and `height` of elements are being calculated, `border` and `padding` are also being included in the calculation.
+* The `height` of an element is now calculated by the content's `height` + vertical `padding` + vertical `border` width.
+* The `width` of an element is now calculated by the content's `width` + horizontal `padding` + horizontal `border` width.
+* Taking into account `padding`s and `border`s as part of our box model resonates better with how designers actually imagine content in grids.
 
 ## How to add shadows to boxes?
 
