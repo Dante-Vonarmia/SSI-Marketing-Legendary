@@ -27,5 +27,7 @@ The only three factors you shall be marked in mind before you start coding is:
 These compose the trinity of PROGRAMMING.  
 它们构成了编程界的3大基本维度。
 
-
+{% hint style="info" %}
+And what you're looking for is simply a contractor level marketing interview collection.
+{% endhint %}
 
