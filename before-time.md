@@ -137,23 +137,29 @@ It helps to get the specific purpose title step by step without deviation.
 
 ### **Work Flow - Agile Development**
 
-#### Prototype Tool
+#### Collect requirements / **Task’s Management**
 
-#### **Task’s Management**
-
-#### **Notification & Communication**
+#### Brain storm & **Notification & Communication**
 
 [Slack](https://slack.com) is one of the most efficient, famous and authorized chatting tool in occupation environment. Any further discussion would be only access through it.
 
 An outstanding staff is never about how flawless himself/herself. It’s about the team work. It’s about letting people know what’s your progress that you’re working on and how do they cooperate with you. This is why we use tasks management such as Notion or Jira.
 
-#### Coding Environment
+#### Design prototype **/** Prototype Tool
 
-#### Testing Tool
+#### Mock demonstration
 
-#### Build & Release
+#### Web designing
 
-#### Version Control
+#### Project foundation setup
+
+#### TDD + Coding + BDD / Coding Environment
+
+#### Testing Tool / Pressure Testing, A/B Testing, Compatibility Testing....
+
+#### Review code + Integrate all modular
+
+#### Build & Release / Publish and Version release
 
 #### Feedback and Improvement
 
