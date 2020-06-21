@@ -15,7 +15,7 @@
   * [Embedded content](html5-structuring-the-web/untitled/embedded-content.md)
   * [Debugging](html5-structuring-the-web/untitled/debugging.md)
 * [Advanced FAQs](html5-structuring-the-web/frequent-asked-interview-questions/README.md)
-  * [HTML Forms \[unfinished\]](html5-structuring-the-web/frequent-asked-interview-questions/html-forms.md)
+  * [HTML Forms](html5-structuring-the-web/frequent-asked-interview-questions/html-forms.md)
   * [Tabular information \[unfinished\]](html5-structuring-the-web/frequent-asked-interview-questions/tabular-information.md)
   * [Data representation](html5-structuring-the-web/frequent-asked-interview-questions/data-representation.md)
   * [Performance & SEO \[unfinished\]](html5-structuring-the-web/frequent-asked-interview-questions/performance-and-seo.md)
