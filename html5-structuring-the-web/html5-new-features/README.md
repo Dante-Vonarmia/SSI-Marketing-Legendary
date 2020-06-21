@@ -2,12 +2,12 @@
 
 ## Index
 
-1. Semantics
-2. Offline and storage
-3. Multimedia
-4. 2D/3D graphics and effects
-5. Performance and integration
-6. Device access
+1. [Semantics](./#semantics)
+2. [Offline and storage](./#offline-and-storage)
+3. [Multimedia](./#multimedia)
+4. [2D/3D graphics and effects](./#2d-3-d-graphics-and-effects)
+5. [Performance and integration](./#performance-and-integration)
+6. [Device access](./#device-access)
 
 ## Semantics 
 

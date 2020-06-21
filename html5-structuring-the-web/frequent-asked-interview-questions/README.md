@@ -25,9 +25,32 @@ The original values of the `type` attribute available since the early days of HT
 
 ## Tabular information
 
+There are a few other things you could learn about table HTML, but we have really given all you need to know at this moment in time. At this point, you might want to go and learn about styling HTML tables.
+
+#### Key Concept:
+
+* Table tags
+* Styling
+
+{% page-ref page="tabular-information.md" %}
+
 ## Data representation
 
+#### Key Concept:
+
+* **`data-` attributes**
+
+{% page-ref page="data-representation.md" %}
+
 ## Performance & SEO
+
+#### Key Concept:
+
+* Common rules
+* Page Loading
+* Compatibility
+* Accessibility
+* SEO
 
 {% page-ref page="performance-and-seo.md" %}
 
