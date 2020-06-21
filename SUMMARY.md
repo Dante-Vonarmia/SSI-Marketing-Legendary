@@ -8,7 +8,7 @@
 
 * [Basic Concept](html5-structuring-the-web/untitled/README.md)
   * [Basic structure](html5-structuring-the-web/untitled/basic-structure.md)
-  * [Basic text-level semantics \[unfinished\]](html5-structuring-the-web/untitled/basic-text-level-semantics.md)
+  * [Basic text-level semantics](html5-structuring-the-web/untitled/basic-text-level-semantics.md)
   * [Hyperlinks \[unfinished\]](html5-structuring-the-web/untitled/hyperlinks.md)
   * [Images & multimedia \[unfinished\]](html5-structuring-the-web/untitled/images-and-multimedia.md)
   * [Internationalization](html5-structuring-the-web/untitled/internationalization.md)

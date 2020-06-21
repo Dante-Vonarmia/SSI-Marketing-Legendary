@@ -46,9 +46,24 @@
 
 ## Styling Syntax
 
+#### Key Concept:
+
+* CSS common components
+* Advanced Effects
+  * Text Effects
+  * 2D/3D Transformations
+  * Animations
+
 {% page-ref page="styling-syntax.md" %}
 
-## The box model and Layouts 
+## The box model and Layouts
+
+#### Key Concept:
+
+* The attribute: `box-sizing`
+* CSS flexible boxes
+* CSS multi-column layouts
+* CSS generated content
 
 {% page-ref page="the-box-model-and-layouts.md" %}
 
