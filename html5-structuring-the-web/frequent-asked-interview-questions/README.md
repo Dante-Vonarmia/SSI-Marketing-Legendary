@@ -2,7 +2,7 @@
 description: Uncommon or advanced problems
 ---
 
-# Advanced FAQs \[unfinished\]
+# Advanced FAQs
 
 ## Index
 
@@ -10,7 +10,6 @@ description: Uncommon or advanced problems
 2. [Tabular information](./#tabular-information)
 3. [Data representation](./#data-representation)
 4. [Performance & SEO](./#performance-and-seo)
-5. [Design and accessibility](./#design-and-accessibility)
 
 ## HTML Forms
 
@@ -31,10 +30,4 @@ The original values of the `type` attribute available since the early days of HT
 ## Performance & SEO
 
 {% page-ref page="performance-and-seo.md" %}
-
-## Design and accessibility
-
-{% page-ref page="design-and-accessibility.md" %}
-
-
 

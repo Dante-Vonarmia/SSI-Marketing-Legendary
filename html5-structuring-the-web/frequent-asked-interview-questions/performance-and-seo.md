@@ -1,5 +1,20 @@
 # Performance & SEO
 
+## Website Performance Rules
+
+* Rule 1: Make Fewer HTTP Requests
+* Rule 2: Use a Content Delivery Network
+* Rule 3: Add an Expires Header
+* Rule 4: Gzip Components
+* Rule 5: Put Stylesheets at the Top
+* Rule 6: Put Scripts at the Bottom
+* Rule 7: Avoid CSS Expressions
+* Rule 8: Make JavaScript and CSS External
+* Rule 9: Reduce DNS Lookups
+* Rule 10: Minify JavaScript
+* Rule 11: Avoid Redirects
+* Rule 12: Remove Duplicate Scripts
+
 ## What will happened if you don't add DOCTYPE for HTML5
 
 The foremost thing that you need to make sure is that have you added the DOCTYPE in your HTML file.
@@ -104,6 +119,72 @@ Examples of such techniques:
 ## Have you used different HTML templating languages before?
 
 Yes, Pug \(formerly Jade\), ERB, Slim, Handlebars, Jinja, Liquid, just to name a few. In my opinion, they are more or less the same and provide similar functionality of escaping content and helpful filters for manipulating the data to be displayed. Most templating engines will also allow you to inject your own filters in the event you need custom processing before display.
+
+## What will happened after you press the enter of a URL?
+
+1. You enter a URL into a web browser
+2. The browser looks up the IP address for the domain name via DNS
+3. The browser sends a HTTP _request_ to the server
+4. The server sends back a HTTP _response_
+5. The browser begins rendering the HTML
+6. The browser sends requests for additional objects embedded in HTML \(images, css, JavaScript\) and repeats steps 3-5.
+7. Once the page is loaded, the browser sends further async requests as needed.
+
+## Any ideas on web accessibility?
+
+### **1. Make Sure Your Site Is Keyboard-Friendly**
+
+The most common way of navigating using a keyboard is with the Tab key. This will jump between areas on a page that can have [‘keyboard focus,’](https://docs.microsoft.com/en-us/dotnet/framework/wpf/advanced/focus-overview) which includes links, buttons, and forms. Therefore, your goal should be to ensure that all web content and navigation can be accessed using Tab.
+
+### **2. Make Sure All Content Is Easily Accessible**
+
+One way you can do this is by using [ARIA landmarks](https://accessibility.oit.ncsu.edu/it-accessibility-at-nc-state/developers/accessibility-handbook/aria-landmarks/). These are tags you add to content in order to clearly define it on the page. You can tag [dynamic content](https://webaim.org/techniques/aria/#dynamic) as a ‘live region,’ which enables screen readers and similar devices to understand the content as it changes.
+
+### **3. Add Alt Text to All Images**
+
+As if that weren’t enough, alt text can also help you [improve your site’s SEO](https://yoast.com/image-seo-alt-tag-and-title-tag-optimization/), giving search engines more information to crawl. Just make sure to write descriptive summaries of each image, and try to include your keywords whenever it makes sense.
+
+### **4. Choose Your Colors Carefully \(For UX\)**
+
+There are plenty of online tools you can use to find and test color combinations. [WebAIM has one](https://webaim.org/resources/contrastchecker/), and we also [like Contrast Checker](https://contrastchecker.com/) because it gives you a score in real-time. The latter tool also enables you to switch to monochrome to get a rough idea of how effective any given combination is.
+
+### **5. Use Headers to Structure Your Content Correctly**
+
+Another key task to make your site accessible is [structuring your content](https://www.w3.org/WAI/tutorials/page-structure/headings/) by using headers carefully. Doing this will make your content much easier to understand and digest and improves flow.
+
+Additionally, clear headers also help screen readers interpret your pages. This makes it much easier to [provide in-page navigation](https://www.nomensa.com/blog/2017/how-structure-headings-web-accessibility). It’s also simple to do as you only need to ensure you use the correct heading levels in your content.
+
+For instance, you should [only use one H1 per page](https://codex.wordpress.org/Designing_Headings) – usually as the page title. This can be followed by subheadings starting with H2, which can then be nested further with H3, followed by H4. These should always be used in order so you should avoid using an H4 directly after an H2 \(and so on\).
+
+### **6. Design Your Forms for Accessibility**
+
+Forms are a useful addition to most sites but must be designed carefully. What’s most important is to ensure that each field is [clearly labeled](https://webaim.org/techniques/forms/). You should also aim to place the labels adjacent to the respective fields. While a sighted user can easily match a label to the corresponding field or option, this may not be obvious for someone using a screen reader.
+
+You should also aim to [provide instructions and information](https://www.w3.org/WAI/tutorials/forms/) in a clear way that the user can easily understand. To create accessible forms in WordPress, you can use a tool like the [Caldera Forms builder](https://calderaforms.com/). This is a plugin specifically focused on accessibility, which will make your job much easier.
+
+### **7. Don’t Use Tables for Anything Except Tabular Data**
+
+When it comes to displaying data, tables are handy. They make it much easier for all users, including those using assistive technology, to parse a large amount of data. To get the maximum benefit, however, you’ll want to keep your tables [as simple as you can](https://make.wordpress.org/accessibility/handbook/markup/tables/).
+
+In addition, it’s best to avoid using tables for anything but tabular data. For example, you should never use a table for layouts, lists, or anything else. This can be confusing to screen readers and similar devices.
+
+### **8. Enable Resizable Text That Doesn’t Break Your Site**
+
+Most devices and browsers will enable users to resize text, which can be helpful for those with visual impairments. However, if you don’t build your site to support this feature, resizing text could break your design or make it difficult to interact with your site.
+
+A good practice is to [avoid absolute units](https://make.wordpress.org/accessibility/handbook/design/font-sizes-and-resize-text/), such as specifying text size using pixels. Instead, use relative sizes, which enable the text to scale depending on other content and screen size.
+
+You should also never [turn off user scalability](https://make.wordpress.org/accessibility/handbook/design/font-sizes-and-resize-text/#viewport) as this will make it difficult for users to resize the text at all.
+
+To make sure your site meets these criteria, test your font sizes thoroughly by increasing the zoom level in your own browser. If you notice that content becomes difficult to read or navigate, you can check out [this guide by WebAIM](https://webaim.org/techniques/fonts/#font_size) that discusses font size.
+
+### **9. Avoid Automatic Media and Navigation**
+
+Automatically-playing media files have been a bane of internet users since the [days of MySpace](https://techcrunch.com/2009/08/18/myspace-disables-auto-play-of-profile-songs-to-get-streaming-costs-under-control/). As annoying as it can be to have music or videos start when a page loads, this is an even bigger issue [in terms of accessibility](https://www.abilitynet.org.uk/news-blogs/why-autoplay-accessibility-issue).
+
+For example, figuring out how to turn off the media can be difficult when using a screen reader, while other users could simply be confused or even frightened by the sudden noise. You should therefore avoid including elements that start without the user first prompting them.
+
+It’s also best to avoid automatic navigation, such as [carousels and sliders](https://www.w3.org/WAI/tutorials/carousels/). This can be incredibly frustrating if the viewer needs more time to absorb all the information before moving on to the next slide or section.
 
 ## SEO in HTML
 
