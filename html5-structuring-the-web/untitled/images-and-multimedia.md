@@ -1,10 +1,18 @@
-# Images & multimedia \[unfinished\]
-
-## Advantages of html5 video and audio compare with the flash.
+# Images & multimedia
 
 ## How do use html5 video and audio to get video from the youtube?
 
-## What is vector image and what is the advantage.
+```markup
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Xy3GlrddZFI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+```
+
+{% hint style="info" %}
+More API [configuration](https://developers.google.com/youtube/youtube_player_demo).
+{% endhint %}
+
+## What is vector image and what is the advantage?
+
+Vector image files are much lighter than their raster equivalents, because they only need to hold a handful of algorithms, rather than information on every pixel in the image individually.
 
 ## [Why you would use a `srcset` attribute in an image tag? Explain the process the browser uses when evaluating the content of this attribute.](https://github.com/Dante-Vonarmia/front-end-interview-handbook/blob/master/contents/en/html-questions.md#why-you-would-use-a-srcset-attribute-in-an-image-tag-explain-the-process-the-browser-uses-when-evaluating-the-content-of-this-attribute)
 
