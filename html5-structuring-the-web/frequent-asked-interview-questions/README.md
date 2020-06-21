@@ -2,7 +2,7 @@
 description: Uncommon or advanced problems
 ---
 
-# Advanced FAQs
+# Advanced FAQs \[unfinished\]
 
 ## Index
 
@@ -13,6 +13,16 @@ description: Uncommon or advanced problems
 5. [Design and accessibility](./#design-and-accessibility)
 
 ## HTML Forms
+
+The original values of the `type` attribute available since the early days of HTML. Now we'll look at the functionality of newer form controls in detail, including some new input types, which were added in HTML5 to allow collection of specific types of data.
+
+#### Key Concept:
+
+* Basic native form controls
+* The HTML5 input types
+* Client-side form validation
+
+{% page-ref page="html-forms.md" %}
 
 ## Tabular information
 

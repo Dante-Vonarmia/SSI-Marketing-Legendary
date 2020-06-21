@@ -1,10 +1,81 @@
-# Performance & SEO \[unfinished\]
+# Performance & SEO
 
 ## What will happened if you don't add DOCTYPE for HTML5
 
+The foremost thing that you need to make sure is that have you added the DOCTYPE in your HTML file.
+
+Doctype basically helps your browser to recognize in which language is your website’s code written. If you don’t specify that, some of the smart browsers will understand it themselves but some dumb browser will not be able to figure out what happened, and they will render some element of your website in a way that you would not like.
+
+So, if you want that IE6 and above should imitate the behavior of browser like chrome and Firefox you may want to add a `strict doctype`.
+
+```markup
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN""http://www.w3.org/TR/html4/strict.dtd">
+```
+
+If you don’t do that, the browser will work in `Quirks mode` and will emulate the behavior of older versions.
+
 ## What is the advantage of collapsing white space?
 
-## What browsers support HTML5? \(hint: Explain Browser Compatibility\)
+It is always good habits to follow a clean code guide not only for yourself, but also for the whole team and future developer.
+
+A proper collapsing white space will make your HTML structure tree simply easier to read and more reasonable. It's a basic routine to always check your own HTML structure trees.
+
+## Common cross browser compatibility issues.
+
+#### Find cross browser compatibility issues with Opera Mini Mobile Browser:
+
+If you are using elements like
+
+* CSS3 3D Transforms
+* 2D transforms
+* Background image
+* HTML5 form features
+* Semantic elements
+* Placeholder-shown CSS pseudo-class
+* Web Authentication API
+* Theme-color Meta Tag
+
+etc then your website will fail to perform on Opera Mini browsers.
+
+### With Firefox Browser:
+
+Firefox usually supports the most latest technologies. Mozilla is a trend setter in web tech. However, there are still some elements that Firefox browsers do not support fully such as:
+
+* Filesystem & FileWriter API
+* Web SQL Database
+* XHTML+SMIL animation
+* EOT fonts
+
+### With Safari
+
+Shared Web Workers,CSS overflow-anchor, Web Authentication API, if used will not work at all in safari browsers. However, safari partially supports some of the features like HTML5 form features, CSS Masks. So these features if used may also lead your website to not work properly in Safari browsers.
+
+### Use Separate Stylesheets For Different Browsers
+
+This will save you from a heck of stylesheet problem. You can link to different stylesheet for every browser using conditional comments. So that Chrome will render chrome’s stylesheet, Firefox will go for its stylesheet and so on.
+
+The basic conditional comment will look something like this:
+
+```markup
+<!-- [if IE ]>
+    <link href="iecss.css" rel="stylesheet" type="text/css">
+<![endif]-->
+```
+
+Or you can try that.
+
+```markup
+<!-- [If IE]>
+    <link type="text/css" href="IEHacks.css" />
+ <![endif]-->
+ <!-- [if !IE]>
+    <link type="text/css" href="NonIEHacks.css" />
+ <![endif]-->
+```
+
+{% hint style="info" %}
+[w3 validator](http://validator.w3.org/) is the only tool you need to validate HTML of your website
+{% endhint %}
 
 ## Why is it generally a good idea to position CSS `<link>`s between `<head></head>` and JS `<script>`s just before `</body>`? Do you know any exceptions?
 
@@ -33,4 +104,8 @@ Examples of such techniques:
 ## Have you used different HTML templating languages before?
 
 Yes, Pug \(formerly Jade\), ERB, Slim, Handlebars, Jinja, Liquid, just to name a few. In my opinion, they are more or less the same and provide similar functionality of escaping content and helpful filters for manipulating the data to be displayed. Most templating engines will also allow you to inject your own filters in the event you need custom processing before display.
+
+## SEO in HTML
+
+Please [follow this page](https://9elements.com/seo-cheat-sheet/).
 
