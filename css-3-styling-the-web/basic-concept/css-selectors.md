@@ -1,10 +1,24 @@
 # CSS Selectors
 
-## Write an example for each type of the selector.
-
 ## Pseudo-class VS Pseudo-elements?
 
+ This group of selectors includes pseudo-classes, which style certain states of an element. The `:hover` pseudo-class for example selects an element only when it is being hovered over by the mouse pointer.
+
+As for pseudo-elements, which select a certain part of an element rather than the element itself.
+
 ## What is the difference between `id` and `class`?
+
+#### ID’s are unique
+
+* Each element can have only one ID
+* Each page can have only one element with that ID
+
+ID’s have special browser functionality, this is an important reason right here why having ID’s be absolutely unique is important. So your browser knows where to scroll!
+
+#### Classes are _not_ unique
+
+* It is allow to use the same class on multiple elements.
+* It is allow to multiple classes on the same element.
 
 ## Explain how a browser determines what elements match a CSS selector.
 
