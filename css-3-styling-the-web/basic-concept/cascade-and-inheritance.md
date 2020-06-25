@@ -17,11 +17,33 @@ I would write CSS rules with low specificity so that they can be easily overridd
 
 ## How to calculate specificity of a CSS selector?
 
+Thousands: Score one in this column if the declaration is inside a style attribute, aka inline styles. Such declarations don't have selectors, so their specificity is always simply 1000.
+
+Hundreds: Score one in this column for each ID selector contained inside the overall selector.
+
+Tens: Score one in this column for each class selector, attribute selector, or pseudo-class contained inside the overall selector.
+
+Ones: Score one in this column for each element selector or pseudo-element contained inside the overall selector.
+
 ## How to control inheritance in CSS?
+
+Inheritance also needs to be understood in this context — some CSS property values set on parent elements are inherited by their child elements, and some aren't.
+
+For example if you set a width of 50% on an element, all of its descendants do not get a width of 50% of their parent's width. If this was the case, CSS would be very frustrating to use!
 
 ## How do I restore the default value of a property?
 
+#### initial
+
+Sets the property value applied to a selected element to the initial value of that property.
+
+#### unset 
+
+Resets the property to its natural value, which means that if the property is naturally inherited it acts like inherit, otherwise it acts like initial.
+
 ## How do I derive one style from another?
 
-## 
+#### inherit 
+
+Sets the property value applied to a selected element to be the same as that of its parent element. Effectively, this "turns on inheritance".
 
