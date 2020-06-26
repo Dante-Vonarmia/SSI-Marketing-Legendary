@@ -36,7 +36,7 @@
   * [CSS Selectors](css-3-styling-the-web/basic-concept/css-selectors.md)
   * [Styling Syntax](css-3-styling-the-web/basic-concept/styling-syntax.md)
   * [The box model and Layouts](css-3-styling-the-web/basic-concept/the-box-model-and-layouts.md)
-* [Advanced FAQs \[unfinished\]](css-3-styling-the-web/advanced-faqs/README.md)
+* [Advanced FAQs](css-3-styling-the-web/advanced-faqs/README.md)
   * [CSS3 New features](css-3-styling-the-web/advanced-faqs/css3-new-features.md)
   * [Project & Methodology](css-3-styling-the-web/advanced-faqs/project-and-methodology.md)
   * [Responsive Design](css-3-styling-the-web/advanced-faqs/responsive-design.md)

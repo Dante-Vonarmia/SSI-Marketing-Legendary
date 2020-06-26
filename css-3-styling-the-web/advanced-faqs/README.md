@@ -1,4 +1,4 @@
-# Advanced FAQs \[unfinished\]
+# Advanced FAQs
 
 ## Index
 
