@@ -130,6 +130,8 @@ In this context, a comma means "and," so this selector applies to all paragraph 
 
 ## How do we make a rounded corner by using CSS?
 
+We can make a rounded corner by using the property “border-radius”. We can apply this property to any element.
+
 ## What's the difference between `inline` and `inline-block`?
 
 I shall throw in a comparison with `block` for good measure.
