@@ -6,6 +6,36 @@ description: 'https://developer.mozilla.org/en-US/docs/Learn/CSS/Howto/CSS_FAQ'
 
 ## Why doesn't my CSS, which is valid, render correctly?
 
+Browsers use the `DOCTYPE` declaration to choose whether to show the document using a mode that is more compatible  with Web standards or with old browser bugs. Using a correct and modern `DOCTYPE` declaration at the start of your HTML will improve browser standards compliance.
+
+Modern browsers have two main rendering modes:
+
+* _Quirks Mode_: also called backwards-compatibility mode, allows legacy webpages to be rendered as their authors intended, following the non-standard rendering rules used by older browsers. Documents with an incomplete, incorrect, or missing `DOCTYPE` declaration or a known `DOCTYPE` declaration in common use before 2001 will be rendered in Quirks Mode.
+* _Standards Mode_: the browser attempts to follow the W3C standards strictly. New HTML pages are expected to be designed for standards-compliant browsers, and as a result, pages with a modern `DOCTYPE` declaration will be rendered with Standards Mode.
+
+Gecko-based browsers, have a third [_Almost Standards Mode_](https://developer.mozilla.org/en-US/docs/Gecko's_%22Almost_Standards%22_Mode) that has only a few minor quirks.
+
+This is a list of the most commonly used `DOCTYPE` declarations that will trigger Standards or Almost Standards mode:
+
+```markup
+<!DOCTYPE html> /* This is the HTML5 doctype. Given that each modern browser uses an HTML5 
+                   parser, this is the recommended doctype */
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+```
+
+When at all possible, you should just use the HTML5 doctype.
+
 ## Why don't my style rules work properly?
 
 #### HTML elements hierarchy <a id="HTML_elements_hierarchy"></a>
@@ -19,6 +49,20 @@ description: 'https://developer.mozilla.org/en-US/docs/Learn/CSS/Howto/CSS_FAQ'
 #### Specificity in CSS <a id="Specificity_in_CSS"></a>
 
 ## Explain BEM? OOCSS?
+
+### BEM
+
+BEM is a specific concrete application of OOCSS. BEM stands for Block Element Modifier, and it describes the pattern of each CSS object's class name. We use a modified form of BEM, described best by CSS Wizardry's post titled MindBEMding.
+
+Essentially, each BEM class starts with a block, which is an object name. Let's start with `.byline`. Then, for children of that block, you add an element, separating it with two underscores: `.byline__name`. Finally, you can modify any class \(block or element\) by adding a modifier, separated with two hyphens: `.byline--expanded`.
+
+### OOCSS
+
+OOCSS is a programming paradigm. OOCSS stands for Object Oriented CSS, so it's best understood in the context of Object Oriented programming: classic \(spaghetti\) CSS vs. OOCSS is a bit like procedural \(spaghetti\) backend code vs. Object-Oriented backend code.
+
+OOCSS focuses on flexible, modular, swappable components that do One Thing Well. OOCSS focuses on the [single responsibility principle](http://en.wikipedia.org/wiki/Single_responsibility_principle), [separation of concerns](http://en.wikipedia.org/wiki/Separation_of_concerns), and much more of the foundational concepts of Object Oriented Programming.
+
+For a great introduction to OOCSS, [this post on the OOCSS Media Object](http://www.stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code/) \(written by the/one of the people behind OOCSS\) shows an example of what a CSS object looks like, and some of the benefits of using one.
 
 ## What's the difference between "resetting" and "normalizing" CSS? Which would you choose, and why?How to use filters in CSS
 
