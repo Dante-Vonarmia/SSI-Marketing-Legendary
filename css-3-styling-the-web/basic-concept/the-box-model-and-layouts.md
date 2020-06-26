@@ -63,9 +63,47 @@ Grid is by far the most intuitive approach for creating grid-based layouts \(it 
 
 ## How many ways to make an elements's position is center to its parent elements?
 
-## Give a sample of align-center. \(Both block and inline elements\)
+#### Text-Align Method**:**
 
-## Give a sample of vertical align center. \(Both block and inline elements\)
+1. Enclose the div that you want to center with a parent element \(commonly known as a wrapper or container\)
+2. Set “text-align: center” to parent element
+3. Then set the inside div to “display: inline-block”
+
+#### Margin Auto Method:
+
+1. Don’t need a parent element.
+2. By simply apply “margin: 0 auto” to our box, as long as we have a defined width.
+
+#### Absolute Positioning Method <a id="absolute-positioning-method"></a>
+
+> This method can cause overlapping of elements if used incorrectly.
+
+1. Set the element’s position property to absolute
+2. Apply “left: 50%” to the element
+3. Set a margin-left of half of the element’s width
+
+#### Transform/Translate Method <a id="transform-translate-method"></a>
+
+This method is used frequently in responsive design and doesn’t require margins to be defined, like in the absolute positioning method.
+
+#### Flex-box Method
+
+The four steps to centering horizontally and vertically with Flex-box are the following:
+
+1. HTML, body, and parent container need to have a height of 100%
+2. Set display to flex on parent container
+3. Set align-items to center on parent container
+4. Set justify-content to center on parent container
+
+{% hint style="info" %}
+I like using this method because it’s both **responsive** and **doesn’t require any margin calculations**.
+{% endhint %}
+
+{% embed url="https://www.freecodecamp.org/news/how-to-center-things-with-style-in-css-dc87b7542689/" caption="Check this article for more details" %}
+
+## Give a sample of align-center / Give a sample of vertical align center. \(Both block and inline elements\)
+
+{% embed url="https://css-tricks.com/centering-css-complete-guide/" caption="Check this article for more details" %}
 
 ## What's the difference between `margin` and `padding`?
 
@@ -98,6 +136,29 @@ Negative values are not allowed in padding.
 
 
 ## Explain `margin` collapse?
+
+The [top](https://developer.mozilla.org/en-US/docs/Web/CSS/margin-top) and [bottom](https://developer.mozilla.org/en-US/docs/Web/CSS/margin-bottom) margins of blocks are sometimes combined \(collapsed\) into a single margin whose size is the largest of the individual margins \(or just one of them, if they are equal\), a behavior known as **margin collapsing**. Note that the margins of [floating](https://developer.mozilla.org/en-US/docs/Web/CSS/float) and [absolutely positioned](https://developer.mozilla.org/en-US/docs/Web/CSS/position#absolute) elements never collapse.
+
+Margin collapsing occurs in three basic cases:
+
+#### Adjacent siblings
+
+The margins of adjacent siblings are collapsed \(except when the latter sibling needs to be [cleared](https://developer.mozilla.org/en-US/docs/Web/CSS/clear) past floats\).
+
+#### No content separating parent and descendants
+
+If there is no border, padding, inline part, [block formatting context](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Block_formatting_context) created, or [_clearance_](https://developer.mozilla.org/en-US/docs/Web/CSS/clear) to separate the [`margin-top`](https://developer.mozilla.org/en-US/docs/Web/CSS/margin-top) of a block from the [`margin-top`](https://developer.mozilla.org/en-US/docs/Web/CSS/margin-top) of one or more of its descendant blocks; or no border, padding, inline content, [`height`](https://developer.mozilla.org/en-US/docs/Web/CSS/height), [`min-height`](https://developer.mozilla.org/en-US/docs/Web/CSS/min-height), or [`max-height`](https://developer.mozilla.org/en-US/docs/Web/CSS/max-height) to separate the [`margin-bottom`](https://developer.mozilla.org/en-US/docs/Web/CSS/margin-bottom) of a block from the [`margin-bottom`](https://developer.mozilla.org/en-US/docs/Web/CSS/margin-bottom) of one or more of its descendant blocks, then those margins collapse. The collapsed margin ends up outside the parent.
+
+#### Empty blocks
+
+If there is no border, padding, inline content, [`height`](https://developer.mozilla.org/en-US/docs/Web/CSS/height), or [`min-height`](https://developer.mozilla.org/en-US/docs/Web/CSS/min-height) to separate a block's [`margin-top`](https://developer.mozilla.org/en-US/docs/Web/CSS/margin-top) from its [`margin-bottom`](https://developer.mozilla.org/en-US/docs/Web/CSS/margin-bottom), then its top and bottom margins collapse.
+
+Some things to note:
+
+* More complex margin collapsing \(of more than two margins\) occurs when the above cases are combined.
+* These rules apply even to margins that are zero, so the margin of a descendant ends up outside its parent \(according to the rules above\) whether or not the parent's margin is zero.
+* When negative margins are involved, the size of the collapsed margin is the sum of the largest positive margin and the smallest \(most negative\) negative margin.
+* When all margins are negative, the size of the collapsed margin is the smallest \(most negative\) margin. This applies to both adjacent elements and nested elements.
 
 ## `position: static` VS `position: relative` \(hint: DOM flow\)
 
