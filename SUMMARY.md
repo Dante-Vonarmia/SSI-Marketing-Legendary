@@ -30,7 +30,7 @@
 
 ## CSS 3 - Styling the Web
 
-* [Basic Syntax \[unfinished\]](css-3-styling-the-web/basic-concept/README.md)
+* [Basic Syntax](css-3-styling-the-web/basic-concept/README.md)
   * [Working Principles](css-3-styling-the-web/basic-concept/working-principles.md)
   * [Cascade and inheritance](css-3-styling-the-web/basic-concept/cascade-and-inheritance.md)
   * [CSS Selectors](css-3-styling-the-web/basic-concept/css-selectors.md)

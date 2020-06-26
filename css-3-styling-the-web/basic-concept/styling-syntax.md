@@ -2,17 +2,16 @@
 
 ## Name new feature modules which are used in CSS3.
 
-## How to style text?
+#### There are several modules in CSS as stated below:
 
-## How to customize a list of elements?
-
-## How to style links?
-
-## How to add shadows to text? \(CSS3\)
-
-## How to write comments in CSS?
-
-## How to specify colors in CSS?
+* Selectors
+* Box Model
+* Backgrounds and Borders
+* Text Effects
+* 2D/3D Transformations
+* Animations
+* Multiple Column Layout
+* User Interface.
 
 ## How would you implement a web design comp that uses non-standard fonts?
 
@@ -20,19 +19,114 @@ Use `@font-face` and define `font-family` for different `font-weight`s.
 
 ## How to get different font?
 
-[https://www.lifewire.com/change-fonts-using-css-3464229](https://www.lifewire.com/change-fonts-using-css-3464229)
+* The best approach is to always have at least two fonts in your [font stack](https://www.lifewire.com/font-stack-definition-3467414) \(the list of fonts\), so that if the browser doesn’t have the first font, it can use the second font instead.
 
-## How to bold or italic text?
+  Separate multiple font choices with a comma, like this:
 
-## What are the main properties for styling images.
+  ```css
+  font-family: Arial, Geneva, Helvetica, sans-serif; 
+  ```
 
-## Why do we need to styling tables in web page? Any common properties?
+* The example outlined above uses inline styling, but the best [kind of styling](https://www.lifewire.com/types-of-css-styles-3466921) uses an [external style sheet](https://www.lifewire.com/what-is-an-external-style-sheet-4685757) to modify more than just the one element. Use a class to set the style on blocks of text. 
 
-## Value units: `px` VS `pt` VS `em` and `rem` etc.
+  ```markup
+  <div class="arial"><p>This text is in Arial</p></div>
+  ```
+
+  In this example, the CSS file to style the above HTML would appear as follows:
+
+  ```css
+  .arial { font-family: Arial; } 
+  ```
+
+* Always end CSS styles with a semicolon \(;\). It's not required when there's only one style, but it's a good habit to start.
+
+## What are the main properties for styling images?
+
+* The `src` attribute is **required**, and contains the path to the image you want to embed.
+* The `alt` attribute holds a text description of the image, which isn't mandatory but is **incredibly useful** for accessibility — screen readers read this description out to their users so they know what the image means. Alt text is also displayed on the page if the image can't be loaded for some reason: for example, network errors, content blocking.
+
+## How do we styling tables in web page? Any common properties?
+
+* Make your table markup as simple as possible, and keep things flexible, e.g. by using percentages, so the design is more responsive.
+* Use [`table-layout`](https://developer.mozilla.org/en-US/docs/Web/CSS/table-layout)`: fixed` to create a more predictable table layout that allows you to easily set column widths by setting [`width`](https://developer.mozilla.org/en-US/docs/Web/CSS/width) on their headings \([`<th>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/th)\).
+* Use [`border-collapse`](https://developer.mozilla.org/en-US/docs/Web/CSS/border-collapse)`: collapse` to make table elements borders collapse into each other, producing a neater and easier to control look.
+* Use [`<thead>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/thead), [`<tbody>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/tbody), and [`<tfoot>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/tfoot) to break up your table into logical chunks and provide extra places to apply CSS to, so it is easier to layer styles on top of one another if required.
+* Use zebra striping to make alternative rows easier to read.
+* Use [`text-align`](https://developer.mozilla.org/en-US/docs/Web/CSS/text-align) to line up your [`<th>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/th) and [`<td>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/td) text, to make things neater and easier to follow.
+
+## All value units: `px` VS `pt` VS `em` and `rem` etc.
+
+**Absolute length units**
+
+The following are all **absolute** length units — they are not relative to anything else and are generally considered to always be the same size.
+
+| Unit | Name | Equivalent to |
+| :--- | :--- | :--- |
+| `cm` | Centimeters | 1cm = 96px/2.54 |
+| `mm` | Millimeters | 1mm = 1/10th of 1cm |
+| `Q` | Quarter-millimeters | 1Q = 1/40th of 1cm |
+| `in` | Inches | 1in = 2.54cm = 96px |
+| `pc` | Picas | 1pc = 1/6th of 1in |
+| `pt` | Points | 1pt = 1/72th of 1in |
+| `px` | Pixels | 1px = 1/96th of 1in |
+
+**Relative length units**
+
+Relative length units are relative to something else, perhaps the size of the parent element's font, or the size of the viewport. The benefit of using relative units is that with some careful planning you can make it so the size of text or other elements scale relative to everything else on the page.
+
+| Unit | Relative to |
+| :--- | :--- |
+| `em` | Font size of the parent, in the case of typographical properties like [`font-size`](https://developer.mozilla.org/en-US/docs/Web/CSS/font-size), and font size of the element itself, in the case of other properties like [`width`](https://developer.mozilla.org/en-US/docs/Web/CSS/width). |
+| `ex` | x-height of the element's font. |
+| `ch` | The advance measure \(width\) of the glyph "0" of the element's font. |
+| `rem` | Font size of the root element. |
+| `lh` | Line height of the element. |
+| `vw` | 1% of the viewport's width. |
+| `vh` | 1% of the viewport's height. |
+| `vmin` | 1% of the viewport's smaller dimension. |
+| `vmax` | 1% of the viewport's larger dimension. |
 
 ## How to select elements via attribute name and content?
 
+The CSS **attribute selector** matches elements based on the presence or value of a given attribute.
+
+```css
+/* <a> elements with a title attribute */
+a[title] {
+  color: purple;
+}
+
+/* <a> elements with an href matching "https://example.org" */
+a[href="https://example.org"] {
+  color: green;
+}
+
+/* <a> elements with an href containing "example" */
+a[href*="example"] {
+  font-size: 2em;
+}
+
+/* <a> elements with an href ending ".org" */
+a[href$=".org"] {
+  font-style: italic;
+}
+
+/* <a> elements whose class attribute contains the word "logo" */
+a[class~="logo"] {
+  padding: 2px;
+}
+```
+
 ## How to apply multiple selectors to the same rule?
+
+To group CSS selectors in a style sheet, [use commas to separate multiple grouped selectors](https://www.lifewire.com/comma-in-css-selectors-3467052) in the style. In this example, the style affects the p and div elements:
+
+```css
+div, p { color: #f00; }
+```
+
+In this context, a comma means "and," so this selector applies to all paragraph elements and all division elements. If the comma were missing, the selector would instead apply to all paragraph elements that are a child of a division. That is a different kind of selector, so the comma is important.
 
 ## How do we make a rounded corner by using CSS?
 

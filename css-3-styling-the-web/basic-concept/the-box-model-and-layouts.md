@@ -69,6 +69,34 @@ Grid is by far the most intuitive approach for creating grid-based layouts \(it 
 
 ## What's the difference between `margin` and `padding`?
 
+In CSS, the margin is the property by which we can create space around elements. We can even create space to the exterior defined borders.
+
+**In CSS, we have margin property as follows:**
+
+* margin-top
+* margin-right
+* margin-bottom
+* Margin-left
+
+**Margin property has some defined values as shown below.**
+
+* **Auto –** Using this property browser calculates the margin.
+* **Length –** It sets the margin values in px,pt,cm etc.
+* **% –** It sets the width % of the element.
+* **Inherit –** By this property we can inherit the margin property from the parent element.
+
+In CSS, padding is the property by which we can generate space around an element’s content as well as inside any known border.
+
+**CSS padding also has properties like,**
+
+1. Padding-top
+2. Padding-right
+3. Padding-bottom
+4. Padding-left
+
+Negative values are not allowed in padding.  
+
+
 ## Explain `margin` collapse?
 
 ## `position: static` VS `position: relative` \(hint: DOM flow\)

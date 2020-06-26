@@ -1,4 +1,4 @@
-# Basic Syntax \[unfinished\]
+# Basic Syntax
 
 ## Index
 
