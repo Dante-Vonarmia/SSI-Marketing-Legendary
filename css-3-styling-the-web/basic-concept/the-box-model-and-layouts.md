@@ -29,7 +29,7 @@ If a parent element contains nothing but floated elements, its height will be co
 
 The `.clearfix` hack uses a clever CSS [pseudo selector](https://github.com/yangshun/front-end-interview-handbook/blob/master/contents/en/css-questions.md#describe-pseudo-elements-and-discuss-what-they-are-used-for) \(`:after`\) to clear floats. Rather than setting the overflow on the parent, you apply an additional class `clearfix` to it. Then apply this CSS:
 
-```text
+```css
 .clearfix:after {
   content: ' ';
   visibility: hidden;
@@ -132,8 +132,7 @@ In CSS, padding is the property by which we can generate space around an element
 3. Padding-bottom
 4. Padding-left
 
-Negative values are not allowed in padding.  
-
+Negative values are not allowed in padding.
 
 ## Explain `margin` collapse?
 
@@ -160,25 +159,56 @@ Some things to note:
 * When negative margins are involved, the size of the collapsed margin is the sum of the largest positive margin and the smallest \(most negative\) negative margin.
 * When all margins are negative, the size of the collapsed margin is the smallest \(most negative\) margin. This applies to both adjacent elements and nested elements.
 
-## `position: static` VS `position: relative` \(hint: DOM flow\)
+## `position` , all value, when and why? \(hint: DOM flow\)
 
-## What unit when use sizing item?
+* `static`: every element has a static position by default, so the element will stick to the normal page flow. So if there is a [left](https://css-tricks.com/almanac/properties/l/left/)/[right](https://css-tricks.com/almanac/properties/r/right/)/[top](https://css-tricks.com/almanac/properties/t/top/)/[bottom](https://css-tricks.com/almanac/properties/b/bottom/)/[z-index](https://css-tricks.com/almanac/properties/z/z-index/) set then there will be no effect on that element.
+* `relative`: an element’s original position remains in the flow of the document, just like the `static` value. But now [left](https://css-tricks.com/almanac/properties/l/left/)/[right](https://css-tricks.com/almanac/properties/r/right/)/[top](https://css-tricks.com/almanac/properties/t/top/)/[bottom](https://css-tricks.com/almanac/properties/b/bottom/)/[z-index](https://css-tricks.com/almanac/properties/z/z-index/) will work. The positional properties “nudge” the element from the original position in that direction.
+* `absolute`: the element is removed from the flow of the document and other elements will behave as if it’s not even there whilst all the other positional properties will work on it.
+* `fixed`: the element is removed from the flow of the document like absolutely positioned elements. In fact they behave almost the same, only fixed positioned elements are always relative to the document, not any particular parent, and are unaffected by scrolling.
+* `sticky` \(experimental\): the element is treated like a `relative` value until the scroll location of the viewport reaches a specified threshold, at which point the element takes a `fixed` position where it is told to stick.
+* `inherit`: the `position` value doesn’t cascade, so this can be used to specifically force it to, and `inherit` the positioning value from its parent.
 
-## What are the common properties to size item, for example min or max size.
+## What are the common properties to size item, for example min or max size?
 
-## The different between flex-box and grid-box.How to size CSS boxes?
+#### Width Properties
 
-## Name all the properties of the flex-box that you know.
+The first thing to discuss is width-related properties. We have `min-width` and `max-width`, and each one of them is important and has its use cases.
 
-## How to control overflowing content?
+#### Min Width <a id="min-width"></a>
+
+When setting the value of `min-width`, its benefit lies in preventing the used value for `width` property from becoming less than the specified value for `min-width`. Note that the default value for `min-width` is `auto`, which resolves to `0`.
+
+#### Max Width <a id="max-width"></a>
+
+When setting the value of `max-width`, its benefit lies in preventing the used value for `width` property from becoming more than the specified value for `max-width`.   
+The default value for `max-width` is `none`.
+
+#### Height Properties
+
+In addition to the minimum and maximum width properties, we have the same properties as the height.
+
+#### Min Height <a id="min-height"></a>
+
+When setting the value of `min-height`, its benefit lies in preventing the used value for `height` property from becoming less than the specified value for `min-height`. Note that the default value for `min-height` is `auto`, which resolves to `0`.
+
+#### Max Height <a id="max-height"></a>
+
+When setting the value of max-height, its benefit lies in preventing the used value for height property from becoming more than the specified value for max-height. Note that the default value for max-height is none.
+
+Consider the below example where I set max-height for the content. But, because it’s bigger than the specified space, there is an overflow. The text is out of its parent boundaries due to that.
 
 ## How to control the part of a CSS box that the background is drawn under?
 
-## How do I define inline, block, and inline-block?
+The **`background-image`** [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) property sets one or more background images on an element.
 
-## How to create fancy boxes \(also see the Styling boxes module, generally\).?
+The background images are drawn on stacking context layers on top of each other. The first layer specified is drawn as if it is closest to the user.
 
 ## How to use background-clip to control how much of the box your background image covers?
+
+The **`background-clip`** CSS property sets whether an element's background extends underneath its border box, padding box, or content box.
+
+If the element has no [`background-image`](https://developer.mozilla.org/en-US/docs/Web/CSS/background-image) or [`background-color`](https://developer.mozilla.org/en-US/docs/Web/CSS/background-color), this property will only have a visual effect when the border has transparent regions or partially opaque regions \(due to [`border-style`](https://developer.mozilla.org/en-US/docs/Web/CSS/border-style) or [`border-image`](https://developer.mozilla.org/en-US/docs/Web/CSS/border-image)\); otherwise, the border masks the difference.  
+
 
 ## What does `* { box-sizing: border-box; }` do? What are its advantages?
 
@@ -190,11 +220,47 @@ Some things to note:
 
 ## How to add shadows to boxes?
 
+Used in casting shadows off block-level elements \(like divs\).
+
+```css
+.shadow {
+  -moz-box-shadow:    3px 3px 5px 6px #ccc;
+  -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+  box-shadow:         3px 3px 5px 6px #ccc;
+}
+```
+
+1. **The horizontal offset** of the shadow, positive means the shadow will be on the right of the box, a negative offset will put the shadow on the left of the box.
+2. **The vertical offset** of the shadow, a negative one means the box-shadow will be above the box, a positive one means the shadow will be below the box.
+3. **The blur radius** \(optional\), if set to 0 the shadow will be sharp, the higher the number, the more blurred it will be.
+4. **The spread radius** \(optional\), positive values increase the size of the shadow, negative values decrease the size. Default is 0 \(the shadow is same size as blur\).
+5. **Color**
+
 ## Using CSS flexible boxes
+
+**CSS Flexible Box Layout** is a module of [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) that defines a CSS box model optimized for user interface design, and the layout of items in one dimension. In the flex layout model, the children of a flex container can be laid out in any direction, and can “flex” their sizes, either growing to fill unused space or shrinking to avoid overflowing the parent. Both horizontal and vertical alignment of the children can be easily manipulated.
 
 ## Using CSS multi-column layouts
 
+The **CSS Multi-column Layout Module** extends the _block layout mode_ to allow the easy definition of multiple columns of text. People have trouble reading text if lines are too long; if it takes too long for the eyes to move from the end of the one line to the beginning of the next, they lose track of which line they were on. Therefore, to make maximum use of a large screen, authors should have limited-width columns of text placed side by side, just as newspapers do.
+
+Unfortunately this is impossible to do with CSS and HTML without forcing column breaks at fixed positions, or severely restricting the markup allowed in the text, or using heroic scripting. This limitation is solved by adding new CSS properties to extend the traditional block layout mode.
+
 ## Using CSS generated content
 
+One of the important advantages of CSS is that it helps you to separate a document's style from its content. However, there are situations where it makes sense to specify certain content as part of the stylesheet, not as part of the document. You can specify text or image content within a stylesheet when that content is closely linked to the document's structure. 
+
+{% hint style="info" %}
+Content specified in a stylesheet does not become part of the DOM.
+{% endhint %}
+
+#### Text content <a id="Text_content"></a>
+
+CSS can insert text content before or after an element. To specify this, make a rule and add [`::before`](https://developer.mozilla.org/en-US/docs/Web/CSS/::before) or [`::after`](https://developer.mozilla.org/en-US/docs/Web/CSS/::after) to the selector. In the declaration, specify the [`content`](https://developer.mozilla.org/en-US/docs/Web/CSS/content) property with the text content as its value.
+
+#### Image content
+
+To add an image before or after an element, you can specify the URL of an image file in the value of the [`content`](https://developer.mozilla.org/en-US/docs/Web/CSS/content) property.  
+  
 
 

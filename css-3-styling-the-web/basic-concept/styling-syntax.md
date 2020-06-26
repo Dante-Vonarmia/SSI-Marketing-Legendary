@@ -170,3 +170,18 @@ A positioned element is an element whose computed `position` property is either 
 * `fixed` - The element is removed from the flow of the page and positioned at a specified position relative to the viewport and doesn't move when scrolled.
 * `sticky` - Sticky positioning is a hybrid of relative and fixed positioning. The element is treated as `relative` positioned until it crosses a specified threshold, at which point it is treated as `fixed` positioned.
 
+## How to control overflowing content?
+
+Everything in CSS is a box. It can constrain the size of these boxes by assigning values of [`width`](https://developer.mozilla.org/en-US/docs/Web/CSS/width) and [`height`](https://developer.mozilla.org/en-US/docs/Web/CSS/height) \(or [`inline-size`](https://developer.mozilla.org/en-US/docs/Web/CSS/inline-size) and [`block-size`](https://developer.mozilla.org/en-US/docs/Web/CSS/block-size)\). **Overflow happens when there is too much content to fit in a box.** CSS provides various tools to manage overflow. As this go further with CSS layout and writing CSS, it will encounter more overflow situations.
+
+```css
+.box {
+  border: 1px solid #333333;
+  width: 200px;
+  height: 100px;
+  overflow: auto;
+}
+```
+
+{% embed url="https://developer.mozilla.org/en-US/docs/Web/CSS/text-overflow" %}
+
