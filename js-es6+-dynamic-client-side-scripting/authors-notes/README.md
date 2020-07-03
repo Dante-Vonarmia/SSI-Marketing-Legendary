@@ -16,8 +16,6 @@ description: Content
 
 {% page-ref page="scope-faqs.md" %}
 
-
-
 ## Prototype
 
 ## Function
