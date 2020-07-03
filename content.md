@@ -20,7 +20,7 @@
 
 ## JavaScript ES6+ - Dynamic Client-side Scripting
 
-{% page-ref page="js-es6+-dynamic-client-side-scripting/basic-concept.md" %}
+{% page-ref page="js-es6+-dynamic-client-side-scripting/faqs/basic-concept.md" %}
 
 
 
