@@ -10,7 +10,13 @@ description: Content
 
 {% page-ref page="the-context.md" %}
 
-{% page-ref page="./" %}
+{% page-ref page="context-coding-part.md" %}
+
+{% page-ref page="scope.md" %}
+
+{% page-ref page="scope-faqs.md" %}
+
+
 
 ## Prototype
 
