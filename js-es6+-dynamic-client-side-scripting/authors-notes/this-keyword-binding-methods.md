@@ -4,7 +4,7 @@
 
 Called as a method of an object.
 
-#### Basic Example 1
+### Basic Example - passing a function
 
 ```javascript
 function func() {
@@ -21,7 +21,7 @@ obj.method() === obj // true
 obj.method() === window // false
 ```
 
-#### Basic Example 2
+### Basic Example - plain object
 
 ```javascript
 var obj = {
@@ -38,7 +38,7 @@ obj.getA();
 
 Whereas if we do new `foo()` at the global level then will get this as `foo {}` object.
 
-#### Basic Example
+### Basic Example - `new` keyword
 
 ```javascript
 // Constructor call
@@ -51,7 +51,7 @@ foo() // window object
 new foo() // foo {}
 ```
 
-### Introduce `new`
+### Explanation: `new` keyword
 
 #### `new`: 
 
@@ -69,9 +69,7 @@ new foo() // foo {}
 
 * A list of values that the constructor will be called with.
 
-### Begin Prototype
-
-#### Basic Example:
+### Prototype Example
 
 ```javascript
 var MyClass = function() {
