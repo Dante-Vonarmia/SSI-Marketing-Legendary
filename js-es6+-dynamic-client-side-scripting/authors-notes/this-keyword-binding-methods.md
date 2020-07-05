@@ -119,7 +119,7 @@ _obj // MyClass { name: 'dva89' }
 _obj.__proto__ // // MyClass { age: [λ] }
 ```
 
-### Proto Method 2:  `Object.create()`
+### Proto Method 2:  `object`
 
 ```javascript
 var MyClass2 = {
@@ -127,51 +127,35 @@ var MyClass2 = {
 		return this.name = 'dva89'
 	}
 };
-```
-
-```javascript
-// Object.create vs New //
-// This is due to the important difference 
-// that `new` actually runs constructor code, 
-// whereas `Object.create` will not execute the constructor code.
-
-
-
-////////////////////
-// Proto method 2 //
-////////////////////
 
 MyClass2.age = function(a) {
 	return a
 };
 
-////////////////////
-// Proto method 3 //
-////////////////////
+MyClass2 // ​​​​​{ name: [λ: name], age: [λ] }​​​​​
+MyClass2.__proto__ // {}
+```
 
+### Proto method 3: `Object.setPrototypeOf()`
+
+```javascript
 var country = {
 	region: 'China'
 }
 
 Object.setPrototypeOf(MyClass2, country)
+MyClass2.region // China
+
 
 var _obj2 = Object.create(MyClass2)
+ 
+_obj2.name() // dva89
+_obj2.age(30) // 30
+_obj2.region // China
 
-
-MyClass2.region //?
-MyClass2
-MyClass2.__proto__ //?
-
-// Object.prototype.toString.call(_obj2) //?
-
-_obj2.name() //?
-// _obj2.name('dva') //?
-_obj2.age(30) //?
-
-_obj2
-_obj2.__proto__ //?
-_obj2.__proto__.__proto__ //?
-
+_obj2 // { name: 'dva89' }
+_obj2.__proto__ // ​​​​​{ name: [λ: name], age: [λ] }​​​​​
+_obj2.__proto__.__proto__ // { region: 'China' }
 ```
 
 #### `Object.create()` vs `new`
