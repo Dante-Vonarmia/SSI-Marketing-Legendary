@@ -75,15 +75,14 @@ new foo() // foo {}
 
 ```javascript
 var MyClass = function() {
-	console.log(this)
 	this.name = 'dva89';
+	/* or */
 	return { // Return an object explicitly
-		name: 'anne'
+		name: 'dva89'
 	}
-	// return 'anne' // return a string
 };
 
-var _obj = new MyClass(); // (factory pattern)
+var _obj = new MyClass(); // MyClass { name: 'dva89' }
 ```
 
 ### Proto method 1: `Object.prototype.constructor`
@@ -158,7 +157,7 @@ _obj2.__proto__ // ​​​​​{ name: [λ: name], age: [λ] }​​​​​
 _obj2.__proto__.__proto__ // { region: 'China' }
 ```
 
-#### `Object.create()` vs `new`
+### `Object.create()` vs `new`？
 
 This is due to the important difference that `new` actually runs constructor code, whereas `Object.create` will not execute the constructor code.
 
