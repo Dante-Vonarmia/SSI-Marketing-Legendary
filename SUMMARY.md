@@ -49,7 +49,7 @@
   * [Context Coding Part](js-es6+-dynamic-client-side-scripting/authors-notes/context-coding-part.md)
   * [Scope](js-es6+-dynamic-client-side-scripting/authors-notes/scope.md)
   * [Scope FAQs](js-es6+-dynamic-client-side-scripting/authors-notes/scope-faqs.md)
-  * [\`this\` keyword Binding Methods](js-es6+-dynamic-client-side-scripting/authors-notes/this-keyword-binding-methods.md)
+  * ["this" keyword Binding Methods](js-es6+-dynamic-client-side-scripting/authors-notes/this-keyword-binding-methods.md)
 * [FAQs](js-es6+-dynamic-client-side-scripting/faqs/README.md)
   * [Core Mechanism](js-es6+-dynamic-client-side-scripting/faqs/basic-concept.md)
   * [Functional Programming](js-es6+-dynamic-client-side-scripting/faqs/functional-programming.md)
