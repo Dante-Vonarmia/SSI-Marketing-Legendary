@@ -196,13 +196,17 @@ createFilterers.filter(frogs)
 
 ## Hook
 
+### What
+
 In computer programming, the term hooking covers a range of techniques used to alter or augment the behavior of an operating system, of applications, or of other software components by intercepting function calls or messages or events passed between software components.
 
-#### why 
+### Why 
 
 * Reusability, extendable, and flexibility.
 * Hooks are not a native implementation, looks like callbacks.
 * Hooks intercept the process and may interrupt the normal process.
+
+### Basic Example \(unfinished\)
 
 ```javascript
 // continue previous example
@@ -242,4 +246,8 @@ hook = createFilterers.filter(frogs)
 ​​​​​    weight: 28 } ]​​​​​
 */
 ```
+
+{% hint style="info" %}
+Reference: [https://code-boxx.com/vanilla-javascript-hooks/](https://code-boxx.com/vanilla-javascript-hooks/)
+{% endhint %}
 
