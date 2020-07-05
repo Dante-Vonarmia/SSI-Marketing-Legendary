@@ -27,11 +27,15 @@ description: Content
 
 ## Functional Programming
 
+
+
 ## Variables
 
 {% page-ref page="variables.md" %}
 
 ## Array
+
+{% page-ref page="array.md" %}
 
 ## ES6+
 

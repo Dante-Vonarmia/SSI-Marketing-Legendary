@@ -50,6 +50,7 @@
   * [Scope](js-es6+-dynamic-client-side-scripting/authors-notes/scope.md)
   * [Scope FAQs](js-es6+-dynamic-client-side-scripting/authors-notes/scope-faqs.md)
   * ["this" keyword Binding Methods](js-es6+-dynamic-client-side-scripting/authors-notes/this-keyword-binding-methods.md)
+  * [Functional Programming](js-es6+-dynamic-client-side-scripting/authors-notes/functional-programming.md)
   * [Variables](js-es6+-dynamic-client-side-scripting/authors-notes/variables.md)
   * [Array](js-es6+-dynamic-client-side-scripting/authors-notes/array.md)
 * [JavaScript Es6+ FAQs](js-es6+-dynamic-client-side-scripting/faqs/README.md)
