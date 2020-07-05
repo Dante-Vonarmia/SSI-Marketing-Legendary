@@ -1,2 +1,2 @@
-# ES6+
+# ES6+ new features
 

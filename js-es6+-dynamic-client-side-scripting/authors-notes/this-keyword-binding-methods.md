@@ -161,3 +161,123 @@ _obj2.__proto__.__proto__ // { region: 'China' }
 
 This is due to the important difference that `new` actually runs constructor code, whereas `Object.create` will not execute the constructor code.
 
+## Explicit Binding
+
+Called as a normal function.
+
+### `call` vs `apply`
+
+Different forms of the passed parameters
+
+```javascript
+// Function.prototype.call(thisArg: any, args...: any)
+```
+
+```javascript
+// Function.prototype.apply(thisArg: any, argArray: Array)
+```
+
+#### Built-in, Basic Example:
+
+```javascript
+const max = Math.max.apply(null, [5, 6, 2, 3, 7]); // 7
+
+const min = Math.min.call(null, 5, 6, 2, 3, 7); // 2
+
+typeof Math.max // function
+typeof Math.min // function
+```
+
+### Usage: Change `this` status
+
+```javascript
+var obj1 = {
+	thyName: 'Adam'
+}
+
+var obj2 = {
+	thyName: 'Eve'
+}
+
+var name = 'window';
+
+var getName = function() {
+	console.log(this) // window object
+	console.log(this.name) // [empty string]
+}
+
+getName();
+
+// Introduce new debug method `in` and `hasOwnProperty`
+'thyName' in obj1 // true | { thyName: 'Adam' }
+obj1.hasOwnProperty('thyName') // true
+getName.hasOwnProperty('thyName') // false
+
+// Change `this` status now.
+getName.hasOwnProperty.call(obj1,'thyName') // true
+```
+
+### Using `bind` to fix "Leaked `this`" problem
+
+Borrow object method \(one of Composition concept\)
+
+```javascript
+var myObject = {
+	name: 'DVA89',
+	getName: function() {
+		return this.name;
+	}
+};
+
+var _getName = myObject.getName;
+_getName() // [empty string]
+_getName.bind(myObject)() // DVA89
+```
+
+### Composition Over Inheritance
+
+* More flexible, reusable in coding structure for the future
+* Won't leak prototype method
+
+## Lexical Binding
+
+Closure is a classic Lexical Scope sample
+
+```javascript
+// Let's us "Encapsulation" a "private variable"
+
+// variable img's scope and lifetime is inside of function block
+var report = function(src) {
+  var img = new Image();
+  img.src = src;
+};
+
+report('https://www.google.co.jp/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png') //?
+
+// Through return an anonymous function, aka HOF, 
+// we could create a API and it will expend the scope and lifetime of the `img`,
+// so we could access to it outside of the function block
+var reportPrivate = (function() {
+  var imgs = [];
+  return function(src) {
+    var img = new Image();
+    img.src = src;
+    imgs.push(img.src);
+    return imgs;
+  }
+})();
+
+reportPrivate('../pic1.jpg')
+//​​​​​ [ 'http://localhost/pic1.jpg' ]​​​​​
+
+reportPrivate('../pic2.jpg') 
+// ​​​​​[ 'http://localhost/pic1.jpg', 'http://localhost/pic2.jpg' ]​​​​​
+
+reportPrivate('../pic3.jpg')
+/*
+[ 'http://localhost/pic1.jpg',​​​​​ 
+  'http://localhost/pic2.jpg',​​​​​ 
+  'http://localhost/pic3.jpg' ]​​​​​
+/*
+```
+

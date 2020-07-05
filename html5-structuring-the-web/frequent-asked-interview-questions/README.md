@@ -2,7 +2,7 @@
 description: Uncommon or advanced problems
 ---
 
-# Advanced FAQs
+# HTML5 Advanced FAQs
 
 ## Index
 

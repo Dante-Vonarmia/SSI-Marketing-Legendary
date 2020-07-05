@@ -1,2 +1,2 @@
-# FAQs
+# JavaScript Es6+ FAQs
 
