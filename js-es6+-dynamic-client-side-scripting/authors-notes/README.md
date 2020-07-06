@@ -29,8 +29,6 @@ description: Content
 
 {% page-ref page="functional-programming.md" %}
 
-
-
 ## Variables
 
 {% page-ref page="variables.md" %}
