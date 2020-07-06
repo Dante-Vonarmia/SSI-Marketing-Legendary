@@ -27,6 +27,8 @@ description: Content
 
 ## Functional Programming
 
+{% page-ref page="functional-programming.md" %}
+
 
 
 ## Variables

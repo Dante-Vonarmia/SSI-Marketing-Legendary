@@ -55,7 +55,7 @@
   * [Array](js-es6+-dynamic-client-side-scripting/authors-notes/array.md)
 * [JavaScript Es6+ FAQs](js-es6+-dynamic-client-side-scripting/faqs/README.md)
   * [Core Mechanism](js-es6+-dynamic-client-side-scripting/faqs/basic-concept.md)
-  * [Functional Programming](js-es6+-dynamic-client-side-scripting/faqs/functional-programming.md)
+  * [Function & Functional Programming](js-es6+-dynamic-client-side-scripting/faqs/functional-programming.md)
   * [ES6+ new features](js-es6+-dynamic-client-side-scripting/faqs/es6+.md)
   * [Asynchronous](js-es6+-dynamic-client-side-scripting/faqs/asynchronous.md)
   * [Common pitfalls](js-es6+-dynamic-client-side-scripting/faqs/common-pitfalls.md)
