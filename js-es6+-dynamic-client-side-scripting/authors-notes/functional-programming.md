@@ -211,6 +211,7 @@ In computer programming, the term hooking covers a range of techniques used to a
 ```javascript
 // continue previous example
 // In this sample, we use hook to supervise data change
+// Actually, the pub/sub pattern itself is an entire hook
 
 let hook = createFilterers.filter(frogs) 
 // All frogs
