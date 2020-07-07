@@ -202,7 +202,7 @@ In computer programming, the term hooking covers a range of techniques used to a
 * Hooks are not a native implementation, looks like callbacks.
 * Hooks intercept the process and may interrupt the normal process.
 
-### Basic Example \(unfinished\)
+### Basic Example
 
 ```javascript
 // continue previous example
