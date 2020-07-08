@@ -1,6 +1,6 @@
 # THE Context
 
-## Is Javascript an Interpreted or a compiled language?
+## Is JavaScript an Interpreted or a compiled language?
 
 Yes, Javascript \(JS\) is an interpreted language,  
 still has its own form of a compiler, run in what’s known as the Javascript engine\(Chrome V8\).
