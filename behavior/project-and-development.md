@@ -26,6 +26,12 @@
 
 ## How do you deal with ambiguous requirements?
 
+To avoid unnecessary requirements. It’s always a good trial to follow the standards from the documents. 
+
+For some future requirements, we can put them into next version. This is how we stick to the agile development. 
+
+For different ideas about the requirements, we can use the A/B test and let the users decide what is really need. We might get the user data by tracking and doing statics on their behavior and feedbacks.
+
 ## What criteria do you take into account when deciding which framework to use to build a project.
 
 * The model of cloud service. SaaS? PaaS? IaaS?
