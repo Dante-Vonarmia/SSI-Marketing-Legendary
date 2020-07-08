@@ -377,7 +377,68 @@ var newArr= [...new Set(arr)]; // [1, 2, 3]
 
 ## Class
 
-{% page-ref page="class.md" %}
+### `static`
+
+The class is equivalent to the prototype of the instance, and all methods defined in the class will be inherited by the instance. If you add the static keyword in front of a method, it means that the method will not be inherited by the instance, but called directly through the class, which is called "static method".
+
+```javascript
+class Foo {
+  static classMethod() {
+    return 'hello';
+  }
+}
+Foo.classMethod() // 'hello'
+let foo = new Foo();
+foo.classMethod()
+// TypeError: foo.classMethod is not a function
+```
+
+### `extends` 
+
+Class can be inherited through the extends keyword, which is much clearer and more convenient than ES5's inheritance by modifying the prototype chain.
+
+### `super`
+
+The keyword super can be used both as a function and as an object. In both cases, its usage is completely different.
+
+In the first case, when super is called as a function, it represents the constructor of the parent class. ES6 requires that the constructor of the subclass must execute the super function once. Equivalent to calling the parent method.
+
+In the second case, when super is an object, in the ordinary method, it points to the prototype object of the parent class; in the static method, it points to the parent class.
+
+It should be noted here that because super points to the prototype object of the parent class, the methods or properties defined on the instance of the parent class cannot be called by super.
+
+```javascript
+class Parent {
+  constructor() {
+    console.log(new.target.name);  
+  }
+  func() {
+    return 2;
+  }
+}
+class Child extends Parent {
+  constructor() {
+    super(); // First case
+    console.log(super.func()); // Second case
+  }
+}
+new Parent() // Parent
+new Child() // Child
+```
+
+### Inheritance of native constructor 
+
+Native constructor refers to the built-in constructor of the language, usually used to generate data structures. ECMAScript's native constructors are roughly the following.
+
+* `Boolean()` 
+* `Number()` 
+* `String()` 
+* `Array()` 
+* `Date()` 
+* `Function()` 
+* `RegExp()` 
+* `Error()` 
+* `Object()`
 
 ## Promise
 
