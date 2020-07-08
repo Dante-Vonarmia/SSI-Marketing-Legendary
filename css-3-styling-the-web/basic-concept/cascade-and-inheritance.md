@@ -1,5 +1,24 @@
 # Cascade and inheritance
 
+## Basic Concept
+
+### Cascade
+
+The cascade Stylesheets cascade — at a very simple level this means that the order of CSS rules matter; when two rules apply that have equal specificity the one that comes last in the CSS is the one that will be used.
+
+### Inheritance
+
+Inheritance also needs to be understood in this context — some CSS property values set on parent elements are inherited by their child elements, and some aren't. 
+
+For example if you set a width of 50% on an element, all of its descendants do not get a width of 50% of their parent's width. If this was the case, CSS would be very frustrating to use!
+
+### Specificity
+
+Specificity is how the browser decides which rule applies if multiple rules have different selectors, but could still apply to the same element. It is basically a measure of how specific a selector's selection will be:
+
+* An element selector is less specific — it will select all elements of that type that appear on a page — so will get a lower score. 
+* A class selector is more specific — it will select only the elements on a page that have a specific class attribute value — so will get a higher score.
+
 ## Explain what is CSS selector specificity and how does it work?
 
 The browser determines what styles to show on an element depending on the specificity of CSS rules. We assume that the browser has already determined the rules that match a particular element. Among the matching rules, the specificity, four comma-separate values, `a, b, c, d` are calculated for each rule based on the following:
