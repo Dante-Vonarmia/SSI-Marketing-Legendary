@@ -54,6 +54,8 @@
   * [Variables](js-es6+-dynamic-client-side-scripting/authors-notes/variables.md)
   * [Array](js-es6+-dynamic-client-side-scripting/authors-notes/array.md)
   * [ES6+ Basic Concept](js-es6+-dynamic-client-side-scripting/authors-notes/es6+-basic-concept.md)
+  * [Class](js-es6+-dynamic-client-side-scripting/authors-notes/class.md)
+  * [Promise](js-es6+-dynamic-client-side-scripting/authors-notes/promise.md)
   * [The Evolution of the Asynchronous Programming](js-es6+-dynamic-client-side-scripting/authors-notes/the-evolution-of-the-asynchronous-programming.md)
 * [JavaScript Es6+ FAQs](js-es6+-dynamic-client-side-scripting/faqs/README.md)
   * [Core Mechanism](js-es6+-dynamic-client-side-scripting/faqs/basic-concept.md)
