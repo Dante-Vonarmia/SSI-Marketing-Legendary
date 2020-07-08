@@ -385,37 +385,28 @@ var newArr= [...new Set(arr)]; // [1, 2, 3]
 
 ## Generator
 
+### Explanation
+
+* Syntactically
+  * The Generator function is a state machine that encapsulates multiple internal states.
+  * Executing the Generator function returns a Iteration object.
+* Formally
+  * The Generator function is a normal function, but has two characteristics.
+  * First, there is an asterisk between the function keyword and the function name.
+  * Second, the yield expression is used inside the function body to define different internal states \(yield means "output" in English\).
+
 ```javascript
+// aka, Pausable Function
+function* f() {
+	yield console.log("I'm a generator function."); 
+	yield console.log("The Generator function is a state machine.");
+	yield console.log("Executing the Generator function returns a Iteration object.");
+	yield console.log("The Generator function is a normal function, but has two characteristics.");
+	// return undefined;
+}
 
-///////////////
-// Generator //
-///////////////
-
-	// 语法上, Generator 函数是一个状态机，封装了多个内部状态
-	// 	执行 Generator 函数会返回一个遍历器对象
-	// 形式上，Generator 函数是一个普通函数，但是有两个特征。
-	// 	一是，function关键字与函数名之间有一个星号；
-	// 	二是，函数体内部使用yield表达式，定义不同的内部状态（yield在英语里的意思就是“产出”）。
-
-	// Syntactically, the Generator function is a state machine that encapsulates multiple internal states
-	// 	Executing the Generator function returns a Iteration object
-	// Formally, the Generator function is a normal function, but has two characteristics.
-		
-		// Pausable Function
-		function* f() {
-			yield console.log("I'm a generator function."); 
-			yield console.log("The Generator function is a state machine.");
-			yield console.log("Executing the Generator function returns a Iteration object.");
-			yield console.log("The Generator function is a normal function, but has two characteristics.");
-			// return undefined;
-		}
-
-		const run_f = f();
-		run_f.next();
-		// First, there is an asterisk between the function keyword and the function name;
-		// Second, the yield expression is used inside the function body to define different internal states (yield means "output" in English).
-
-	// Used as create an iterator
-
+// Used as create an iterator
+const run_f = f();
+run_f.next();
 ```
 
