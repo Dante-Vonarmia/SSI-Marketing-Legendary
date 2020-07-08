@@ -1,5 +1,42 @@
 # Reference
 
+## HTML part
+
+* The principle: [HTML Official Document](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5)
+* The standard paradigm: [http://codeguide.co](http://codeguide.co/)
+* SEO: [https://9elements.com/seo-cheat-sheet/](https://9elements.com/seo-cheat-sheet/)
+
+## CSS part
+
+* CSS Modules: [https://glenmaddern.com/articles/css-modules](https://glenmaddern.com/articles/css-modules)
+* CSS Cheat Sheet: [https://websitesetup.org/css3-cheat-sheet/](https://websitesetup.org/css3-cheat-sheet/)
+* CSS Browser Compatibility Check: [https://caniuse.com](https://caniuse.com/)
+* CSS Flexible Box: [https://css-tricks.com/snippets/css/a-guide-to-flexbox/](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+* CSS Grid Box: [https://css-tricks.com/snippets/css/complete-guide-grid/](https://css-tricks.com/snippets/css/complete-guide-grid/)
+* CSS Methodology - BEM: [http://getbem.com](http://getbem.com/)
+* Browser Specific Hacks: [https://css-tricks.com/snippets/css/browser-specific-hacks/](https://css-tricks.com/snippets/css/browser-specific-hacks/)
+
+## JavaScript part
+
+* Call Stack Demo: [latentflip.com/loupe/](http://latentflip.com/loupe/)
+* Event Loop: [https://developer.mozilla.org/en-US/docs/Web/JavaScript/EventLoop](https://developer.mozilla.org/en-US/docs/Web/JavaScript/EventLoop)
+* OOP vs FP: [https://www.educba.com/functional-programming-vs-oop/](https://www.educba.com/functional-programming-vs-oop/)
+* JavaScript Better Understand: [https://bonsaiden.github.io/JavaScript-Garden/](https://bonsaiden.github.io/JavaScript-Garden/)
+* ES6: [https://es6.ruanyifeng.com](https://es6.ruanyifeng.com/)
+* CORS: [https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS)
+* Fetch API: [https://developer.mozilla.org/en-US/docs/Web/API/Fetch\_API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API)
+
+## React JS Part
+
+* JS Linter: [https://medium.com/dailyjs/why-you-should-always-use-a-linter-](https://medium.com/dailyjs/why-you-should-always-use-a-linter-and-or-pretty-formatter-bb5471115a76)...
+* Node JS: [https://nodejs.org/en/](https://nodejs.org/en/)
+* NPM JS: [https://www.npmjs.com](https://www.npmjs.com/)
+* REACT: [https://reactjs.org](https://reactjs.org/)
+* Babel JS: [https://babeljs.io](https://babeljs.io/)
+* Create React App: [https://create-react-app.dev](https://create-react-app.dev/)
+* React Life-cycle: [https://blog.bitsrc.io/react-16-lifecycle-methods-how-and-when-](https://blog.bitsrc.io/react-16-lifecycle-methods-how-and-when-to-use-them-f4ad31fb2282)...
+* React Debug Tool \(browser\): [https://chrome.google.com/webstore/](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi)...
+
 {% hint style="info" %}
 Check out these frequently used websites and materials.
 {% endhint %}
