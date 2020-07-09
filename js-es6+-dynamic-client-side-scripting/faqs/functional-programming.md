@@ -1,6 +1,6 @@
 # Function & Functional Programming
 
-### What is functional programming? <a id="619e"></a>
+## What is functional programming?
 
 Functional programming produces programs by composing mathematical functions and avoids shared state & mutable data. Lisp \(specified in 1958\) was among the first languages to support functional programming, and was heavily inspired by lambda calculus. Lisp and many Lisp family languages are still in common use today.
 
@@ -47,4 +47,23 @@ FP has a much steeper learning curve than OOP because the broad popularity of OO
 * Awareness that a highly functional codebase can have a steep learning curve.
 * Awareness that a highly OOP codebase can be extremely resistant to change and very brittle compared to an equivalent FP codebase.
 * Awareness that immutability gives rise to an extremely accessible and malleable program state history, allowing for the easy addition of features like infinite undo/redo, rewind/replay, time-travel debugging, and so on. Immutability can be achieved in either paradigm, but a proliferation of shared stateful objects complicates the implementation in OOP.
+
+
+
+## What are IIFEs \(Immediately Invoked Function Expressions\)?
+
+## What is the difference between anonymous and named functions?
+
+## Difference between regular functions and arrow functions in JavaScript
+
+#### **Arrow function has no keywords: `this`, argument**
+
+So an arrow function as actionHandler no need to do `bind` in constructor
+
+An arrow function expression is a syntactically compact alternative to a regular function expression, although without its own bindings to the `this`, arguments, `super`, or new.target keywords. Arrow function expressions are illustrated as methods, and they cannot be used as constructors.
+
+* Arrow functions do not have a prototype property.
+* Arrow functions cannot be used as constructors and will throw an error when used with `new`
+
+Since arrow functions do not have their own this, the methods `call()` and `apply()` can only pass in parameters. Any this argument is ignored.
 

@@ -1,5 +1,26 @@
 # Core Mechanism
 
+## Is Javascript an Interpreted or a compiled language?
+
+Yes, Javascript \(JS\) is an interpreted language,  
+still has its own form of a compiler, run in what’s known as the Javascript engine\(Chrome V8\).
+
+## Explain what is the operation mechanism of the JavaScript. \(hint: event-loop, call-stack\)
+
+JavaScript has a concurrency model based on an event loop,  
+which is responsible for executing the code, collecting and processing events, and executing queued sub-tasks.  
+This model is quite different from models in other languages like C and Java.
+
+JavaScript engine uses a **call stack** to manage [execution contexts:](../authors-notes/the-context.md#execution-context) the Global Execution Context and Function Execution Contexts.
+
+At the most basic level, a call stack is a data structure that uses the Last In, First Out \(LIFO\) principle to temporarily store and manage function invocation \(call\).
+
+**LIFO:** When we say that the call stack, operates by the data structure principle of Last In, First Out, it means that the last function that gets pushed into the stack is the first to be pop out, when the function returns.
+
+{% hint style="info" %}
+[Read more here](https://www.freecodecamp.org/news/understanding-the-javascript-call-stack-861e41ae61d4/)
+{% endhint %}
+
 ## How context is different from the scope?
 
 The scope is the accessibility of variables, functions, or objects in some particular part of your code during runtime.
@@ -69,7 +90,12 @@ In JavaScript, prototypal inheritance is simpler & more flexible than class inhe
 
 ## What does “favor object composition over class inheritance” mean?
 
-* use can-do, has-a, or uses-a relationships instead of is-a relationships.
+This is a quote from [“Design Patterns: Elements of Reusable Object-Oriented Software”](http://www.amazon.com/Design-Patterns-Elements-Reusable-Object-Oriented/dp/0201633612). It means that code reuse should be achieved by assembling smaller units of functionality into new objects instead of inheriting from classes and creating object taxonomies.
+
+In other words, use **can-do, has-a,** or **uses-a** relationships instead of **is-a** relationships.
+
+#### **Good to hear:**
+
 * Avoid class hierarchies.
 * Avoid brittle base class problem.
 * Avoid tight coupling.
@@ -77,12 +103,11 @@ In JavaScript, prototypal inheritance is simpler & more flexible than class inhe
 * Avoid the gorilla banana problem \(“what you wanted was a banana, what you got was a gorilla holding the banana, and the entire jungle”\).
 * Make code more flexible.
 
-## Explain what is the operation mechanism of the JavaScript. \(hint: event-loop, call-stack\)
-
 ## List some OOP concept that is actually adopted in JavaScript.
 
 * Objects
 * Encapsulation
 * Inheritance
 * Instance
+* ...
 
