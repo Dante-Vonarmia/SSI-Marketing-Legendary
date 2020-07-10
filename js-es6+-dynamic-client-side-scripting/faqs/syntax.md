@@ -15,6 +15,16 @@ In [JavaScript](https://developer.mozilla.org/en-US/docs/Glossary/JavaScript), a
 
 ## What is escape character and what is it used for? \(hint: Backslash\)
 
+The backslash is used as a marker character to tell the compiler/interpreter that the next character has some special meaning. What that next character means is up to the implementation.
+
+In JavaScript, the backslash is used to escape special characters, such as newlines \(`\n`\). If you want to use a literal backslash, a double backslash has to be used.
+
+#### Usage:
+
+* To search for special characters `[ \ ^ $ . | ? * + ( )` literally, we need to prepend them with a backslash `\` \(“escape them”\).
+* We also need to escape `/` if we’re inside `/.../` \(but not inside `new RegExp`\).
+* When passing a string `new RegExp`, we need to double backslashes `\\`, cause string quotes consume one of them.
+
 ## What happened when a `new` operator is used for an instance?
 
 * Creates a blank, plain JavaScript object;
