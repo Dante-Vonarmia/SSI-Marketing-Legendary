@@ -79,9 +79,11 @@ for (var j = 0; j < 5; j++) {
 */
 ```
 
-## How do you solve the "[leaked this](../authors-notes/this-keyword-binding-methods.md#using-bind-to-fix-leaked-this-problem)" problem?
+## How do you solve the "[leaked this](../authors-notes/this-keyword-binding-methods.md#using-bind-to-fix-leaked-this-problem)" problem? 
+
+> \(Hint\) How to allow a function to "borrow" another function's context\(this\)?
 
 [Link to the solution](../authors-notes/this-keyword-binding-methods.md#using-bind-to-fix-leaked-this-problem)
 
-## How to allow a function to "borrow" another function's context\(`this`\)?
+
 

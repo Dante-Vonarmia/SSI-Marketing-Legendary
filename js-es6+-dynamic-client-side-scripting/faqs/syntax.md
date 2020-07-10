@@ -6,6 +6,13 @@ In [JavaScript](https://developer.mozilla.org/en-US/docs/Glossary/JavaScript), a
 
 ## What's the difference between spread operator and rest operator?
 
+* Rest Parameter is collecting all remaining elements into an array .
+* Spread Operator is unpacking collected elements such as arrays into single elements .
+
+#### Reference:
+
+{% embed url="https://medium.com/javascript-in-plain-english/es6-spread-parameter-vs-rest-operator-5e3c924c4e1f" %}
+
 ## What is escape character and what is it used for? \(hint: Backslash\)
 
 ## What happened when a `new` operator is used for an instance?
