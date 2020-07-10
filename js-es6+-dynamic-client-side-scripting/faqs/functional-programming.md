@@ -48,8 +48,6 @@ FP has a much steeper learning curve than OOP because the broad popularity of OO
 * Awareness that a highly OOP codebase can be extremely resistant to change and very brittle compared to an equivalent FP codebase.
 * Awareness that immutability gives rise to an extremely accessible and malleable program state history, allowing for the easy addition of features like infinite undo/redo, rewind/replay, time-travel debugging, and so on. Immutability can be achieved in either paradigm, but a proliferation of shared stateful objects complicates the implementation in OOP.
 
-
-
 ## What are IIFEs \(Immediately Invoked Function Expressions\)?
 
 ## What is the difference between anonymous and named functions?
@@ -66,4 +64,6 @@ An arrow function expression is a syntactically compact alternative to a regular
 * Arrow functions cannot be used as constructors and will throw an error when used with `new`
 
 Since arrow functions do not have their own this, the methods `call()` and `apply()` can only pass in parameters. Any this argument is ignored.
+
+## What is immutable data?
 

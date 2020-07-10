@@ -1,5 +1,18 @@
 # Common pitfalls
 
+## Why we need to avoid Global Variables and Functions? 
+
+Global variables are easily overwritten by other scripts. For example when two separate parts of an application define global variables with the same name but with different purposes.
+
+In JavaScript, it enables us to have multiple `var` statements anywhere in a function, and they all act as if the variables were declared at the top of the function.
+
+It’s also common for web pages to include code not written by the developers of the page, for example.
+
+* A third-party JavaScript library
+* Code from a third-party user tracking and analytics script
+* Different kinds of widgets, badges, and buttons
+* Scripts from an advertising partner
+
 ## What are two-way data binding and one-way data flow, and how are they different?
 
 Two way data binding means that UI fields are bound to model data dynamically such that when a UI field changes, the model data changes with it and vice-versa.
@@ -48,11 +61,24 @@ Microservices are frequently deployed on their own virtual machines or container
 
 ## `preventDefault` vs. `stopPropagation` vs. `stopImmediatePropagation`
 
+* **preventDefault:** Cancels the event if it is cancelable, without stopping further propagation of the event.
+* **stopPropagation:** Prevents further propagation of the current event.
+* **stopImmediatePropagation:** Prevents other listeners of the same event from being called.
+
 ## What kinds of codes do front-end actually divided from back-end is as an anti-pattern? \(hint: REST API\)
 
 ## What are the responsibilities of front-end and back-end?
 
 ## Shall we load the JavaScript Files first in an HTML file?
+
+It is a best practice to put JavaScript &lt;script&gt; tags just before the closing &lt;/body&gt; tag rather than in the &lt;head&gt; section of your HTML.
+
+The reason for this is that HTML loads from top to bottom. The head loads first, then the body, and then everything inside the body. If we put our JavaScript links in the head section, the entire JavaScript file will load before loading any of the HTML, which could cause a few problems.
+
+1. If you have code in your JavaScript that alters HTML as soon as the JavaScript file loads, there won't actually be any HTML elements available for it to affect yet, so it will seem as though the JavaScript code isn't working, and you may get errors.
+2. If you have a lot of JavaScript, it can visibly slow the loading of your page because it loads all of the JavaScript before it loads any of the HTML.
+
+When placing JavaScript links at the bottom of your HTML body, it gives the HTML time to load before any of the JavaScript loads, which can prevent errors, and speed up website response time.
 
 ## Name some ways of how do you debug your codes?
 
@@ -69,4 +95,25 @@ Microservices are frequently deployed on their own virtual machines or container
 ## Any ideas about modular asynchronous function programming strategy? \(hint: AMD, CMD\)
 
 ## Can you explain the difference between Debouncing and throttle in user experience?
+
+### Throttling
+
+Throttling enforces a maximum number of times a function can be called over time. As in “execute this function at most once every 100 milliseconds.”
+
+### Debouncing
+
+Debouncing enforces that a function will not be called again until a certain amount of time has passed since its last call. As in “execute this function only if an amount of time \(ex. 100 milliseconds\) have passed without it being called.”
+
+## [3 Ways to Disable Copy Text in JavaScript & CSS](https://code-boxx.com/disable-copy-text-javascript-css/)
+
+* Disable the right-click \(context menu\) to prevent copy-and-paste.
+* Disable the clipboard copy.
+* CSS disable select and hide the highlighting of text.
+
+## [4 Ways To Abort JavaScript Execution](https://code-boxx.com/abort-javascript-execution/)
+
+* Manually throw an error in a function.
+* Run the script with workers that can be terminated.
+* Simply return false or undefined in a function.
+* Set the script to run on a timer, clear the time to stop running.
 

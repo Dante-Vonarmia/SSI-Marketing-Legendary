@@ -111,3 +111,7 @@ In other words, use **can-do, has-a,** or **uses-a** relationships instead of **
 * Instance
 * ...
 
+## What is `use strict` in JavaScript?
+
+## 
+

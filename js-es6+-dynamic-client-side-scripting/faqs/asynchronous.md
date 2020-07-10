@@ -17,3 +17,9 @@ This is important in JavaScript, because it is a very natural fit for user inter
 * An understanding of what blocking means, and the performance implications.
 * An understanding of event handling, and why its important for UI code.
 
+## What's the difference between a promise-based object and a generator-based object?
+
+## Is async/await the best way to implement the asynchronous programming?
+
+## What is asynchronous programming, and why is it important in JavaScript?
+

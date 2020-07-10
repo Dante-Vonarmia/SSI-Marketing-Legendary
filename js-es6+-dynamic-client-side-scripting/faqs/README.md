@@ -1,4 +1,4 @@
-# JavaScript Es6+ FAQs
+# JavaScript ES6+ FAQs
 
 ## Core Mechanism
 
