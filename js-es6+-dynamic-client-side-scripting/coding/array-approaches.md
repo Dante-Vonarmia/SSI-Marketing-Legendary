@@ -307,3 +307,9 @@ const removeDupes = (arr) => {
 console.log(removeDupes(arr)); // Output: [1, 3, 5]
 ```
 
+## Check whether the "a" array contains the "b" array
+
+```javascript
+export const getArrRepeat = (arr1, arr2) => arr1.filter((item, index) => arr2.includes(item))
+```
+
