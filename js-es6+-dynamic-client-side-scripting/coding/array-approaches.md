@@ -160,3 +160,150 @@ const findMissingNum = (arr) => {
 console.log(findMissingNum(arr)); // Output: [3, 9]
 ```
 
+## Find out all the pairs that equal to the same summation
+
+```javascript
+let arr = [1, 5, 6, 1, 2, 3, 0, 1];
+const findSumPairs = (arr, value) => {
+  let sumsLookup = {};
+  let output = [];
+
+  for (let i = 0; i < arr.length; i++) {
+    let targetVal = value - arr[i];
+
+    if (sumsLookup[targetVal]) {
+      output.push([arr[i], targetVal]);
+    }
+
+    sumsLookup[arr[i]] = true;
+  }
+
+  return output;
+}
+
+console.log(findSumPairs(arr, 6)); // Output: ​​​​​[ [ 5, 1 ], [ 1, 5 ], [ 0, 6 ], [ 1, 5 ] ]​​​​​
+```
+
+## The element with the most occurrences and the number of times.
+
+```javascript
+// Find out the number's occurrences
+function countOfElement(arr, N) {
+  let encounteredNums = {};
+  let num;
+  for (let i = 0; i < arr.length; i++) {
+    num = arr[i];
+    if (encounteredNums[num]) {
+      // value already encountered, count++
+      encounteredNums[num]++;
+    } else {
+      // first encounter, initialize count
+      encounteredNums[num] = 1;
+    }
+  }
+  return {
+    element: N,
+    times: encounteredNums[N]
+  } || 0; // 6 times
+  // return encounteredNums[N] || 0; // 2
+}
+// returns 6
+countOfElement([3, 4, 2, 3, 2, 2, 2, 2, 3, 2], 2); // Output:​​​​​ { element: 2, times: 6 }​​​​​
+
+
+// Find out the most Occurred number
+let arr = [1,2,2,3,4,4,4,5,5,5,5,5,5,6,7,8,8,9];
+
+function mostOccur(arr) {
+  // if (arr) { ... } // common error check
+  
+  let temp = {},
+      result = 0;
+            
+  for (let i = 0, length = arr.length; i < length; i++) {
+    if (temp[arr[i]]) {
+      temp[arr[i]]++;
+    } else {
+      temp[arr[i]] = 1;
+    }
+    if (temp[arr[i]] > result) {
+      result = arr[i]
+    } 
+  }
+      
+  return result;
+}
+
+mostOccur(arr) // Output: 5
+```
+
+## Find the number n greatest number in an array.
+
+```javascript
+function Kth_greatest_in_array(arr, k) {
+
+	for (var i = 0; i < k; i++) {
+		var max_index = i,
+			tmp = arr[i];
+
+		for (var j = i + 1; j < arr.length; j++) {
+			if (arr[j] > arr[max_index]) {
+				max_index = j;
+			}
+		}
+
+		arr[i] = arr[max_index];
+		arr[max_index] = tmp;
+	}
+
+	return arr[k - 1];
+}
+
+console.log(Kth_greatest_in_array([1, 2, 6, 4, 5], 1))
+
+// Ouput: 
+// [1, 2, 6, 4, 5], 1 => 6;
+// [1, 2, 6, 4, 5], 2 => 5;
+// [1, 2, 6, 4, 5], 3 => 4;
+```
+
+## Meandering Array
+
+```javascript
+let arr = [7, -5, 2, 7, 8, -2, 25, 25];
+let result = [];
+
+function meandering(arr) {
+    if (!arr.length)
+        return arr;
+    arr.sort((prev, cur) => prev - cur);
+    for (var i = 0, j = arr.length - 1; i <= j; i++, j--) {  
+        result = [...result, arr[j]];
+        result = [...result, arr[i]];
+
+        if (i === j) 
+            result = [...result, arr[i]];
+    }
+    return result
+}
+
+console.log(meandering(arr)); // Output: ​​​​​[ 25, -5, 25, -2, 8, 2, 7, 7 ]​​​​​
+```
+
+## Find out the duplicated number that need to be remove. \(Not all the element need to be removed\)
+
+```javascript
+const arr = [1, 1, 3, 1, 3, 1, 5];
+const removeDupes = (arr) => {
+  let result = [];
+  for (let i = 0, len = arr.length; i < len; i++) {
+    if (result.indexOf(arr[i]) < 0) {
+      result.push(arr[i]);
+    }
+  }
+  return result;
+}
+
+console.log(removeDupes(arr)); // Output: [1, 3, 5]
+```
+
