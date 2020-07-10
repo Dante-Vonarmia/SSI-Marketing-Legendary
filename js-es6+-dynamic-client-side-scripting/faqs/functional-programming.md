@@ -52,18 +52,11 @@ FP has a much steeper learning curve than OOP because the broad popularity of OO
 
 ## What is the difference between anonymous and named functions?
 
-## Difference between regular functions and arrow functions in JavaScript
+## What is currying and how does it apply to a react application? 
 
-#### **Arrow function has no keywords: `this`, argument**
+It’s just a chaining styled format to passing down the multiples parameters which are usually callbacks functions. In React application. We usually use that as a HOC pattern. Or, while combining with redux, it’s common to connect the redux mapping props methods with the components.
 
-So an arrow function as actionHandler no need to do `bind` in constructor
-
-An arrow function expression is a syntactically compact alternative to a regular function expression, although without its own bindings to the `this`, arguments, `super`, or new.target keywords. Arrow function expressions are illustrated as methods, and they cannot be used as constructors.
-
-* Arrow functions do not have a prototype property.
-* Arrow functions cannot be used as constructors and will throw an error when used with `new`
-
-Since arrow functions do not have their own this, the methods `call()` and `apply()` can only pass in parameters. Any this argument is ignored.
+## 
 
 ## What is immutable data?
 
