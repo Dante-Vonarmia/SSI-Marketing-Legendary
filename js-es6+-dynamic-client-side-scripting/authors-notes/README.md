@@ -14,7 +14,7 @@ description: Content Page
 
 {% page-ref page="scope.md" %}
 
-{% page-ref page="scope-faqs.md" %}
+{% page-ref page="../faqs/scope-faqs.md" %}
 
 ## `this` keyword Binding Methods
 
