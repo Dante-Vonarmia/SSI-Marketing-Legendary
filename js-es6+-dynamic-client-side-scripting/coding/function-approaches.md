@@ -310,7 +310,7 @@ const myNewFilteredDevs = developers.myNewFilter(developer => developer.expInYea
 console.log(myNewFilteredDevs.length); // 3
 ```
 
-## Rebuilt - HOF - Pure function ver.
+## Rebuilt - HOF - Pure function
 
 #### Fake data
 
