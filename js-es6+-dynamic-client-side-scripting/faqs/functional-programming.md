@@ -56,7 +56,5 @@ FP has a much steeper learning curve than OOP because the broad popularity of OO
 
 It’s just a chaining styled format to passing down the multiples parameters which are usually callbacks functions. In React application. We usually use that as a HOC pattern. Or, while combining with redux, it’s common to connect the redux mapping props methods with the components.
 
-## 
-
 ## What is immutable data?
 
