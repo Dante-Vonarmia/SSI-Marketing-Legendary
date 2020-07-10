@@ -4,15 +4,6 @@
 
 In [JavaScript](https://developer.mozilla.org/en-US/docs/Glossary/JavaScript), a **primitive** \(primitive value, primitive data type\) is data that is not an [object](https://developer.mozilla.org/en-US/docs/Glossary/object) and has no [methods](https://developer.mozilla.org/en-US/docs/Glossary/method). There are 6 primitive data types: [string](https://developer.mozilla.org/en-US/docs/Glossary/string), [number](https://developer.mozilla.org/en-US/docs/Glossary/number), [bigint](https://developer.mozilla.org/en-US/docs/Glossary/bigint), [boolean](https://developer.mozilla.org/en-US/docs/Glossary/boolean), [undefined](https://developer.mozilla.org/en-US/docs/Glossary/undefined), and [symbol](https://developer.mozilla.org/en-US/docs/Glossary/symbol). There also is [null](https://developer.mozilla.org/en-US/docs/Glossary/null), which is seemingly primitive, but indeed is a special case for every [`Object`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object): and any structured type is derived from `null` by the [Prototype Chain](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Inheritance).
 
-## What's the difference between spread operator and rest operator?
-
-* Rest Parameter is collecting all remaining elements into an array .
-* Spread Operator is unpacking collected elements such as arrays into single elements .
-
-#### Reference:
-
-{% embed url="https://medium.com/javascript-in-plain-english/es6-spread-parameter-vs-rest-operator-5e3c924c4e1f" %}
-
 ## What is escape character and what is it used for? \(hint: Backslash\)
 
 The backslash is used as a marker character to tell the compiler/interpreter that the next character has some special meaning. What that next character means is up to the implementation.
