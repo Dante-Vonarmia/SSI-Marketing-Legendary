@@ -105,3 +105,58 @@ const findDupes = arr => {
 findDupes(arr); // Output: 4, 7, 6
 ```
 
+## Find out the intersection part of following two arrays.
+
+```javascript
+let arr1 = ["mike", "sue", "tom", "kathy", "henry"],
+		arr2 = ["howey", "jim", "sue", "jennifer", "kathy", "hank", "alex"];
+
+function intersection(a, b) {
+	return a.filter(e => b.indexOf(e) > -1)
+}
+
+intersection(arr1, arr2); // Output: ['sue', 'kathy']
+```
+
+## Return the maximum and minimum number in the array
+
+```javascript
+const arr = [1, 2, 3, 4, 100];
+const findMaxMin = (arr) => {
+  let max = arr[0];
+  let min = arr[0];
+  
+  for(let i = 0; i < arr.length; i++) {
+    if(arr[i] > max) {
+      max = arr[i];
+    } else if (arr[i] < min) {
+      min = arr[i];
+    }
+  }  
+  return {
+    "max": max,
+    "min": min
+  };
+}
+
+console.log(findMaxMin(arr)); // Output: { "max": 100, "min": 1 }
+```
+
+## Return the maximum and minimum missing number in the array
+
+```javascript
+let arr = [1, 2, 6, 7, 8, 10];
+const findMissingNum = (arr) => {
+  let newArr = [];
+  for (let i = 0, len = arr.length - 1; i < len; i++) {
+    if (arr[i] + 1 != arr[i + 1]) {
+    	console.log(arr[i] + 1)
+      newArr.push(arr[i] + 1);
+    }
+  }
+  return newArr;
+}
+
+console.log(findMissingNum(arr)); // Output: [3, 9]
+```
+
