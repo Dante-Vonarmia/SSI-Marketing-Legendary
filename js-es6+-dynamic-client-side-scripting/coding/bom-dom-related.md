@@ -1,7 +1,5 @@
 # BOM / DOM related
 
-{% embed url="https://code-boxx.com/build-query-string-javascript/" %}
-
 ## Browser
 
 ### is WeChat Browser
@@ -140,4 +138,8 @@ export const elementIsVisibleInViewport = (el, partiallyVisible = false) => {
         : top >= 0 && left >= 0 && bottom <= innerHeight && right <= innerWidth;
 }
 ```
+
+## URL Query
+
+{% embed url="https://code-boxx.com/build-query-string-javascript/" %}
 

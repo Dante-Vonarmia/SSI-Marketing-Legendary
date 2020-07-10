@@ -8,15 +8,13 @@
 
 ### Examples
 
-`console.log(0.1 + 0.2 === 0.3) // false` 
-
-`console.log(1 + '2') // 12`
-
-`console.log(1 - '2') // -1`
-
-`console.log(1 * '2') // 2`
-
-`console.log(1 % '2') // 1`
+```javascript
+console.log(0.1 + 0.2 === 0.3) // false 
+console.log(1 + '2') // 12
+console.log(1 - '2') // -1
+console.log(1 * '2') // 2
+console.log(1 % '2') // 1
+```
 
 ## Write a swap function to exchange two value. Use methods as much as you know. \(Probably 4 ways\)
 
@@ -50,6 +48,4 @@ const swap = (a, b) => {
 	return [a, b] = [b, a];
 }
 ```
-
-
 
