@@ -85,7 +85,7 @@ export const getQueryString = (name) => {
 }
 ```
 
-### is "class" inside of the "element"
+### Is "class" inside of the "element"
 
 ```javascript
 export const hasClass = (el, className) => {
@@ -128,7 +128,7 @@ export const getScrollPosition = (el = window) => ({
 });
 ```
 
-### whether "el" is within the viewport
+### Whether "el" is within the viewport
 
 ```javascript
 export const elementIsVisibleInViewport = (el, partiallyVisible = false) => {
