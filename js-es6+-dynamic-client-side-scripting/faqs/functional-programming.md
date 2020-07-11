@@ -50,11 +50,30 @@ FP has a much steeper learning curve than OOP because the broad popularity of OO
 
 ## What are IIFEs \(Immediately Invoked Function Expressions\)?
 
+
+
+An **IIFE** \(Immediately Invoked Function Expression\) is a [JavaScript](https://developer.mozilla.org/en-US/docs/Glossary/JavaScript) [function](https://developer.mozilla.org/en-US/docs/Glossary/function) that runs as soon as it is defined.
+
+```javascript
+(function () {
+    statements
+})();
+```
+
+It is a design pattern which is also known as a [Self-Executing Anonymous Function](https://developer.mozilla.org/en-US/docs/Glossary/Self-Executing_Anonymous_Function) and contains two major parts:
+
+1. The first is the anonymous function with lexical scope enclosed within the [`Grouping Operator`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Grouping) `()`. This prevents accessing variables within the IIFE idiom as well as polluting the global scope.
+2. The second part creates the immediately invoked function expression `()` through which the JavaScript engine will directly interpret the function.
+
 ## What is the difference between anonymous and named functions?
+
+Named functions are useful for a good debugging experience, while anonymous functions provides context scoping for easier development. Arrow functions should only be used when functions act as data.
 
 ## What is currying and how does it apply to a react application? 
 
 It’s just a chaining styled format to passing down the multiples parameters which are usually callbacks functions. In React application. We usually use that as a HOC pattern. Or, while combining with redux, it’s common to connect the redux mapping props methods with the components.
 
 ## What is immutable data?
+
+In [object-oriented](https://en.wikipedia.org/wiki/Object-oriented_computer_programming) and [functional](https://en.wikipedia.org/wiki/Functional_programming) programming, an **immutable object** \(unchangeable[\[1\]](https://en.wikipedia.org/wiki/Immutable_object#cite_note-1) object\) is an [object](https://en.wikipedia.org/wiki/Object_%28computer_science%29) whose state cannot be modified after it is created.
 
