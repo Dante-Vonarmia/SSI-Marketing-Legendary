@@ -260,7 +260,9 @@ CSS can insert text content before or after an element. To specify this, make a 
 
 #### Image content
 
-To add an image before or after an element, you can specify the URL of an image file in the value of the [`content`](https://developer.mozilla.org/en-US/docs/Web/CSS/content) property.  
-  
+To add an image before or after an element, you can specify the URL of an image file in the value of the [`content`](https://developer.mozilla.org/en-US/docs/Web/CSS/content) property.
 
+## Useful Layout Solution
+
+{% embed url="https://web.dev/one-line-layouts/" %}
 
