@@ -1,4 +1,4 @@
-# Asynchronous \(unfinished\)
+# Asynchronous
 
 ## What is asynchronous programming, and why is it important in JavaScript?
 

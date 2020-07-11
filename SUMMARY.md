@@ -62,7 +62,7 @@
   * [Events and APIs](js-es6+-dynamic-client-side-scripting/faqs/events-and-apis.md)
   * [Function & Functional Programming](js-es6+-dynamic-client-side-scripting/faqs/functional-programming.md)
   * [ES6+ new features](js-es6+-dynamic-client-side-scripting/faqs/es6+.md)
-  * [Asynchronous \(unfinished\)](js-es6+-dynamic-client-side-scripting/faqs/asynchronous.md)
+  * [Asynchronous](js-es6+-dynamic-client-side-scripting/faqs/asynchronous.md)
   * [Common pitfalls](js-es6+-dynamic-client-side-scripting/faqs/common-pitfalls.md)
 * [Coding](js-es6+-dynamic-client-side-scripting/coding/README.md)
   * [Variables and Types](js-es6+-dynamic-client-side-scripting/coding/variables-and-types.md)
