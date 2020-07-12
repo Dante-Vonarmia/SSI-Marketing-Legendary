@@ -150,7 +150,6 @@ const findMissingNum = (arr) => {
   let newArr = [];
   for (let i = 0, len = arr.length - 1; i < len; i++) {
     if (arr[i] + 1 != arr[i + 1]) {
-    	console.log(arr[i] + 1)
       newArr.push(arr[i] + 1);
     }
   }
