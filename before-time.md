@@ -13,9 +13,7 @@ _"As things come too easy, then people won't cherish them. Cuz there is somethin
 3. [Standards](before-time.md#standards)
 4. [Start Interview Questions](before-time.md#start-interview-questions)
 
-## Be a Programmer
-
-### Principle
+## Be a Programmer - Principle
 
 Let's not rush to diving in some code.   
 There are some inevitable rules that I have been followed for many years, and I hope that you remember these rules as they will be beneficial.
