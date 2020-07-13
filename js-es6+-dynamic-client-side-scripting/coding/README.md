@@ -1,2 +1,2 @@
-# Coding
+# JavaScript Coding Part
 

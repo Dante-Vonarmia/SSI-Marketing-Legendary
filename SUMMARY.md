@@ -64,7 +64,7 @@
   * [ES6+ new features](js-es6+-dynamic-client-side-scripting/faqs/es6+.md)
   * [Asynchronous](js-es6+-dynamic-client-side-scripting/faqs/asynchronous.md)
   * [Common pitfalls](js-es6+-dynamic-client-side-scripting/faqs/common-pitfalls.md)
-* [Coding](js-es6+-dynamic-client-side-scripting/coding/README.md)
+* [JavaScript Coding Part](js-es6+-dynamic-client-side-scripting/coding/README.md)
   * [Variables and Types](js-es6+-dynamic-client-side-scripting/coding/variables-and-types.md)
   * [Array Approaches](js-es6+-dynamic-client-side-scripting/coding/array-approaches.md)
   * [String Approaches](js-es6+-dynamic-client-side-scripting/coding/string-approaches.md)
