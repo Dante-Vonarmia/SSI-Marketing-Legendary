@@ -42,7 +42,7 @@ function factorialize2(num) {
 factorialize2(5);
 ```
 
-## Function throttle
+## Function throttle 🚧
 
 ```javascript
 /**
@@ -98,7 +98,7 @@ const developers = [
 // Map 🎯 //
 ////////////
 
-// Step 1: Imperative Approach
+// Method 1: Imperative Approach
 
 /**
  * ES6 array function which returns array of salaries 
@@ -113,8 +113,10 @@ const loopSalary = () => {
 }
 
 console.log(loopSalary(3000)); // [ 103000, 123000, 173000, 93000, 103000, 43000 ]
+```
 
-// Step 2: Declarative Approach
+```javascript
+// Method 2: Declarative Approach
 
 // Approach One
 const mapSalary = bonus => developers.map(dev => {
@@ -129,7 +131,10 @@ const mapSalaryAgain = bonus => developers.map(devs(bonus));
 
 console.log(mapSalaryAgain(3000)); // [ 103000, 123000, 173000, 93000, 103000, 43000 ]
 
-// Step 3: Map Dissection
+```
+
+```javascript
+// Method 3: Map Dissection
 
 /**
  * Chaining new map function to Array.prototype,
@@ -157,7 +162,7 @@ const myNewMapResult = developers.myNewMap(dev => {
 });
 
 // printing the result array
-console.log(myNewMapResult);
+console.log(myNewMapResult);  // [ 103000, 123000, 173000, 93000, 103000, 43000 ]
 ```
 
 ### `Reduce()`
@@ -167,7 +172,7 @@ console.log(myNewMapResult);
 // Reduce 🍔 //
 ///////////////
 
-// Step 1: Imperative Approach
+// Method 1: Imperative Approach
 
 /**
  * Defining function to calculate average
@@ -186,8 +191,10 @@ const averageSalaryPerYear = () => {
 }
 
 console.log(averageSalaryPerYear()); // 25833
+```
 
-// Step 2: Declarative Approach
+```javascript
+// Method 2: Declarative Approach
 
 /**
  * Using reduce to calculate the total salary,
@@ -205,8 +212,10 @@ const [totalSalary, totalExp] = averageSalExp;
 const averageSalPerYear = Math.floor(totalSalary / totalExp);
 
 console.log(averageSalPerYear); // 25833
+```
 
-// Step 3: Reduce Dissection
+```javascript
+// Method 3: Reduce Dissection
 
 /**
  * Reducer Implementation 
@@ -251,7 +260,7 @@ console.log(averageGainPerYear); // 25833
 // Filter 🔎 //
 ///////////////
 
-// Step 1: Imperative Approach
+// Method 1: Imperative Approach
 
 /**
  * Function to find developers of required experience.
@@ -272,8 +281,10 @@ const expDevelopers = requiredExp => {
 
 let testDevs = expDevelopers(3);
 console.log(testDevs.length); // 3 
+```
 
-// Step 2: Declarative Approach
+```javascript
+// Method 2: Declarative Approach
 
 /**
  * Function using filters to find min experience developers.
@@ -285,8 +296,10 @@ const expFilteredDevelopers = requiredExp => developers.filter(developer => {
 
 let filteredDevelopers = expFilteredDevelopers(3);
 console.log(filteredDevelopers.length); // 3
+```
 
-// Step 3: Filter Dissection
+```javascript
+// Method 3: Filter Dissection
 
 /**
  * Filter as array prototype method.
