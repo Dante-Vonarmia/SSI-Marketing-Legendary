@@ -80,6 +80,7 @@
 
 ## Behavior
 
+* [How to behave like a badass](behavior/how-to-behave-like-a-badass.md)
 * [Role and Responsibilities](behavior/role-and-responsibilities.md)
 * [Project and Development](behavior/project-and-development.md)
 
