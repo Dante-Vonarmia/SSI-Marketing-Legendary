@@ -75,7 +75,7 @@
 
 ## React - View Layer Revolution
 
-* [React Syntax 🚧](react-view-layer-revolution/untitled.md)
+* [React Syntax](react-view-layer-revolution/untitled.md)
 * [React Components 🚧](react-view-layer-revolution/react-components.md)
 * [React Advanced 🚧](react-view-layer-revolution/react-advanced.md)
 * [Redux 🚧](react-view-layer-revolution/redux.md)
