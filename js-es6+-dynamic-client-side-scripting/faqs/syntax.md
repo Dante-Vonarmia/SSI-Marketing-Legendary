@@ -1,3 +1,7 @@
+---
+description: Primitive data; Operator;
+---
+
 # Syntax
 
 ## What are the primitive data types in JS?

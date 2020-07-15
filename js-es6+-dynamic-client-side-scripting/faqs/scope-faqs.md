@@ -1,3 +1,7 @@
+---
+description: Function-scoped; Block-scoped; Hoisting; Lexical Scope
+---
+
 # Context and Scope FAQs
 
 ## Difference between var, const, let 
