@@ -1,12 +1,10 @@
 # Role and Responsibilities
 
-> The following questions will indicate how big the projects the candidate has been involved in
-
-
+> The following questions will indicate how big the projects the candidate has been involved in.
 
 ## What tools suite do you use for your project and why?
 
-* Good: "Webpack, React router and TypeScript"
+* Good: "Webpack, React router and TypeScript", "Try list some major features"
 * Bad: "Parcel, NextJS and JS++"
 
 ## What testing strategy do you use?
