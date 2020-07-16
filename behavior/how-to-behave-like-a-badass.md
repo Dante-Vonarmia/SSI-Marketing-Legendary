@@ -16,6 +16,8 @@ When answer specific question. Make sure you always stick to how did you impleme
 
 Describe a problem but shows how you benefit or learned from it \(take negative thing into positive\)
 
+The criteria of choosing the appropriate solution depends on the performance and UX.
+
 ## How to describe Project Experience \(Example\)
 
 > Examples of situation, task, action, result
