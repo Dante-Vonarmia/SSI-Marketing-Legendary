@@ -167,7 +167,7 @@ const findSumPairs = (arr, value) => {
   let sumsLookup = {};
   let output = [];
 
-  for (let i = 0; i < arr.length; i++) {
+  for (let i = 0, len = arr.length; i < len; i++) {
     let targetVal = value - arr[i];
 
     if (sumsLookup[targetVal]) {
