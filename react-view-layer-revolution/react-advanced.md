@@ -42,6 +42,8 @@ The concept of the [react profiler](https://reactjs.org/blog/2018/09/10/introduc
 
 * "I use Enzyme but only for generic components since I use UI testing mostly"
 
+
+
 > Advanced FAQs
 
 ## How to Apply Styles In React
