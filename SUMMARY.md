@@ -19,7 +19,7 @@
   * [Tabular information](html5-structuring-the-web/frequent-asked-interview-questions/tabular-information.md)
   * [Data representation](html5-structuring-the-web/frequent-asked-interview-questions/data-representation.md)
   * [Performance & SEO](html5-structuring-the-web/frequent-asked-interview-questions/performance-and-seo.md)
-* [HTML5 New Features \[unfinished\]](html5-structuring-the-web/html5-new-features/README.md)
+* [HTML5 New Features 🚧](html5-structuring-the-web/html5-new-features/README.md)
   * [Semantic Tags](html5-structuring-the-web/html5-new-features/semantic-tags.md)
   * [Offline and storage](html5-structuring-the-web/html5-new-features/offline-and-storage.md)
   * [Multimedia](html5-structuring-the-web/html5-new-features/multimedia.md)
