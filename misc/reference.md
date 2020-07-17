@@ -59,7 +59,7 @@ I strongly suggest you type, debug and test code instead of "read" tons of books
 * React: [Official Document](https://reactjs.org)
 * Redux: [Official Document](https://redux.js.org)
 * Design Patterns: 《[Learning JavaScript Design Patterns](https://addyosmani.com/resources/essentialjsdesignpatterns/book/)》
-* Materials and Collections: [Codrops](https://tympanus.net/codrops/)
+* Materials and Collections: [Codrops](https://tympanus.net/codrops/), [Tutorialzine](https://tutorialzine.com/articles), 
 
 ## Helpful YouTube Channel
 

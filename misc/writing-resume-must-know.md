@@ -36,9 +36,9 @@
    * Confidence
    * Ask for feedback or next round
 4. About support
-   * Company offer support during the interview
-   * Record and send back questions
-   * For the rest: help or shut up
+   * Company\(SSI\) will offer support during the interview
+   * All students who attend the interview could record and send back questions
+   * _For the rest: help or shut up_
 
 **Their goal**
 
