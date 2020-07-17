@@ -4,11 +4,21 @@ description: All folks matter
 
 # Contributors List
 
+## YES, we have slack!
+
+#### Click to join 👉🏻 [Slack](https://join.slack.com/t/ssiuitraining/shared_invite/zt-f3l19teq-dycRfzKSOUhSRu_b9~63Iw)
+
+> All contributor here. Order in joined date.
+
+❤️ Jia Qi Li - [https://github.com/jiackie](https://github.com/jiackie)
+
 Di Sheng Wang - [https://github.com/w-disheng](https://github.com/w-disheng)
 
-Jia Qi Li - [https://github.com/jiackie](https://github.com/jiackie)
+Peng Jiang - [https://github.com/PengJiang0528](https://github.com/PengJiang0528)
 
-> Add us on [Slack](https://join.slack.com/t/ssiuitraining/shared_invite/zt-f3l19teq-dycRfzKSOUhSRu_b9~63Iw)
+
+
+
 
 
 
