@@ -18,6 +18,10 @@
 
 ## React Assignment2 \(Multiple Choices\):
 
+### Rebuild JavaScript App into React App
+
+{% embed url="https://dante-vonarmia.github.io/SSI-Assignment\_Meal\_Finder/" %}
+
 {% embed url="https://dante-vonarmia.github.io/SSI-Assignment\_Exchange\_Rate\_Calculator/" %}
 
 {% embed url="https://dante-vonarmia.github.io/expense-tracker/" %}
