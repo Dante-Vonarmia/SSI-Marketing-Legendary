@@ -8,7 +8,7 @@ description: Forged by Dante Von Alcatraz (1989 - )
 
 > One man might go fast. One team goes further.
 
-An Empire shall stands for the power,  the authority, and the invincibility.  
+An Empire shall stand for the power,  the authority, and the invincibility.  
 The summation of the highest wisdom and technology.  
 The unification.   
 Aim on the same targets.
@@ -26,8 +26,4 @@ The only three factors you shall be marked in mind before you start coding is:
 
 These compose the trinity of PROGRAMMING.  
 它们构成了编程界的3大基本维度。
-
-{% hint style="info" %}
-And what you're looking for is simply a contractor level marketing interview collection.
-{% endhint %}
 
