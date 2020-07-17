@@ -1,7 +1,7 @@
 # Table of contents
 
 * [Cover](README.md)
-* [Cover Two 🚧](cover-two.md)
+* [An essential programming hypothesis 🚧](cover-two.md)
 * [Before Time](before-time.md)
 * [Content](content.md)
 

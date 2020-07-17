@@ -135,9 +135,13 @@ It helps to get the specific title step by step without deviation.
 
 ### **Work Flow - Agile Development**
 
-#### Collect requirements / **Task’s Management**
+#### Collect requirements
 
-#### Brain storm & **Notification & Communication**
+#### Brainstorm
+
+#### **Notification /** **Task’s Management**
+
+#### **Communication**
 
 [Slack](https://slack.com) is one of the most efficient, famous and authorized chatting tool in occupation environment. Any further discussion would be only access through it.
 
