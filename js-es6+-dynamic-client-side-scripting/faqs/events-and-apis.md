@@ -2,7 +2,7 @@
 description: DOM events / BOM / JSON / Web APIs / RESTful APIs
 ---
 
-# Events and APIs
+# Events and APIs 🚧
 
 ## What is Cross-Origin Resource Sharing \(CORS\)? And how does it works?
 

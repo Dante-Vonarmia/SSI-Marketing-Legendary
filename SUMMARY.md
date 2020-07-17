@@ -60,7 +60,7 @@
   * [Core Mechanism](js-es6+-dynamic-client-side-scripting/faqs/basic-concept.md)
   * [Context and Scope FAQs](js-es6+-dynamic-client-side-scripting/faqs/scope-faqs.md)
   * [Syntax](js-es6+-dynamic-client-side-scripting/faqs/syntax.md)
-  * [Events and APIs](js-es6+-dynamic-client-side-scripting/faqs/events-and-apis.md)
+  * [Events and APIs 🚧](js-es6+-dynamic-client-side-scripting/faqs/events-and-apis.md)
   * [Function & Functional Programming](js-es6+-dynamic-client-side-scripting/faqs/functional-programming.md)
   * [ES6+ new features](js-es6+-dynamic-client-side-scripting/faqs/es6+.md)
   * [Asynchronous](js-es6+-dynamic-client-side-scripting/faqs/asynchronous.md)

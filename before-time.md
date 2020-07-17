@@ -135,27 +135,32 @@ It helps to get the specific title step by step without deviation.
 
 ### **Work Flow - Agile Development**
 
-#### Collect requirements
+#### Collect requirements / Brainstorm
 
-#### Brainstorm
+* You don’t need to know everything, nor all the existing frameworks. The most significant thing is to have a good base. Know the language in depth before starting with a Framework and learn fundamental things like the [**SOLID** ](https://en.wikipedia.org/wiki/SOLID)principles or how to write clean code.
 
 #### **Notification /** **Task’s Management**
 
 #### **Communication**
 
-[Slack](https://slack.com) is one of the most efficient, famous and authorized chatting tool in occupation environment. Any further discussion would be only access through it.
 
-An outstanding staff is never about how flawless himself/herself. It’s about the team work. It’s about letting people know what’s your progress that you’re working on and how do they cooperate with you. This is why we use tasks management such as Notion or Jira.
 
 #### Design prototype **/** Prototype Tool
 
+* [**YAGNI** principle](https://en.wikipedia.org/wiki/You_aren%27t_gonna_need_it): don’t codify more than you’ve been asked to. Don’t anticipate the future, and just create something that works as soon as possible. Code only the necessary parts to solve the current problem.
+* [**KISS**](https://en.wikipedia.org/wiki/KISS_principle): “Keep it simple, stupid” or “keep it stupid simple” is a design principle that states that most systems work best if they are kept simple rather than made complicated. And while this is logical, it is sometimes difficult to achieve.
+
 #### Mock demonstration
 
-#### Web designing
+* It is good to discuss and try some thing new here. Never try to change anything directly on codes.
 
 #### Project foundation setup
 
 #### TDD + Coding + BDD / Coding Environment
+
+* Take the code and break down big pieces of code into small functions.
+
+
 
 #### Testing Tool / Pressure Testing, A/B Testing, Compatibility Testing....
 
