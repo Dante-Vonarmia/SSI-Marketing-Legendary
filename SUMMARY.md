@@ -90,7 +90,7 @@
 
 ## Misc
 
-* [Writing Resume Must Know](misc/writing-resume-must-know.md)
+* [Preparation for the interview](misc/writing-resume-must-know.md)
 * [Contributors List](misc/contributors-list.md)
 * [Reference](misc/reference.md)
 

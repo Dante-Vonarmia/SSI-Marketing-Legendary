@@ -1,10 +1,6 @@
-# Writing Resume Must Know
+# Preparation for the interview
 
-
-
-## Preparation for the interview
-
-### Write Resume
+## Write Resume
 
 **General Info**
 
@@ -27,7 +23,7 @@
 4. 公司在不同的州或者地方，要查清楚地址
 5. 高频强调你的主要技能和贡献
 
-### Marketing Interview
+## Marketing Interview
 
 1. Interview Mock \(see Schedule\)
 2. About Vendor Call
