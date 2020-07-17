@@ -1,4 +1,4 @@
-# React Components Best Practices 🚧
+# React Best Practices 🚧
 
 {% embed url="https://blog.bitsrc.io/building-a-react-autocomplete-component-from-scratch-b78105324f4c" %}
 

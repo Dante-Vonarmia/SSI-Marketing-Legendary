@@ -80,7 +80,7 @@
 * [React Advanced](react-view-layer-revolution/react-advanced.md)
 * [React Native 🚧](react-view-layer-revolution/react-native.md)
 * [Redux](react-view-layer-revolution/redux.md)
-* [React Components Best Practices 🚧](react-view-layer-revolution/react-components-best-practices.md)
+* [React Best Practices 🚧](react-view-layer-revolution/react-components-best-practices.md)
 
 ## Behavior
 
