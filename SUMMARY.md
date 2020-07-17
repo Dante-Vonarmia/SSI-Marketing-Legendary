@@ -87,6 +87,7 @@
 * [How to behave like a badass](behavior/how-to-behave-like-a-badass.md)
 * [Role and Responsibilities](behavior/role-and-responsibilities.md)
 * [Project and Development](behavior/project-and-development.md)
+* [Git commands and Version Control 🚧](behavior/git-commands-and-version-control.md)
 
 ## Misc
 
