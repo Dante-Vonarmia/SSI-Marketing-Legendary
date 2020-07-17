@@ -15,8 +15,8 @@ _"As things come too easy, then people won't cherish them. Cuz there is somethin
 
 ## Be a Programmer - Principle
 
-Let's not rush to diving in some code.   
-There are some inevitable rules that I have been followed for many years, and I hope that you remember these rules as they will be beneficial.
+Let's not rush to diving in some "code".   
+There are some inevitable rules that I have been followed for many years, and I hope that you could remember these rules because they are extremely beneficial.
 
 ### **Will the Cycle, be unbroken**
 
@@ -66,7 +66,7 @@ It helps to get the specific title step by step without deviation.
   * Templates
   * OpenGL
   * DirectX
-  * Game Engine
+  * Game Engine Architecture
   * GoF Design Pattern
 * Javascript ES6
   * Functional Programming
