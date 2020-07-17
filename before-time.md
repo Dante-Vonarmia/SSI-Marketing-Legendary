@@ -47,7 +47,7 @@ _Why we use it? Can we improve it? \(The future\)_
 ### **Road-map**
 
 A well planned learning path is essential for a systematic study.  
-It helps to get the specific purpose title step by step without deviation.  
+It helps to get the specific title step by step without deviation.  
 [\(see here\)](https://roadmap.sh)
 
 #### **The author's skills tree**
