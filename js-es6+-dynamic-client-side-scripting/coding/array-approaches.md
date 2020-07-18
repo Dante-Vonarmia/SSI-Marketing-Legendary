@@ -266,6 +266,25 @@ console.log(Kth_greatest_in_array([1, 2, 6, 4, 5], 1))
 // [1, 2, 6, 4, 5], 3 => 4;
 ```
 
+```javascript
+// Improved version
+// Solved issue that the array might conatain the same value
+function Kth_greatest_in_array_object_solution(arr, k) {
+	if (k > arr.length && k <= 0)
+		return;
+
+	let rst = {};
+
+	for (idx of arr) {
+		rst[arr[idx - 1]] = null;
+	}
+
+	return Object.keys(rst)[Object.keys(rst).length-k]
+}
+
+console.log(Kth_greatest_in_array_object_solution([1, 2, 6, 6, 4, 5], 1))
+```
+
 ## Meandering Array
 
 ```javascript
