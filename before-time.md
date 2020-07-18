@@ -141,7 +141,12 @@ It helps to get the specific title step by step without deviation.
 * Don’t overthink it.
 * Practice makes perfect.
 
-#### **Notification /** **Task’s Management**
+#### **Notification /** **Task Management**
+
+* It’s all about feedback.
+* \*\*\*\*[**Slack**](https://slack.com) **brings the team together, wherever you are.**
+* Task Management Tool, not only help you maintain your works, but also record everything you might need in the future.
+* You can also regard this as a proof or your promotion. 💰
 
 #### **Communication**
 
