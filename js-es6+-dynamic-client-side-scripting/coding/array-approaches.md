@@ -76,6 +76,7 @@ let rotate = function(nums, k) {
     }
 };
 
+// Solution: HOF, hacking way
 let rotate = function(nums, k) {
     k %= nums.length
     nums.unshift(...nums.splice(nums.length - k, k));
