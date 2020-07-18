@@ -217,7 +217,9 @@ It helps to get the specific title step by step without deviation.
 
 ## Start Interview Questions
 
-In our interview question, we cover: HTML5, CSS3, JavaScript, React, and common Behavior questions. You don't have to go through all of them but remember whenever you feel like to do some self-test. This is exactly the right place for you. And it is always encouraged to contribute your own questions to us.
+In our interview question, we'll cover:   
+**HTML5, CSS3, JavaScript, React, React Native, and common Behavior questions.**   
+You don't have to go through all of these questions, but remember whenever you feel like to challenge, this is exactly the right place for you. And it is always encouraged to [contribute](misc/contributors-list.md) your own questions to us.
 
 Lets' build our empire together!
 
