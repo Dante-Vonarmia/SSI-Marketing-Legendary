@@ -269,7 +269,7 @@ console.log(Kth_greatest_in_array([1, 2, 6, 4, 5], 1))
 
 ```javascript
 // Improved version
-// Solved issue that the array might conatain the same value
+// Solved issue that the array might contain the same value
 function Kth_greatest_in_array_object_solution(arr, k) {
 	if (k > arr.length && k <= 0)
 		return;
