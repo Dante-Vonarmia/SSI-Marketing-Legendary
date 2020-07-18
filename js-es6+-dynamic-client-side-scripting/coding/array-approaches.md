@@ -208,8 +208,9 @@ function countOfElement(arr, N) {
 }
 // returns 6
 countOfElement([3, 4, 2, 3, 2, 2, 2, 2, 3, 2], 2); // Output:​​​​​ { element: 2, times: 6 }​​​​​
+```
 
-
+```javascript
 // Find out the most Occurred number
 let arr = [1,2,2,3,4,4,4,5,5,5,5,5,5,6,7,8,8,9];
 
