@@ -274,15 +274,14 @@ function Kth_greatest_in_array_object_solution(arr, k) {
 		return;
 
 	let rst = {};
-
 	for (idx of arr) {
-		rst[arr[idx - 1]] = null;
+		rst[idx] = null;
 	}
 
 	return Object.keys(rst)[Object.keys(rst).length-k]
 }
 
-console.log(Kth_greatest_in_array_object_solution([1, 2, 6, 6, 4, 5], 1))
+console.log(Kth_greatest_in_array_object_solution([1, 2, 6, 6, 6, 6, 4, 5, 5, 2, 1], 2))
 ```
 
 ## Meandering Array
