@@ -138,37 +138,63 @@ It helps to get the specific title step by step without deviation.
 #### Collect requirements / Brainstorm
 
 * You don’t need to know everything, nor all the existing frameworks. The most significant thing is to have a good base. Know the language in depth before starting with a Framework and learn fundamental things like the [**SOLID** ](https://en.wikipedia.org/wiki/SOLID)principles or how to write clean code.
+* Don’t overthink it.
+* Practice makes perfect.
 
 #### **Notification /** **Task’s Management**
 
 #### **Communication**
 
-
+* **Ask for help when you need it. Don’t lose time.**
+* One man goes fast, one group of people can go further.
 
 #### Design prototype **/** Prototype Tool
 
 * [**YAGNI** principle](https://en.wikipedia.org/wiki/You_aren%27t_gonna_need_it): don’t codify more than you’ve been asked to. Don’t anticipate the future, and just create something that works as soon as possible. Code only the necessary parts to solve the current problem.
 * [**KISS**](https://en.wikipedia.org/wiki/KISS_principle): “Keep it simple, stupid” or “keep it stupid simple” is a design principle that states that most systems work best if they are kept simple rather than made complicated. And while this is logical, it is sometimes difficult to achieve.
+* Don’t Reinvent The Wheel.
+* Users are not technical people. Think about it when you develop your UI.
 
 #### Mock demonstration
 
 * It is good to discuss and try some thing new here. Never try to change anything directly on codes.
+* When developing a web app, think mobile-first and the associated power and bandwidth restrictions.
 
 #### Project foundation setup
 
+* Know your development environment and invest in a powerful enough one
+* Use integration tools and automate as much as you can.
+* **Follow the documented standards.**
+* Be consistent when coding. If you use a style, always use the same one. If you work with more people, use the same style with all the team.
+
 #### TDD + Coding + BDD / Coding Environment
 
+* Solve the problem first and then write the code. Don’t start coding without knowing what to do.
 * Take the code and break down big pieces of code into small functions.
-
-
-
-#### Testing Tool / Pressure Testing, A/B Testing, Compatibility Testing....
+* If you’re with a problem or a bug too long, walk away, and come back to it later.
+* Don’t memorize code, instead understand the logic.
+* **Your code is the best documentation.**
+* Design patterns are solutions to common problems in software design. Each pattern is like a blueprint that you can customize to solve a common design problem in your code.
+* Learn to write useful tests and learn to do [**TDD**](https://en.wikipedia.org/wiki/Test-driven_development). TDD is a software development process that relies on the repetition of a very short development cycle: Write a test, run all tests and see if the new one fails, write some code, run tests, refactor code, repeat.
+* **Testing Tool / Pressure Testing, A/B Testing, Compatibility Testing....**
 
 #### Review code + Integrate all modular
 
+* Never gives up, in the end, in one way or another you’ll resolve it. There are bad days, but they’ll pass.
+* Don’t optimize or refactor prematurely. It is more important to have a minimum viable product as soon as possible.
+* **YOU SHOULD DO CODE REViEWS.** Why? Because they increase code quality and reduce defect rate.
+
 #### Build & Release / Publish and Version release
 
+* Make sure you are familiar with the common operation of Git.
+* Use always a source control system like Github or bitbucket and do small and frequent git commits.
+
 #### Feedback and Improvement
+
+* Rest, Rest, and Rest. The best way to solve a problem is to have a restful mind.
+* Refactor -Test-Refactor. [Refactoring](https://refactoring.com/) is a technique for restructuring an existing code, altering, and improving its internal structure without changing its external behavior.
+* Don’t stop learning, but more than new languages or frameworks, focus on the basics of software development.
+* Although sometimes the comments can help you, don’t pay too much attention to them. They’re probably outdated.
 
 ## Standards
 
