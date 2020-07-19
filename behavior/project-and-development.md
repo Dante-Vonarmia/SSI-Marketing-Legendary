@@ -1,5 +1,11 @@
 # Project and Development
 
+## Major Coding Standard
+
+{% embed url="https://codeguide.co" %}
+
+{% embed url="https://github.com/airbnb/javascript" %}
+
 ## If your client tells you that the website you built for them is running slow, how do you triage this to understand the root cause?
 
 #### A: There are several reason in different ways could cause the reasons:
