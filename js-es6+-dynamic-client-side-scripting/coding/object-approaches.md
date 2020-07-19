@@ -108,6 +108,12 @@ const flattenObject = (obj, keyName) => {
     }
   });
 };
+
+flattenObject(user, 'user')
 console.log(flattendObj);
 ```
+
+## How to Check if Object is Empty in JavaScript <a id="ce2b"></a>
+
+
 
