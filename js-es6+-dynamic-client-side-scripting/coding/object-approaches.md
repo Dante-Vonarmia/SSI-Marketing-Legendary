@@ -115,5 +115,20 @@ console.log(flattendObj);
 
 ## How to Check if Object is Empty in JavaScript <a id="ce2b"></a>
 
+Here’s a Code Recipe to check if an object is empty or not.
 
+```javascript
+const empty = {};
+/* -------------------------
+  Plain JS for Newer Browser
+----------------------------*/
+Object.keys(empty).length === 0 && empty.constructor === Object // true
+
+/* -------------------------
+  Lodash for Older Browser
+----------------------------*/
+_.isEmpty(empty) // true
+```
+
+{% embed url="https://medium.com/@samanthaming/how-to-check-if-object-is-empty-in-javascript-aeab2674eeb1" %}
 
