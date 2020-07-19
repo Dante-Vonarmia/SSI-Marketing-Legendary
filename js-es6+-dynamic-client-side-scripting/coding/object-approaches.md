@@ -60,3 +60,54 @@ export const isObjectEqual = (a, b) => {
 }
 ```
 
+## Flatten a JavaScript Object
+
+Flattening deeply nested object can be easily achieved by using recursive technique.
+
+```javascript
+// Sample input
+let user = {
+  name: "Vishal",
+  address: {
+    primary: {
+      house: "109",
+      street: {             
+        main: "21",
+        cross: "32"
+      }
+    }
+  }
+};
+
+//output
+{
+  user_name: "Vishal",
+  user_address_primary_house: "109",
+  user_address_primary_street_main: "21",
+  user_address_primary_street_cross: "32",
+}
+```
+
+#### Algorithms:
+
+1. Iterate over keys of the object
+2. Append child key name into the parent key name
+3. If the child key's value is an object again call the same function
+4. Else assign key to the new value
+
+```javascript
+let flattendObj = {};
+const flattenObject = (obj, keyName) => {
+  Object.keys(obj).forEach(key => {
+    let newKey = `${keyName}_${key}` 
+    if (typeof obj[key] === "object") {
+      // calling the function again
+      flattenObject(obj[key], newKey);
+    } else {
+      flattendObj[newKey] = obj[key];
+    }
+  });
+};
+console.log(flattendObj);
+```
+

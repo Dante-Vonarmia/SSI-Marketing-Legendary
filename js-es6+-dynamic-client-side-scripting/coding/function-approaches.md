@@ -42,21 +42,42 @@ function factorialize2(num) {
 factorialize2(5);
 ```
 
-## Function throttle 🚧
+## Function debounce
+
+Debouncing is a very good to have feature, when user is expected to do a particular action very very quickly, such as typing a product name for searching in an e-commerce site.
+
+Imagine on each key press the client code makes and API call for fetching the suggestions to be shown in the search result, these are so many api calls, to avoid this situation of making so many api call we can implement debouncing.
+
+#### Debounce Algorithms:
+
+1. Call a function on user action after a delay time
+2. Clear the previous delay time on the next action if the action is performed before that delay time
+3. Make use of `setTimeout`
 
 ```javascript
-/**
- * Function throttle
- * @param  {Function} fn: function to execute
- * @param  {number} time: Timestamp
- * @param  {number} interval: interval time
- */
-export const debouncer = (fn, time, interval = 200) => {
-    if (time - (window.debounceTimestamp || 0) > interval) {
-        fn && fn();
-        window.debounceTimestamp = time;
-    }
-}
+// debounce logic
+let timer = null;
+const debounce = (actionHandler, delay) => {
+  if (timer) {
+    // clearing timer
+    clearInterval(timer);
+  }
+  timer = setTimeout(actionHandler, delay);
+};
+
+// some costly function
+const fetchDataFromAPI = () => {
+
+  //here you can put your fetch logic
+
+  console.log("fetchData");
+};
+
+// event binding to input
+const elem = document.getElementById("sample-id");
+elem.addEventListener("input", e => {
+  debounce(fetchDataFromAPI, 1000);
+});
 ```
 
 ## Rebuilt - HOF - Prototype ver.
