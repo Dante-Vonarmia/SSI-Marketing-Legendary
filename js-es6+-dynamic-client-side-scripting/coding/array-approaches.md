@@ -99,6 +99,8 @@ const findDupes = arr => {
 	for (let i = 0, len = arr.length; i < len; i++) {
 		if (!observed[arr[i]]) {
 			observed[arr[i]] = arr[i];
+		} else {
+			console.log(arr[i]);
 		}
 	}
 }
