@@ -36,7 +36,7 @@ Note that these two 2 approaches are not exclusive.
 
 Making a website responsive means the some elements will respond by adapting its size or other functionality according to the device's screen size, typically the viewport width, through CSS media queries, for example, making the font size smaller on smaller devices.
 
-```text
+```css
 @media (min-width: 601px) {
   .my-class {
     font-size: 24px;
@@ -52,7 +52,7 @@ Making a website responsive means the some elements will respond by adapting its
 
 A mobile-first strategy is also responsive, however it agrees we should default and define all the styles for mobile devices, and only add specific responsive rules to other devices later. Following the previous example:
 
-```text
+```css
 .my-class {
   font-size: 12px;
 }
