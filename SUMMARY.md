@@ -100,5 +100,5 @@
 
 ## PPT notes
 
-* [Lecture - Prerequisite](ppt-notes/lecture-prerequisite.md)
+* [Lecture - Prerequisite 🚧](ppt-notes/lecture-prerequisite.md)
 
