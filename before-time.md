@@ -50,6 +50,8 @@ A well planned learning path is essential for a systematic study.
 It helps to get the specific title step by step without deviation.  
 [\(see here\)](https://roadmap.sh)
 
+Explanation: [Complete Learning Path](https://levelup.gitconnected.com/the-2020-web-developer-roadmap-76503ddfb327)
+
 #### **The author's skills tree**
 
 {% tabs %}
