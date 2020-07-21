@@ -98,3 +98,7 @@
 * [Contributors List](misc/contributors-list.md)
 * [Reference](misc/reference.md)
 
+## PPT notes
+
+* [Lecture - Prerequisite](ppt-notes/lecture-prerequisite.md)
+
