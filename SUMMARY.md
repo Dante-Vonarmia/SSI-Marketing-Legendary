@@ -103,7 +103,8 @@
 * [Lecture - Prerequisite 🚧](ppt-notes/lecture-prerequisite.md)
 * [Lecture - HTML5 🚧](ppt-notes/lecture-html5.md)
 * [Lecture - CSS3 🚧](ppt-notes/lecture-css3.md)
-* [Lecture - JavaScript](ppt-notes/lecture-javascript.md)
-* [Lecture - React](ppt-notes/lecture-react.md)
-* [Lecture - React Native](ppt-notes/lecture-react-native.md)
+* [Lecture - JavaScript 🚧](ppt-notes/lecture-javascript.md)
+* [Lecture - React 🚧](ppt-notes/lecture-react.md)
+* [Lecture - React Native 🚧](ppt-notes/lecture-react-native.md)
+* [The Mock Interview](ppt-notes/the-mock-interview.md)
 

@@ -1,2 +1,2 @@
-# Lecture - JavaScript
+# Lecture - JavaScript 🚧
 
