@@ -413,9 +413,9 @@ function myReduce(arr, reducer, initialValue) {
 }
 
 const sum = myReduce(arr, sumReducer);
-console.log(sum); // prints 10
+console.log(sum); // prints 15
 const sum2 = myReduce(arr, sumReducer, 5);
-console.log(sum2); // prints 15
+console.log(sum2); // prints 20
 ```
 
 ### `filter()`
