@@ -8,7 +8,7 @@ description: All folks matter
 
 #### Click to join 👉🏻 [Slack](https://join.slack.com/t/ssiuitraining/shared_invite/zt-f3l19teq-dycRfzKSOUhSRu_b9~63Iw)
 
-> All contributor here. Order in joined date.
+> Order in joined date
 
 ❤️ Jia Qi Li - [https://github.com/jiackie](https://github.com/jiackie)
 
