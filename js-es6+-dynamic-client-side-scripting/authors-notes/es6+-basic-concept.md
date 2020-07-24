@@ -450,7 +450,7 @@ Native constructor refers to the built-in constructor of the language, usually u
 
 * Syntactically
   * The Generator function is a state machine that encapsulates multiple internal states.
-  * Executing the Generator function returns a Iteration object.
+  * Executing the Generator function returns an Iteration object.
 * Formally
   * The Generator function is a normal function, but has two characteristics.
   * First, there is an asterisk between the function keyword and the function name.
