@@ -308,20 +308,19 @@ export const getArrRepeat = (arr1, arr2) => arr1.filter((item, index) => arr2.in
 
 ## Flattening multidimensional Arrays in JavaScript
 
+#### Recursion Solution
+
 ```javascript
-let res = [];
-
-function flatArr(element) {
-  if (element && typeof element === 'number') {
-    res.push(element)
-  } else {
-    for(let i = 0, len = element.length; i < len; i++) {
-      flatArr(element[i])
-    }
-  }
+function flatten(arr) {
+   return arr.reduce((acc, val) => Array.isArray(val) ? acc.concat(flatten(val)) : acc.concat(val), []);
 }
+flatten([1, 2, [3, 4, [5, 6, [7, 8, [9, 10]]]]]) // [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+```
 
-flatArr([1, 2, [3, 4, [5, 6, [7, 8, [9, 10]]]]])
-console.log(res);
+#### ES6 HOF Solution \(Infinitely Nested Arrays\)
+
+```javascript
+const veryDeep = [[1, [2, 2, [3,[4,[5,[6]]]]], 1]];
+veryDeep.flat(Infinity); // [1, 2, 2, 3, 4, 5, 6, 1]
 ```
 
