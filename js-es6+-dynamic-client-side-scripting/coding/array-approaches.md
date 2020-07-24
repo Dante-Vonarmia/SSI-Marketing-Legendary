@@ -306,3 +306,47 @@ console.log(removeDupes(arr)); // Output: [1, 3, 5]
 export const getArrRepeat = (arr1, arr2) => arr1.filter((item, index) => arr2.includes(item))
 ```
 
+## Flattening multidimensional Arrays in JavaScript
+
+Given this array:
+
+```javascript
+let myArray = [[1, 2],[3, 4, 5], [6, 7, 8, 9]];
+```
+
+#### Solution 1: Using [`concat()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/concat) and [`apply()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/apply) <a id="solution-1-using-concat-and-apply"></a>
+
+```javascript
+let myNewArray = [].concat.apply([], myArray);
+// [1, 2, 3, 4, 5, 6, 7, 8, 9]
+```
+
+#### Solution 2: Using [`reduce()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce#Flatten_an_array_of_arrays) <a id="solution-2-using-reduce"></a>
+
+```javascript
+let myNewArray = myArray.reduce(function(prev, curr) {
+  return prev.concat(curr);
+});
+// [1, 2, 3, 4, 5, 6, 7, 8, 9]
+```
+
+#### Solution 3: <a id="solution-3"></a>
+
+```javascript
+let myNewArray3 = [];
+for (let i = 0; i < myArray.length; ++i) {
+  for (let j = 0; j < myArray[i].length; ++j)
+    myNewArray3.push(myArray[i][j]);
+}
+console.log(myNewArray3);
+// [1, 2, 3, 4, 5, 6, 7, 8, 9]
+```
+
+#### Solution 4: Using [spread operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_operator) in ES6 <a id="solution-4-using-spread-operator-in-es6"></a>
+
+```javascript
+let myNewArray4 = [].concat(...myArray);
+console.log(myNewArray4);
+// [1, 2, 3, 4, 5, 6, 7, 8, 9]
+```
+
