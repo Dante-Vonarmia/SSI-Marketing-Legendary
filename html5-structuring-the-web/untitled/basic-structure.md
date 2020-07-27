@@ -84,7 +84,7 @@ There are meta tags beyond just _description_ and _keywords_, though those two a
 * **Viewport** – In this mobile world, you should be specifying the viewport. If you don’t, you run the risk of having a poor mobile experience — the [Google PageSpeed Insights Tool will tell you more about it](https://developers.google.com/speed/docs/insights/ConfigureViewport). The standard tag is:
 
 ```markup
-<meta name=viewport content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 ```
 
 ## Explain Document Flow of HTML.
