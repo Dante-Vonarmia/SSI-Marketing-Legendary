@@ -16,7 +16,7 @@ Di Sheng Wang - [https://github.com/w-disheng](https://github.com/w-disheng)
 
 Peng Jiang - [https://github.com/PengJiang0528](https://github.com/PengJiang0528)
 
-Lindsay Lin - 
+Lindsay Lin - [https://github.com/TT0-GIT](https://github.com/TT0-GIT)
 
 Kezhen Yang - [https://github.com/KezhenY](https://github.com/KezhenY)
 
