@@ -33,7 +33,9 @@ All the above-mentioned technologies are key-value storage mechanisms on the cli
 | Capacity \(per domain\) | 4kb | 5MB | 5MB |
 | Accessibility | Any window | Any window | Same tab |
 
-_Note: If the user decides to clear browsing data via whatever mechanism provided by the browser, this will clear out any `cookie`, `localStorage`, or `sessionStorage` stored. It's important to keep this in mind when designing for local persistance, especially when comparing to alternatives such as server side storing in a database or similar \(which of course will persist despite user actions\)._
+{% hint style="info" %}
+_Note: If the user decides to clear browsing data via whatever mechanism provided by the browser, this will clear out any `cookie`, `localStorage`, or `sessionStorage` stored. It's important to keep this in mind when designing for local persistence, especially when comparing to alternatives such as server side storing in a database or similar \(which of course will persist despite user actions\)._
+{% endhint %}
 
 ## What is the Application Cache in HTML5 and why it is used?
 
