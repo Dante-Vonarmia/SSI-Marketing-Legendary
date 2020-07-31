@@ -71,6 +71,7 @@
   * [String Approaches](js-es6+-dynamic-client-side-scripting/coding/string-approaches.md)
   * [Object Approaches](js-es6+-dynamic-client-side-scripting/coding/object-approaches.md)
   * [Function Approaches](js-es6+-dynamic-client-side-scripting/coding/function-approaches.md)
+  * [Misc](js-es6+-dynamic-client-side-scripting/coding/misc.md)
   * [BOM / DOM related](js-es6+-dynamic-client-side-scripting/coding/bom-dom-related.md)
   * [Tips: Short and clean code 🚧](js-es6+-dynamic-client-side-scripting/coding/tips-short-and-clean-code.md)
   * [Algorithm Methodology 🚧](js-es6+-dynamic-client-side-scripting/coding/algorithm-methodology.md)
