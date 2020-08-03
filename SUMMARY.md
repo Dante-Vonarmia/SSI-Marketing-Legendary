@@ -1,7 +1,6 @@
 # Table of contents
 
 * [Cover](README.md)
-* [An essential programming hypothesis 🚧](cover-two.md)
 * [Before Time](before-time.md)
 * [Content](content.md)
 
@@ -95,6 +94,7 @@
 ## Misc
 
 * [Assignment Lists](misc/assignment-lists.md)
+* [An essential programming hypothesis 🚧](misc/cover-two.md)
 * [Preparation for the interview](misc/writing-resume-must-know.md)
 * [The Mock Interview](misc/the-mock-interview.md)
 * [Contributors List](misc/contributors-list.md)
