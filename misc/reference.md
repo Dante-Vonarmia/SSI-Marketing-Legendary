@@ -49,6 +49,7 @@ Check out these frequently used websites and materials.
 \(!! Do me a favor. No W3Schools. It's not the [W3C.org](http://W3C.org).\)
 {% endhint %}
 
+* JavaScript Tutorial: [Tutorial](https://www.javascripttutorial.net)
 * ECMAScript 6: [JavaScript ES6+](https://es6.ruanyifeng.com)
 * JavaScript Advanced: [JavaScript Garden](https://bonsaiden.github.io/JavaScript-Garden/)
 
