@@ -220,7 +220,9 @@ function findLongestWord1(str) {
 	return result;
 }
 findLongestWord1("The quick brown fox jumped over the lazy dog");
+```
 
+```javascript
 /////////////////////////////////////////////////////
 // 2. Find the Longest Word With the `sort()` Method //
 /////////////////////////////////////////////////////
@@ -230,7 +232,9 @@ function findLongestWord2(str) {
 	return longestWord.shift();
 }
 findLongestWord2("The quick brown fox jumped over the lazy dog");
+```
 
+```javascript
 ///////////////////////////////////////////////////////
 // 3. Find the Longest Word With the `reduce()` Method //
 ///////////////////////////////////////////////////////
@@ -256,7 +260,9 @@ function palindrome(str) {
   return reverseStr === lowRegStr;
 }
 palindrome("A man, a plan, a canal. Panama"); // Output: true
+```
 
+```javascript
 //////////////////////////////////////////////
 // 2. Check for Palindromes With a FOR loop //
 //////////////////////////////////////////////
@@ -273,8 +279,9 @@ function palindrome2(str) {
  return true;
 }
 palindrome2("A man, a plan, a canal. Panama"); // Output: true
+```
 
-
+```javascript
 ///////////////////////
 // 3. JS HOF methods //
 ///////////////////////
@@ -298,7 +305,9 @@ function reverseString1(str) {
 	return str.split("").reverse().join("");
 }
 reverseString1("hello");
+```
 
+```javascript
 //////////////////////////////////////////////////////
 // 2. Reverse a String With a Decrementing For Loop //
 //////////////////////////////////////////////////////
@@ -310,7 +319,9 @@ function reverseString2(str) {
 	return newString;
 }
 reverseString2('hello');
+```
 
+```javascript
 ////////////////////////////////////////
 // 3. Reverse a String With Recursion //
 ////////////////////////////////////////
