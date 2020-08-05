@@ -324,3 +324,28 @@ const veryDeep = [[1, [2, 2, [3,[4,[5,[6]]]]], 1]];
 veryDeep.flat(Infinity); // [1, 2, 2, 3, 4, 5, 6, 1]
 ```
 
+## Chunk
+
+Chunk into certain parts, e.q.: \[1,2,3,4,5,6,7,8\] \[\[1,2,3\],\[4,5,6\],\[7,8\]\]
+
+```javascript
+let arrChunk = (data = [], space = 3) => {
+    var result = [];
+    for (var i = 0, len = data.length; i < len; i += space) {
+        result.push(data.slice(i, i + space));
+    }
+    return {
+        data: result,
+        total: data.length,
+        space
+    };
+}
+
+arrChunk([1,2,3,4,5,6,7,8])
+/*
+{ data: [ [ 1, 2, 3 ], [ 4, 5, 6 ], [ 7, 8 ] ],​​​​​
+​​​​​  total: 8,​​​​​
+​​​​​  space: 3 }​​​​​
+*/
+```
+
