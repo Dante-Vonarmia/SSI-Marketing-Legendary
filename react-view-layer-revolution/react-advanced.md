@@ -10,6 +10,7 @@
 * **Hooks allow you to reuse stateful logic without changing your component hierarchy.**
 * Complex components become hard to understand, **Hooks let you split one component into smaller functions based on what pieces are related \(such as setting up a subscription or fetching data\)**, rather than forcing a split based on lifecycle methods.
 * Classes confuse both people and machines, **hooks let you use more of React’s features without classes.**
+* **Return to functional programming.**
 
 \*\*\*\*
 
