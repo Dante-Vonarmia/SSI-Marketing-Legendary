@@ -77,3 +77,27 @@ It’s just a chaining styled format to passing down the multiples parameters wh
 
 In [object-oriented](https://en.wikipedia.org/wiki/Object-oriented_computer_programming) and [functional](https://en.wikipedia.org/wiki/Functional_programming) programming, an **immutable object** \(unchangeable[\[1\]](https://en.wikipedia.org/wiki/Immutable_object#cite_note-1) object\) is an [object](https://en.wikipedia.org/wiki/Object_%28computer_science%29) whose state cannot be modified after it is created.
 
+## What causes tight coupling? <a id="7481"></a>
+
+### Tight coupling has many causes
+
+* **Mutation** vs _immutability_
+* **Side-Effects** vs _purity/isolated side-effects_
+* **Responsibility overload** vs _Do One Thing \(DOT\)_
+* **Procedural instructions** vs _describing structure_
+* **Class Inheritance** vs _composition_
+
+Imperative and object-oriented code is more susceptible to tight coupling than functional code. That doesn’t mean that programming in a functional style makes your code immune to tight coupling, but functional code uses pure functions as the elemental unit of composition, and pure functions are less vulnerable to tight coupling by nature.
+
+### Pure functions
+
+* Given the same input, always return the same output, and
+* Produce no side-effects
+
+### How do pure functions reduce coupling?
+
+* **Immutability:** Pure functions don’t mutate existing values. They return new ones, instead.
+* **No side effects:** The only observable effect of a pure function is its return value, so there’s no chance for it to interfere with the operation of other functions that may be observing external state such as the screen, the DOM, the console, standard out, the network, or the disk.
+* **Do one thing:** Pure functions do one thing: Map some input to some corresponding output, avoiding the responsibility overload that tends to plague object and class-based code.
+* **Structure, not instructions:** Pure functions can be safely memoized, meaning that, if the system had infinite memory, any pure function could be replaced with a lookup table that uses the function’s input as an index to retrieve a corresponding value from the table. In other words, pure functions describe structural relationships between data, not instructions for the computer to follow, so two different sets of conflicting instructions running at the same time can’t step on each other’s toes and cause problems.
+
