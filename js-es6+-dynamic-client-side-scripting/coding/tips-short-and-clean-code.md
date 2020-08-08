@@ -1,4 +1,4 @@
-# Tips: Short and clean code 🚧
+# Tips: Short and clean code
 
 ## 1. Declaring Variables Shorthand <a id="70d3"></a>
 
