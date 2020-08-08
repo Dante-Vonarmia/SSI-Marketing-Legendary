@@ -271,9 +271,7 @@ function meandering(arr) {
         return arr;
     arr.sort((prev, cur) => prev - cur);
     for (var i = 0, j = arr.length - 1; i <= j; i++, j--) {  
-        result = [...result, arr[j]];
-        result = [...result, arr[i]];
-
+        result = [...result, arr[j], arr[i]];
         if (i === j) 
             result = [...result, arr[i]];
     }
