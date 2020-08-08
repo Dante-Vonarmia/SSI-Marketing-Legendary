@@ -383,7 +383,7 @@ let func = arr => {
 	arr.sort();
 	for (let i = 0, length1 = arr.length - 1; i < length1; i++) {
 
-		if (arr[i + 1] != undefined && arr[i + 1][0] > arr[i][0] && arr[i + 1][1] < arr[i][1]) {
+		if (arr[i + 1] !== undefined && arr[i + 1][0] > arr[i][0] && arr[i + 1][1] < arr[i][1]) {
 			arr.splice(i, 1);
 			i--;
 		}
