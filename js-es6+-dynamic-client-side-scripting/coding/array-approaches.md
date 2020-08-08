@@ -349,11 +349,11 @@ arrChunk([1,2,3,4,5,6,7,8])
 */
 ```
 
-## Queue Reconstruction by ascent
+## Queue Reconstruction by ascent or descent order
 
 Suppose you have a random list of array in a queue. Each element is described by a pair of integers `(w, h)`, where `w` is the first value of the element and `h` is the second value of the element which both have the value greater than or equal to their previous one. Write an algorithm to reconstruct the queue.
 
-**Example**
+#### Example
 
 ```javascript
 `Input:`
@@ -361,9 +361,7 @@ Suppose you have a random list of array in a queue. Each element is described by
 
 `Output:`
 ​​​​​[[ 5, 0 ], [ 7, 0 ], [ 7, 1 ]]
-```
 
-```javascript
 let arr = [
 	[1, 1],
 	[4, 5],
@@ -373,28 +371,52 @@ let arr = [
 	[3, 3],
 	[3, 5]
 ];
+
 let arr2 = [
 	[5, 0],
 	[6, 1],
 	[7, 0],
 	[7, 1]
 ];
-let func = arr => {
+```
+
+#### By Ascent
+
+```javascript
+let byAscent = arr => {
 	arr.sort();
 	for (let i = 0, length1 = arr.length - 1; i < length1; i++) {
-
 		if (arr[i + 1] !== undefined && arr[i + 1][0] > arr[i][0] && arr[i + 1][1] < arr[i][1]) {
 			arr.splice(i, 1);
 			i--;
 		}
-
 	}
 	return arr;
 }
 
-func(arr); // ​​​​​[ [ 1, 1 ], [ 2, 2 ], [ 3, 3 ], [ 4, 4 ], [ 5, 4 ] ]​​​​​
-func(arr2); // ​​​​​[ [ 5, 0 ], [ 7, 0 ], [ 7, 1 ] ]​​​​​
+byAscent(arr); // ​​​​​[ [ 1, 1 ], [ 2, 2 ], [ 3, 3 ], [ 4, 4 ], [ 5, 4 ] ]​​​​​
+byAscent(arr2); // ​​​​​[ [ 5, 0 ], [ 7, 0 ], [ 7, 1 ] ]​​​​​
 ```
 
+#### By descent
 
+```javascript
+let byDescent = arr => {
+	arr = arr.sort((idx =>
+		(a, b) =>
+		(a[idx] === b[idx] ? (a[idx][1] > b[idx][1] ? 0 : -1) : (a[idx] > b[idx] ? -1 : 1))
+	)(0));
+
+	for (let i = 0, length1 = arr.length - 1; i < length1; ++i) {
+		if (arr[i + 1] !== undefined && arr[i + 1][1] > arr[i][1]) {
+			arr.splice(i + 1, 1);
+			i--;
+		}
+	}
+	return arr;
+}
+
+byDescent(arr); //? ​​​​​[ [ 5, 4 ], [ 4, 4 ], [ 3, 3 ], [ 2, 2 ], [ 1, 1 ] ]​​​​​
+byDescent(arr2); //? ​​​​​[ [ 7, 1 ], [ 7, 0 ], [ 5, 0 ] ]​​​​​
+```
 
