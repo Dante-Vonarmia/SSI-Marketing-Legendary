@@ -119,5 +119,89 @@ The response has the correct origin in `Access-Control-Allow-Origin` header so c
 
 ## Explain RESTful API. What's the main features and why they're important?
 
-## Explain Event Bubbling and Event Capturing?
+REST is stands for REpresentational State Transfer;   
+it's all about communication of state, and structured in terms of the resources which achieve this.
+
+Good REST APIs are good software;   
+they are simultaneously good consumer products, with the understanding that their consumers are application programmers.
+
+Good APIs know their version  
+providing the version as a parameter**,** specifying it in the header.
+
+Good REST APIs:
+
+* Result paginate, filtering, sorting & searching
+* are well-documented and reliable
+* use HTTP verbs as Fielding originally defined
+* support X-HTTP-METHOD-Override to accommodate picky proxies
+* express URLs with nouns rather than verbs
+* track version
+* make expressive use of HTTP Status Codes
+* handle errors carefully and explicitly
+* log activity
+* choose wisely between XML \(increasingly rare\), JSON, and HATEOAS \(rapidly growing\)
+* Limiting which fields are returned by the API
+* explicitly design in other commercially-significant API-specific features
+
+## Explain Event target, Event Bubbling and Event Capturing ?
+
+The standard [DOM Events](http://www.w3.org/TR/DOM-Level-3-Events/) describes 3 phases of event propagation:
+
+1. Capturing phase – the event goes down to the element.
+2. Target phase – the event reached the target element.
+3. Bubbling phase – the event bubbles up from the element.
+
+### Event Bubbling
+
+The process is called “bubbling”, because events “bubble” from the inner element up through parents like a bubble in the water.
+
+When an event happens on an element, it first runs the handlers on it, then on its parent, then all the way up on other ancestors.
+
+### Event Capturing
+
+There’s another phase of event processing called “capturing”. It is rarely used in real code, but sometimes can be useful.
+
+**Before we only talked about bubbling, because the capturing phase is rarely used. Normally it is invisible to us.**
+
+To catch an event on the capturing phase, we need to set the handler `capture` option to `true`:
+
+```javascript
+elem.addEventListener(..., {capture: true})
+// or, just "true" is an alias to {capture: true}
+elem.addEventListener(..., true)
+```
+
+There are two possible values of the `capture` option:
+
+* If it’s `false` \(default\), then the handler is set on the bubbling phase.
+* If it’s `true`, then the handler is set on the capturing phase.
+
+#### Example of Bubbling and Capturing
+
+```javascript
+for(let elem of document.querySelectorAll('*')) {
+  elem.addEventListener("click", e => alert(`Capturing: ${elem.tagName}`), true);
+  elem.addEventListener("click", e => alert(`Bubbling: ${elem.tagName}`));
+}
+```
+
+### Event target
+
+A handler on a parent element can always get the details about where it actually happened.
+
+**The most deeply nested element that caused the event is called a** _**target**_ **element, accessible as `event.target`.**
+
+Note the differences from `this` \(=`event.currentTarget`\):
+
+* `event.target` – is the “target” element that initiated the event, it doesn’t change through the bubbling process.
+* `this` – is the “current” element, the one that has a currently running handler on it.
+
+For instance, if we have a single handler `form.onclick`, then it can “catch” all clicks inside the form. No matter where the click happened, it bubbles up to `<form>` and runs the handler.
+
+In `form.onclick` handler:
+
+* `this` \(=`event.currentTarget`\) is the `<form>` element, because the handler runs on it.
+* `event.target` is the actual element inside the form that was clicked.
+
+
 
