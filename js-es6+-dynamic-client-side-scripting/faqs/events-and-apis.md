@@ -2,7 +2,7 @@
 description: DOM events / BOM / JSON / Web APIs / RESTful APIs
 ---
 
-# Events and APIs 🚧
+# Events and APIs
 
 ## What is Cross-Origin Resource Sharing \(CORS\)? And how does it works?
 
@@ -116,6 +116,16 @@ The response has the correct origin in `Access-Control-Allow-Origin` header so c
 ![](../../.gitbook/assets/screen-shot-2020-07-19-at-6.45.30-pm.png)
 
 ## Give some samples of Browser Object Model \(BOM\).
+
+| Reference | Object |
+| :--- | :--- |
+| window | The main browser window |
+| window.navigator | Information about the browser itself |
+| window.screen | The user's screen |
+| window.history | URLs visited by a user |
+| window.location | The current URL |
+| window.document \(document\) | The document appearing in the main browser window |
+| document.getElementById\("id"\) | An HTML element appearing in a document and identified by its assigned _id_ value. |
 
 ## Explain RESTful API. What's the main features and why they're important?
 
