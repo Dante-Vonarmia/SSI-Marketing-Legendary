@@ -27,13 +27,15 @@ let name,
 Instead of:
 
 ```javascript
-if (isUsernameValid === true) {}if (isExist === false) {}
+if (isUsernameValid === true) {}
+if (isExist === false) {}
 ```
 
 Do this:
 
 ```javascript
-if (isUsernameValid) {}if (!isExist) {}
+if (isUsernameValid) {}
+if (!isExist) {}
 ```
 
 ## 3. Using Decimal Base Exponent <a id="ab80"></a>
