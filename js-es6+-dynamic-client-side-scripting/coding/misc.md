@@ -62,3 +62,21 @@ function factorialize2(num) {
 factorialize2(5);
 ```
 
+## Find out the largest number that could be generated from a  sorted array
+
+```javascript
+let largestNumber = function(nums) {
+ 
+    const res =  nums.map(String).sort((a,b) => b.concat(a) - a.concat(b)).join('')
+ 
+    if(res.length > 1 && res.charAt(0) == '0') {
+        return '0'
+    }
+    else {
+        return res
+    }
+};
+
+largestNumber([3,30,34,5,9]) // output: 9534330
+```
+
