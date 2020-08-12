@@ -189,7 +189,7 @@ console.log(findSumPairs(arr, 6)); // Output: ​​​​​[ [ 5, 1 ], [ 1, 5 
 ## The element with the most occurrences and the number of times.
 
 ```javascript
-// Find out the number's occurrences
+// Find out the target number's occurrences
 function countOfElement(arr, N) {
   let encounteredNums = {};
   let num;
@@ -209,35 +209,37 @@ function countOfElement(arr, N) {
   } || 0; // 6 times
   // return encounteredNums[N] || 0; // 2
 }
-// returns 6
+
 countOfElement([3, 4, 2, 3, 2, 2, 2, 2, 3, 2], 2); // Output:​​​​​ { element: 2, times: 6 }​​​​​
 ```
 
 ```javascript
 // Find out the most Occurred number
-let arr = [1,2,2,3,4,4,4,5,5,5,5,5,5,6,7,8,8,9];
+let arr = [1,2,2,3,4,4,4,4,4,4,5,5,5,5,5,5,6,7,8,8,9];
 
 function mostOccur(arr) {
   // if (arr) { ... } // common error check
   
-  let temp = {},
-      result = 0;
+  let obj = {},
+      max = 0,
+      output = new Array();
             
   for (let i = 0, length = arr.length; i < length; i++) {
-    if (temp[arr[i]]) {
-      temp[arr[i]]++;
-    } else {
-      temp[arr[i]] = 1;
+    obj[arr[i]] ? obj[arr[i]]++ : obj[arr[i]] = 1;
+    if (obj[arr[i]] > max) {
+      max = obj[arr[i]]
     }
-    if (temp[arr[i]] > result) {
-      result = arr[i]
-    } 
   }
-      
-  return result;
+  
+  for (let prop in obj) {
+    if (obj[prop] === max) {
+      output.push(parseInt(prop));
+    }
+  }
+  return output;
 }
 
-mostOccur(arr) // Output: 5
+mostOccur(arr) // [4, 5]
 ```
 
 ## Find the number n greatest number in an array.
