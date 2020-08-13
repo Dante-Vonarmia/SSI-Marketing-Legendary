@@ -94,7 +94,7 @@
 ## Misc
 
 * [Assignment Lists](misc/assignment-lists.md)
-* [An essential programming hypothesis 🚧](misc/cover-two.md)
+* [Evolution of Codes](misc/cover-two.md)
 * [Preparation for the interview](misc/writing-resume-must-know.md)
 * [The Mock Interview](misc/the-mock-interview.md)
 * [Contributors List](misc/contributors-list.md)
