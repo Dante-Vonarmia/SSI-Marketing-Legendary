@@ -3,7 +3,25 @@
 ## Merge the following two array and The output should be
 
 ```javascript
-/*
+/* INPUT:
+[
+	{ id: 3, name: "Matt" }, 
+	{ id: 4, name: "Greg" }, 
+	{ id: 1, name: "David" }, 
+	{ id: 2, name: "John"}
+];
+[
+	{ id: 2, position: "Leader" },
+	{ id: 3, position: "Captain" },
+	{ id: 6, position: "Rogue" },
+	{ id: 4, position: "VP" },
+	{ id: 5, position: "Pawn" }
+];
+*/
+```
+
+```javascript
+/* OUTPUT:
 [
     { id: 1, name: "David", position: null },
     { id: 2, name: "John", position: "Leader" },
