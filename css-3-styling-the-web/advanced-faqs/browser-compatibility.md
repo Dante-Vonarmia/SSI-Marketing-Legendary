@@ -80,7 +80,7 @@ In order to have crisp, good-looking graphics that make the best of retina displ
 
 To overcome this problem, we can use responsive images, as specified in HTML5. It requires making available different resolution files of the same image to the browser and let it decide which image is best, using the html attribute `srcset` and optionally `sizes`, for instance:
 
-```text
+```markup
 <div responsive-background-image>
   <img
     src="/images/test-1600.jpg"
