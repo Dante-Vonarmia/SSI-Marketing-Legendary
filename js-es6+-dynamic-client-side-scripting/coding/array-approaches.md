@@ -1,6 +1,6 @@
 # Array Approaches
 
-## Merge the following two array and The output should be
+## Merge the following two array
 
 ```javascript
 /* INPUT:
