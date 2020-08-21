@@ -260,7 +260,7 @@ function mostOccur(arr) {
 mostOccur(arr) // [4, 5]
 ```
 
-## Find the number n greatest number in an array.
+## Find the number nth greatest number in an array.
 
 ```javascript
 // Improved version
