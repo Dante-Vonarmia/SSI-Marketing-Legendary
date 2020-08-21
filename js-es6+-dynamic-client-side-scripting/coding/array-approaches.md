@@ -301,7 +301,7 @@ function meandering(arr) {
 console.log(meandering(arr)); // Output: ​​​​​[ 25, -5, 25, -2, 8, 2, 7, 7 ]​​​​​
 ```
 
-## Find out the duplicated number that need to be remove. \(Not all the element need to be removed\)
+## Find out the duplicated number that need to be remove. \(Not all matched element need to be removed\)
 
 ```javascript
 const arr = [1, 1, 3, 1, 3, 1, 5];
