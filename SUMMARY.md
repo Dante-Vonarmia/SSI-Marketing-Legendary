@@ -73,6 +73,7 @@
   * [Mathematic Approaches](js-es6+-dynamic-client-side-scripting/coding/misc.md)
   * [BOM / DOM related](js-es6+-dynamic-client-side-scripting/coding/bom-dom-related.md)
   * [Tips: Short and clean code](js-es6+-dynamic-client-side-scripting/coding/tips-short-and-clean-code.md)
+  * [Tips: JavaScript Snippets for common tasks](js-es6+-dynamic-client-side-scripting/coding/tips-javascript-snippets-for-common-tasks.md)
   * [Algorithm Methodology 🚧](js-es6+-dynamic-client-side-scripting/coding/algorithm-methodology.md)
 
 ## React - View Layer Revolution
