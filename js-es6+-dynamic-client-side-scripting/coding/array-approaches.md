@@ -163,21 +163,28 @@ const findMaxMin = (arr) => {
 console.log(findMaxMin(arr)); // Output: { "max": 100, "min": 1 }
 ```
 
-## Return the maximum and minimum missing number in the array
+## Return the maximum and minimum missing number in the array \(unsorted array\)
 
 ```javascript
-let arr = [1, 2, 6, 7, 8, 10];
+// a not very good HOF approach
+let arr = [4, 7, 9, 3, 6, 8, 13];
 const findMissingNum = (arr) => {
-  let newArr = [];
-  for (let i = 0, len = arr.length - 1; i < len; i++) {
-    if (arr[i] + 1 != arr[i + 1]) {
-      newArr.push(arr[i] + 1);
-    }
-  }
-  return newArr;
+	let [...obj] = new Set(arr.sort((a, b) => a - b)),
+		result = [];
+	for (let i = 1, length1 = obj[obj.length - 1]; i < length1; i++) {
+		if (obj.includes(i)) {
+			continue;
+		} else {
+			result.push(i)
+		}
+	}
+	return {
+		min: result.shift(),
+		max: result.pop()
+	};
 }
 
-console.log(findMissingNum(arr)); // Output: [3, 9]
+console.log(findMissingNum(arr)); // Output: { min: 1, max: 12 }​​​​​
 ```
 
 ## Find out all the pairs that equal to the same summation
