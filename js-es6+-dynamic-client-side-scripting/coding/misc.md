@@ -80,3 +80,65 @@ let largestNumber = function(nums) {
 largestNumber([3,30,34,5,9]) // output: 9534330
 ```
 
+
+
+## Prime Mover
+
+Have the function `PrimeMover(num)` return the nth prime number.   
+The range will be from 1 to 10^4.
+
+For example:   
+if `num` is 16 the output should be **53** as 53 is the 16th prime number.
+
+```javascript
+Input: 9
+Output: 23
+Input: 100
+Output: 541
+```
+
+```javascript
+/*By Haolin Yang*/
+let primeMover = (nth) => {
+    let curRange = nth * 2;
+    let count = -1;
+    let flags = [];
+    while (count < nth) {
+        flags = sieveOfEratosthenes(curRange);
+
+        count = flags.reduce((prev, cur) => {
+            if (cur) return prev + 1;
+            else return prev;
+        }, 0);
+
+        curRange *= 2;
+    }
+
+    for (let i = 0, tmp = 0; i < flags.length; i++) {
+        const e = flags[i];
+        if (e) tmp++;
+        if (tmp == nth) return i;
+    }
+};
+
+let sieveOfEratosthenes = (range) => {
+    // mark all prime num [0,range]
+    let flags = new Array(range + 1).fill(true);
+    flags[0] = false;
+    flags[1] = false;
+
+    for (let i = 2; i <= range; i++) {
+        const e = flags[i];
+        if (e === true) {
+            for (let j = i * i; j <= range; j += i) {
+                flags[j] = false;
+            }
+        }
+    }
+
+    return flags;
+};
+// first 1000 prime num: https://primes.utm.edu/lists/small/1000.txt
+console.log(primeMover(1000));
+```
+
