@@ -67,7 +67,7 @@ factorialize2(5);
 ```javascript
 let largestNumber = function(nums) {
  
-    const res =  nums.map(String).sort((a,b) => b.concat(a) - a.concat(b)).join('')
+    const res = nums.map(String).sort((a,b) => b.concat(a) - a.concat(b)).join('')
  
     if(res.length > 1 && res.charAt(0) == '0') {
         return '0'
