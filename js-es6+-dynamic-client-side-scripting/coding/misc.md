@@ -1,6 +1,6 @@
 # Mathematic Approaches
 
-## Given a id string, sum it up till only one digit. 
+## Given a positive integer, sum it up till only one digit. 
 
 For instance, 55555 - 25 - 7, return 7
 
