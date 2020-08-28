@@ -66,16 +66,9 @@ factorialize2(5);
 
 ```javascript
 let largestNumber = function(nums) {
- 
     const res = nums.map(String).sort((a,b) => b.concat(a) - a.concat(b)).join('')
- 
-    if(res.length > 1 && res.charAt(0) == '0') {
-        return '0'
-    }
-    else {
-        return res
-    }
-};
+    res.length > 1 && res.charAt(0) == '0' ? return '0' : return res;
+}
 
 largestNumber([3,30,34,5,9]) // output: 9534330
 ```
