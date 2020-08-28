@@ -80,8 +80,6 @@ let largestNumber = function(nums) {
 largestNumber([3,30,34,5,9]) // output: 9534330
 ```
 
-
-
 ## Prime Mover
 
 Have the function `PrimeMover(num)` return the nth prime number.   
