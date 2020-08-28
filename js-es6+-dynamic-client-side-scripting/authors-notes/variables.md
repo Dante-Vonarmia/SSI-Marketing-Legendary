@@ -66,19 +66,19 @@ JavaScript is a _weakly typed_ language, so it will apply _type coercion_ **wher
 
 ```javascript
 // These are true
-new Number(10) === 10; // Number object is converted
+new Number(10) == 10; // Number object is converted
                        // to a number primitive via implicit call of
                        // Number.prototype.valueOf method
 
-10 === '10';           // Strings gets converted to Number
-10 === '+10 ';         // More string madness
-10 === '010';          // And more 
-isNaN(null) === false; // null converts to 0
+10 == '10';           // Strings gets converted to Number
+10 == '+10 ';         // More string madness
+10 == '010';          // And more 
+isNaN(null) == false; // null converts to 0
                        // which of course is not NaN
 
 // These are false
-10 === 010;
-10 === '-10';
+10 == 010;
+10 == '-10';
 ```
 
 {% hint style="info" %}
