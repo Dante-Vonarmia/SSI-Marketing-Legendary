@@ -334,10 +334,13 @@ const array2 = ['y', 'x'];
   
 // Function call 
 function findCommonElements2(arr1, arr2) { 
-      
+
+    if (!array2.length || array2 === 'undefined') {
+        return false
+    }
+    
     // Create an empty object 
     let obj = {}; 
-          
     // Loop through the first array 
     for (let i = 0, len = arr1.length; i < len; i++) { 
           
@@ -350,9 +353,7 @@ function findCommonElements2(arr1, arr2) {
             // elements in the array 
             obj[arr1[i]] = true; 
         } 
-    } 
-
-    console.log(obj);
+    }
       
     // Loop through the second array 
     for (let j = 0, len = arr2.length; j < len; j++) { 
