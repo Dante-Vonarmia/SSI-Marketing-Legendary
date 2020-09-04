@@ -325,10 +325,48 @@ const removeDupes = (arr) => {
 console.log(removeDupes(arr)); // Output: [1, 3, 5]
 ```
 
-## Check whether the "a" array contains the "b" array
+## Check whether the array1 contains the array2
 
 ```javascript
-export const getArrRepeat = (arr1, arr2) => arr1.filter((item, index) => arr2.includes(item))
+// Declare Two array 
+const array1 = ['a', 'd', 'm', 'x']; 
+const array2 = ['y', 'x']; 
+  
+// Function call 
+function findCommonElements2(arr1, arr2) { 
+      
+    // Create an empty object 
+    let obj = {}; 
+          
+    // Loop through the first array 
+    for (let i = 0, len = arr1.length; i < len; i++) { 
+          
+        // Check if element from first array 
+        // already exist in object or not 
+        if(!obj[arr1[i]]) { 
+          
+            // If it doesn't exist assign the 
+            // properties equals to the  
+            // elements in the array 
+            obj[arr1[i]] = true; 
+        } 
+    } 
+
+    console.log(obj);
+      
+    // Loop through the second array 
+    for (let j = 0, len = arr2.length; j < len; j++) { 
+          
+        // Check elements from second array exist 
+        // in the created object or not 
+        if(!obj[arr2[j]]) { 
+            return false; 
+        } 
+    } 
+    return true; 
+} 
+  
+console.log(findCommonElements2(array1, array2));
 ```
 
 ## Flattening multidimensional Arrays in JavaScript
