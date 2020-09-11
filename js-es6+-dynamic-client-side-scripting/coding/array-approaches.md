@@ -163,7 +163,7 @@ const findMaxMin = (arr) => {
 console.log(findMaxMin(arr)); // Output: { "max": 100, "min": 1 }
 ```
 
-## Return the maximum and minimum missing number in the array \(unsorted array\)
+## Return the maximum and minimum missing number in the array \(unsorted version\)
 
 ```javascript
 // a not very good HOF approach
