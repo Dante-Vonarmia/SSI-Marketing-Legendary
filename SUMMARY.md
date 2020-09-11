@@ -81,7 +81,7 @@
 * [React Syntax](react-view-layer-revolution/untitled.md)
 * [React Components](react-view-layer-revolution/react-components.md)
 * [React Advanced](react-view-layer-revolution/react-advanced.md)
-* [React Native 🚧](react-view-layer-revolution/react-native.md)
+* [React Native](react-view-layer-revolution/react-native.md)
 * [Redux](react-view-layer-revolution/redux.md)
 * [React Best Practices 🚧](react-view-layer-revolution/react-components-best-practices.md)
 

@@ -190,3 +190,51 @@ There are some cases, however, when data sent through `props` might not be the b
 
 Each React component must have a `render()` mandatorily. It returns a single React element which is the representation of the native DOM component. If more than one HTML element needs to be rendered, then they must be grouped together inside one enclosing tag such as `<form>`, `<group>`, `<div>` etc. This function must be kept pure i.e., it must return the same result each time it is invoked.
 
+## **What are refs in React? When to use Refs?**
+
+Refs are escape hatch that provides a direct way to access DOM nodes or React elements created in the render method.
+
+Refs get in use when
+
+* To manage focus, text selection, or media playback
+* To trigger imperative animations
+* To integrate with third-party DOM libraries
+
+In order to use them you add a ref attribute to your component whose value is a callback function which will receive the underlying DOM element or the mounted instance of the component as its first argument.
+
+```jsx
+class UnControlledForm extends Component {
+    handleSubmit = () => {
+        console.log("Input Value: ", this.input.value)
+}
+render () {
+    return (
+        <form onSubmit={this.handleSubmit}>
+            <input
+            type='text'
+            ref={(input) => this.input = input} />
+            <button type='submit'>Submit</button>
+        </form>
+        )
+    }
+}
+```
+
+Above notice that our input field has a ref attribute whose value is a function. That function receives the actual DOM element of input which we then put on the instance in order to have access to it inside of the handleSubmit function.
+
+It’s often misconstrued that you need to use a class component in order to use refs, but refs can also be used with functional components by leveraging closures in JavaScript.
+
+```jsx
+function CustomForm ({handleSubmit}) {
+    let inputElement
+    return (
+        <form onSubmit={() => handleSubmit(inputElement.value)}>
+        <input
+            type='text'
+            ref={(input) => inputElement = input} />
+        <button type='submit'>Submit</button>
+        </form>
+    )
+}
+```
+
