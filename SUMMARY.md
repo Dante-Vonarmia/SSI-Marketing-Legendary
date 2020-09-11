@@ -95,7 +95,6 @@
 ## Misc
 
 * [Assignment Lists](misc/assignment-lists.md)
-* [Evolution of Codes🚧](misc/cover-two.md)
 * [Preparation for the interview](misc/writing-resume-must-know.md)
 * [The Mock Interview](misc/the-mock-interview.md)
 * [Contributors List](misc/contributors-list.md)
