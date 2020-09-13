@@ -206,15 +206,17 @@ In order to use them you add a ref attribute to your component whose value is a 
 class UnControlledForm extends Component {
     handleSubmit = () => {
         console.log("Input Value: ", this.input.value)
-}
-render () {
-    return (
-        <form onSubmit={this.handleSubmit}>
-            <input
-            type='text'
-            ref={(input) => this.input = input} />
-            <button type='submit'>Submit</button>
-        </form>
+    }
+    
+    render () {
+        return (
+            <form onSubmit={this.handleSubmit}>
+                <input
+                    type='text'
+                    ref={(input) => this.input = input} 
+                />
+                <button type='submit'>Submit</button>
+            </form>
         )
     }
 }
