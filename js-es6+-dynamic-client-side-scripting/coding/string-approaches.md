@@ -295,6 +295,25 @@ checkPalindrom("A man, a plan, a canal. Panama"); // Output: false
 checkPalindrom("amanap lanacanal panama"); // Output: true
 ```
 
+## Longest Palindromic Substring
+
+```javascript
+const longestPalindrome = function (s) {
+  const len = s.length;
+  const dp = Array.from(new Array(len), () => new Array(len).fill(false));
+  let res = '';
+  for (let i = len - 1; i >= 0; i--) {
+    for (let j = i; j < len; j++) {
+      dp[i][j] = s.charAt(i) === s.charAt(j) && (j - i <= 2 || dp[i + 1][j - 1]);
+      if (dp[i][j] && j - i >= res.length) {
+        res = s.slice(i, j + 1);
+      }
+    }
+  }
+  return res;
+};
+```
+
 ## Reverse a String
 
 ```javascript
