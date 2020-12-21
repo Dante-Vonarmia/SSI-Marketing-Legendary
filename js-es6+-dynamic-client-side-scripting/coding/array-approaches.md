@@ -313,19 +313,22 @@ console.log(meandering(arr)); // Output: ​​​​​[ 25, -5, 25, -2, 8, 2, 
 ## Find out the duplicated number that need to be remove. \(Not all matched element need to be removed\)
 
 ```javascript
-// Not correct. Need to be modified.🚧
-const arr = [1, 1, 3, 1, 3, 1, 5];
+const arr = [1, 5, 1, 3, 1, 3, 1, 5];
 const removeDupes = (arr) => {
-  let result = [];
-  for (let i = 0, len = arr.length; i < len; i++) {
-    if (result.indexOf(arr[i]) < 0) {
-      result.push(arr[i]);
-    }
-  }
-  return result;
+	let result = {},
+		output = []
+
+	for (var i = 0, len = arr.length; i < len; i++) {
+		if (result[arr[i]] !== undefined) 
+			output.push(i) // Elements need to be removed.
+		else {
+			result[arr[i]] = i; // Elements appeared the first time
+		}
+	}
+	return output;
 }
 
-console.log(removeDupes(arr)); // Output: [1, 3, 5]
+console.log(removeDupes(arr)); // Output: [ 2, 4, 5, 6, 7 ]
 ```
 
 ## Check whether the array1 contains the array2
