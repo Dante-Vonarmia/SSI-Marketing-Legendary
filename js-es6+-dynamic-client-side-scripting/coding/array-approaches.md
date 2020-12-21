@@ -78,27 +78,29 @@ arrayRotation([1,2,3], 2)
 
 ```javascript
 // Solution: for
-let rotate = function(nums, k) {
+function arrayRotation(arr, steps) {
     let tempArr = [] 
-    for(let i=0; i<nums.length; i++){ // Save the rotated array with a new array
-        tempArr[(i+k) % nums.length] = nums[i] 
+    for(let i=0; i<arr.length; i++){ // Save the rotated array with a new array
+        tempArr[(i+steps) % arr.length] = arr[i] 
     }
     return tempArr;
-};
+}; // O(n)
 
 // Solution: HOF, pop(), unshift()
-let rotate = function(nums, k) {
-    k %= nums.length
-    for(let i = 0; i < k; i ++){
-        nums.unshift(nums.pop()); // Remove the element from the end first, then put it to the front
+function arrayRotation(arr, steps) {
+    steps %= arr.length
+    for(let i = 0; i < steps; i ++){
+        arr.unshift(arr.pop()); // Remove the element from the end first, then put it to the front
     }
-};
+    return arr;
+}; // It looks a cool solution but the big-O could be a disaster.
 
 // Solution: HOF, hacking way
-let rotate = function(nums, k) {
-    k %= nums.length
-    nums.unshift(...nums.splice(nums.length - k, k));
-};
+function arrayRotation(arr, steps) {
+    steps %= arr.length
+    arr.unshift(...arr.splice(arr.length - steps, steps));
+    return arr;
+}; // It looks a cool solution but the big-O could be a disaster.
 ```
 
 ## Use HOF methods to accomplish a quick sort for an array.
