@@ -80,6 +80,34 @@ elem.addEventListener("input", e => {
 });
 ```
 
+
+
+## Write a function that will reverse the arguments of a different function call. 
+
+```javascript
+
+/**
+ * Write a function that will reverse the arguments of a different function call. 
+ * eg:
+ * console.log('1', '2', '3') // console 1 2 3
+ * reversedFunc(console.log)('1', '2', '3') // console 3 2 1
+ */
+
+function reversedFunc(fn) {
+  let newArray = [],
+      rst = []
+  return function(...obj) {
+    newArray.push(...obj) 
+    for (let i = newArray.length - 1; i >=0 ; i--) {
+      rst.push(newArray[i]);
+    }
+    return fn(...rst)
+  }
+}
+
+reversedFunc(console.log)('1', '2', '3')
+```
+
 ## Rebuilt - HOF - Prototype ver.
 
 #### fake data class
