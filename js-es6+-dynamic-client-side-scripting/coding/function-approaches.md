@@ -85,7 +85,6 @@ elem.addEventListener("input", e => {
 ## Write a function that will reverse the arguments of a different function call. 
 
 ```javascript
-
 /**
  * Write a function that will reverse the arguments of a different function call. 
  * eg:
@@ -94,12 +93,11 @@ elem.addEventListener("input", e => {
  */
 
 function reversedFunc(fn) {
-  let newArray = [],
-      rst = []
+    let rst = [];
   return function(...obj) {
-    newArray.push(...obj) 
-    for (let i = newArray.length - 1; i >=0 ; i--) {
-      rst.push(newArray[i]);
+    // newArray.push(...obj) 
+    for (let i = obj.length - 1; i >=0 ; i--) {
+      rst = [...rst, obj[i]];
     }
     return fn(...rst)
   }
