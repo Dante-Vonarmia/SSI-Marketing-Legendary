@@ -95,7 +95,6 @@ elem.addEventListener("input", e => {
 function reversedFunc(fn) {
     let rst = [];
   return function(...obj) {
-    // newArray.push(...obj) 
     for (let i = obj.length - 1; i >=0 ; i--) {
       rst = [...rst, obj[i]];
     }
