@@ -195,11 +195,6 @@ Array.prototype.myNewMap = callback => {
     let i = -1;
 
     while (++i < len) {
-        console.log({
-            this[i],
-            i,
-            this
-        });
         result[i] = callback(this[i], i, this)
     }
     return result;
@@ -407,7 +402,7 @@ function myMap(arr, mapFunc) {
 	const mapArr = []; // empty array        
 	// loop though array
 	for (let i = 0; i < arr.length; i++) {
-		const result = mapFunc(arr[i], i, arr);
+		const result = mapFunc(arr[i]);
 		mapArr.push(result);
 	}
 	return mapArr;
