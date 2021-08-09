@@ -4,7 +4,7 @@ description: Development logs
 
 # Light Survey - An Ant Design based React App
 
-## 15.0.0 - 2042-12-03
+## Day2 - 2021-08-10 Tue
 
 ### Tasks
 
@@ -14,7 +14,7 @@ description: Development logs
 
 * tbc
 
-## Day 1 - 2021-08-09
+## Day 1 - 2021-08-09 Mon
 
 ### Tasks
 
