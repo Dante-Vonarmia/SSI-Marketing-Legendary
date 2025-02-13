@@ -2,7 +2,7 @@
 
 ## Explain your understanding of the box model and how you would tell the browser in CSS to render your layout in different box models.
 
-The CSS box model describes the rectangular boxes that are generated for elements in the document tree and laid out according to the visual formatting model. Each box has a content area \(e.g. text, an image, etc.\) and optional surrounding `padding`, `border`, and `margin` areas.
+The CSS box model describes the rectangular boxes that are generated for elements in the document tree and laid out according to the visual formatting model. Each box has a content area (e.g. text, an image, etc.) and optional surrounding `padding`, `border`, and `margin` areas.
 
 The CSS box model is responsible for calculating:
 
@@ -13,7 +13,7 @@ The CSS box model is responsible for calculating:
 The box model has the following rules:
 
 * The dimensions of a block element are calculated by `width`, `height`, `padding`, `border`s, and `margin`s.
-* If no `height` is specified, a block element will be as high as the content it contains, plus `padding` \(unless there are floats, for which see below\).
+* If no `height` is specified, a block element will be as high as the content it contains, plus `padding` (unless there are floats, for which see below).
 * If no `width` is specified, a non-floated block element will expand to fit the width of its parent minus `padding`.
 * The `height` of an element is calculated by the content's `height`.
 * The `width` of an element is calculated by the content's `width`.
@@ -21,13 +21,13 @@ The box model has the following rules:
 
 ## Describe `float` and how they work.
 
-Float is a CSS positioning property. Floated elements remain a part of the flow of the page, and will affect the positioning of other elements \(e.g. text will flow around floated elements\), unlike `position: absolute` elements, which are removed from the flow of the page.
+Float is a CSS positioning property. Floated elements remain a part of the flow of the page, and will affect the positioning of other elements (e.g. text will flow around floated elements), unlike `position: absolute` elements, which are removed from the flow of the page.
 
 The CSS `clear` property can be used to be positioned below `left`/`right`/`both` floated elements.
 
 If a parent element contains nothing but floated elements, its height will be collapsed to nothing. It can be fixed by clearing the float after the floated elements in the container but before the close of the container.
 
-The `.clearfix` hack uses a clever CSS [pseudo selector](https://github.com/yangshun/front-end-interview-handbook/blob/master/contents/en/css-questions.md#describe-pseudo-elements-and-discuss-what-they-are-used-for) \(`:after`\) to clear floats. Rather than setting the overflow on the parent, you apply an additional class `clearfix` to it. Then apply this CSS:
+The `.clearfix` hack uses a clever CSS [pseudo selector](https://github.com/yangshun/front-end-interview-handbook/blob/master/contents/en/css-questions.md#describe-pseudo-elements-and-discuss-what-they-are-used-for) (`:after`) to clear floats. Rather than setting the overflow on the parent, you apply an additional class `clearfix` to it. Then apply this CSS:
 
 ```css
 .clearfix:after {
@@ -45,7 +45,7 @@ Alternatively, give `overflow: auto` or `overflow: hidden` property to the paren
 
 The `z-index` property in CSS controls the vertical stacking order of elements that overlap. `z-index` only affects elements that have a `position` value which is not `static`.
 
-Without any `z-index` value, elements stack in the order that they appear in the DOM \(the lowest one down at the same hierarchy level appears on top\). Elements with non-static positioning \(and their children\) will always appear on top of elements with default static positioning, regardless of HTML hierarchy.
+Without any `z-index` value, elements stack in the order that they appear in the DOM (the lowest one down at the same hierarchy level appears on top). Elements with non-static positioning (and their children) will always appear on top of elements with default static positioning, regardless of HTML hierarchy.
 
 A stacking context is an element that contains a set of layers. Within a local stacking context, the `z-index` values of its children are set relative to that element rather than to the document root. Layers outside of that context — i.e. sibling elements of a local stacking context — can't sit between layers within it. If an element B sits on top of element A, a child element of element A, element C, can never be higher than element B even if element C has a higher `z-index` than element B.
 
@@ -57,15 +57,15 @@ _Note: What exactly qualifies an element to create a stacking context is listed 
 
 Yes. Flexbox is mainly meant for 1-dimensional layouts while Grid is meant for 2-dimensional layouts.
 
-Flexbox solves many common problems in CSS, such as vertical centering of elements within a container, sticky footer, etc. Bootstrap and Bulma are based on Flexbox, and it is probably the recommended way to create layouts these days. Have tried Flexbox before but ran into some browser incompatibility issues \(Safari\) in using `flex-grow`, and I had to rewrite my code using `inline-blocks` and math to calculate the widths in percentages, it wasn't a nice experience.
+Flexbox solves many common problems in CSS, such as vertical centering of elements within a container, sticky footer, etc. Bootstrap and Bulma are based on Flexbox, and it is probably the recommended way to create layouts these days. Have tried Flexbox before but ran into some browser incompatibility issues (Safari) in using `flex-grow`, and I had to rewrite my code using `inline-blocks` and math to calculate the widths in percentages, it wasn't a nice experience.
 
-Grid is by far the most intuitive approach for creating grid-based layouts \(it better be!\) but browser support is not wide at the moment.
+Grid is by far the most intuitive approach for creating grid-based layouts (it better be!) but browser support is not wide at the moment.
 
 ## How many ways to make an elements's position is center to its parent elements?
 
-#### Text-Align Method**:**
+#### Text-Align Metho&#x64;**:**
 
-1. Enclose the div that you want to center with a parent element \(commonly known as a wrapper or container\)
+1. Enclose the div that you want to center with a parent element (commonly known as a wrapper or container)
 2. Set “text-align: center” to parent element
 3. Then set the inside div to “display: inline-block”
 
@@ -74,7 +74,7 @@ Grid is by far the most intuitive approach for creating grid-based layouts \(it 
 1. Don’t need a parent element.
 2. By simply apply “margin: 0 auto” to our box, as long as we have a defined width.
 
-#### Absolute Positioning Method <a id="absolute-positioning-method"></a>
+#### Absolute Positioning Method <a href="#absolute-positioning-method" id="absolute-positioning-method"></a>
 
 > This method can cause overlapping of elements if used incorrectly.
 
@@ -82,7 +82,7 @@ Grid is by far the most intuitive approach for creating grid-based layouts \(it 
 2. Apply “left: 50%” to the element
 3. Set a margin-left of half of the element’s width
 
-#### Transform/Translate Method <a id="transform-translate-method"></a>
+#### Transform/Translate Method <a href="#transform-translate-method" id="transform-translate-method"></a>
 
 This method is used frequently in responsive design and doesn’t require margins to be defined, like in the absolute positioning method.
 
@@ -99,11 +99,15 @@ The four steps to centering horizontally and vertically with Flex-box are the fo
 I like using this method because it’s both **responsive** and **doesn’t require any margin calculations**.
 {% endhint %}
 
-{% embed url="https://www.freecodecamp.org/news/how-to-center-things-with-style-in-css-dc87b7542689/" caption="Check this article for more details" %}
+{% embed url="https://www.freecodecamp.org/news/how-to-center-things-with-style-in-css-dc87b7542689/" %}
+Check this article for more details
+{% endembed %}
 
-## Give a sample of align-center / Give a sample of vertical align center. \(Both block and inline elements\)
+## Give a sample of align-center / Give a sample of vertical align center. (Both block and inline elements)
 
-{% embed url="https://css-tricks.com/centering-css-complete-guide/" caption="Check this article for more details" %}
+{% embed url="https://css-tricks.com/centering-css-complete-guide/" %}
+Check this article for more details
+{% endembed %}
 
 ## What's the difference between `margin` and `padding`?
 
@@ -136,13 +140,13 @@ Negative values are not allowed in padding.
 
 ## Explain `margin` collapse?
 
-The [top](https://developer.mozilla.org/en-US/docs/Web/CSS/margin-top) and [bottom](https://developer.mozilla.org/en-US/docs/Web/CSS/margin-bottom) margins of blocks are sometimes combined \(collapsed\) into a single margin whose size is the largest of the individual margins \(or just one of them, if they are equal\), a behavior known as **margin collapsing**. Note that the margins of [floating](https://developer.mozilla.org/en-US/docs/Web/CSS/float) and [absolutely positioned](https://developer.mozilla.org/en-US/docs/Web/CSS/position#absolute) elements never collapse.
+The [top](https://developer.mozilla.org/en-US/docs/Web/CSS/margin-top) and [bottom](https://developer.mozilla.org/en-US/docs/Web/CSS/margin-bottom) margins of blocks are sometimes combined (collapsed) into a single margin whose size is the largest of the individual margins (or just one of them, if they are equal), a behavior known as **margin collapsing**. Note that the margins of [floating](https://developer.mozilla.org/en-US/docs/Web/CSS/float) and [absolutely positioned](https://developer.mozilla.org/en-US/docs/Web/CSS/position#absolute) elements never collapse.
 
 Margin collapsing occurs in three basic cases:
 
 #### Adjacent siblings
 
-The margins of adjacent siblings are collapsed \(except when the latter sibling needs to be [cleared](https://developer.mozilla.org/en-US/docs/Web/CSS/clear) past floats\).
+The margins of adjacent siblings are collapsed (except when the latter sibling needs to be [cleared](https://developer.mozilla.org/en-US/docs/Web/CSS/clear) past floats).
 
 #### No content separating parent and descendants
 
@@ -154,18 +158,18 @@ If there is no border, padding, inline content, [`height`](https://developer.moz
 
 Some things to note:
 
-* More complex margin collapsing \(of more than two margins\) occurs when the above cases are combined.
-* These rules apply even to margins that are zero, so the margin of a descendant ends up outside its parent \(according to the rules above\) whether or not the parent's margin is zero.
-* When negative margins are involved, the size of the collapsed margin is the sum of the largest positive margin and the smallest \(most negative\) negative margin.
-* When all margins are negative, the size of the collapsed margin is the smallest \(most negative\) margin. This applies to both adjacent elements and nested elements.
+* More complex margin collapsing (of more than two margins) occurs when the above cases are combined.
+* These rules apply even to margins that are zero, so the margin of a descendant ends up outside its parent (according to the rules above) whether or not the parent's margin is zero.
+* When negative margins are involved, the size of the collapsed margin is the sum of the largest positive margin and the smallest (most negative) negative margin.
+* When all margins are negative, the size of the collapsed margin is the smallest (most negative) margin. This applies to both adjacent elements and nested elements.
 
-## `position` , all value, when and why? \(hint: DOM flow\)
+## `position` , all value, when and why? (hint: DOM flow)
 
 * `static`: every element has a static position by default, so the element will stick to the normal page flow. So if there is a [left](https://css-tricks.com/almanac/properties/l/left/)/[right](https://css-tricks.com/almanac/properties/r/right/)/[top](https://css-tricks.com/almanac/properties/t/top/)/[bottom](https://css-tricks.com/almanac/properties/b/bottom/)/[z-index](https://css-tricks.com/almanac/properties/z/z-index/) set then there will be no effect on that element.
 * `relative`: an element’s original position remains in the flow of the document, just like the `static` value. But now [left](https://css-tricks.com/almanac/properties/l/left/)/[right](https://css-tricks.com/almanac/properties/r/right/)/[top](https://css-tricks.com/almanac/properties/t/top/)/[bottom](https://css-tricks.com/almanac/properties/b/bottom/)/[z-index](https://css-tricks.com/almanac/properties/z/z-index/) will work. The positional properties “nudge” the element from the original position in that direction.
 * `absolute`: the element is removed from the flow of the document and other elements will behave as if it’s not even there whilst all the other positional properties will work on it.
 * `fixed`: the element is removed from the flow of the document like absolutely positioned elements. In fact they behave almost the same, only fixed positioned elements are always relative to the document, not any particular parent, and are unaffected by scrolling.
-* `sticky` \(experimental\): the element is treated like a `relative` value until the scroll location of the viewport reaches a specified threshold, at which point the element takes a `fixed` position where it is told to stick.
+* `sticky` (experimental): the element is treated like a `relative` value until the scroll location of the viewport reaches a specified threshold, at which point the element takes a `fixed` position where it is told to stick.
 * `inherit`: the `position` value doesn’t cascade, so this can be used to specifically force it to, and `inherit` the positioning value from its parent.
 
 ## What are the common properties to size item, for example min or max size?
@@ -174,24 +178,24 @@ Some things to note:
 
 The first thing to discuss is width-related properties. We have `min-width` and `max-width`, and each one of them is important and has its use cases.
 
-#### Min Width <a id="min-width"></a>
+#### Min Width <a href="#min-width" id="min-width"></a>
 
 When setting the value of `min-width`, its benefit lies in preventing the used value for `width` property from becoming less than the specified value for `min-width`. Note that the default value for `min-width` is `auto`, which resolves to `0`.
 
-#### Max Width <a id="max-width"></a>
+#### Max Width <a href="#max-width" id="max-width"></a>
 
-When setting the value of `max-width`, its benefit lies in preventing the used value for `width` property from becoming more than the specified value for `max-width`.   
+When setting the value of `max-width`, its benefit lies in preventing the used value for `width` property from becoming more than the specified value for `max-width`. \
 The default value for `max-width` is `none`.
 
 #### Height Properties
 
 In addition to the minimum and maximum width properties, we have the same properties as the height.
 
-#### Min Height <a id="min-height"></a>
+#### Min Height <a href="#min-height" id="min-height"></a>
 
 When setting the value of `min-height`, its benefit lies in preventing the used value for `height` property from becoming less than the specified value for `min-height`. Note that the default value for `min-height` is `auto`, which resolves to `0`.
 
-#### Max Height <a id="max-height"></a>
+#### Max Height <a href="#max-height" id="max-height"></a>
 
 When setting the value of max-height, its benefit lies in preventing the used value for height property from becoming more than the specified value for max-height. Note that the default value for max-height is none.
 
@@ -207,7 +211,7 @@ The background images are drawn on stacking context layers on top of each other.
 
 The **`background-clip`** CSS property sets whether an element's background extends underneath its border box, padding box, or content box.
 
-If the element has no [`background-image`](https://developer.mozilla.org/en-US/docs/Web/CSS/background-image) or [`background-color`](https://developer.mozilla.org/en-US/docs/Web/CSS/background-color), this property will only have a visual effect when the border has transparent regions or partially opaque regions \(due to [`border-style`](https://developer.mozilla.org/en-US/docs/Web/CSS/border-style) or [`border-image`](https://developer.mozilla.org/en-US/docs/Web/CSS/border-image)\); otherwise, the border masks the difference.  
+If the element has no [`background-image`](https://developer.mozilla.org/en-US/docs/Web/CSS/background-image) or [`background-color`](https://developer.mozilla.org/en-US/docs/Web/CSS/background-color), this property will only have a visual effect when the border has transparent regions or partially opaque regions (due to [`border-style`](https://developer.mozilla.org/en-US/docs/Web/CSS/border-style) or [`border-image`](https://developer.mozilla.org/en-US/docs/Web/CSS/border-image)); otherwise, the border masks the difference.\
 
 
 ## What does `* { box-sizing: border-box; }` do? What are its advantages?
@@ -220,7 +224,7 @@ If the element has no [`background-image`](https://developer.mozilla.org/en-US/d
 
 ## How to add shadows to boxes?
 
-Used in casting shadows off block-level elements \(like divs\).
+Used in casting shadows off block-level elements (like divs).
 
 ```css
 .shadow {
@@ -232,8 +236,8 @@ Used in casting shadows off block-level elements \(like divs\).
 
 1. **The horizontal offset** of the shadow, positive means the shadow will be on the right of the box, a negative offset will put the shadow on the left of the box.
 2. **The vertical offset** of the shadow, a negative one means the box-shadow will be above the box, a positive one means the shadow will be below the box.
-3. **The blur radius** \(optional\), if set to 0 the shadow will be sharp, the higher the number, the more blurred it will be.
-4. **The spread radius** \(optional\), positive values increase the size of the shadow, negative values decrease the size. Default is 0 \(the shadow is same size as blur\).
+3. **The blur radius** (optional), if set to 0 the shadow will be sharp, the higher the number, the more blurred it will be.
+4. **The spread radius** (optional), positive values increase the size of the shadow, negative values decrease the size. Default is 0 (the shadow is same size as blur).
 5. **Color**
 
 ## Using CSS flexible boxes
@@ -248,13 +252,13 @@ Unfortunately this is impossible to do with CSS and HTML without forcing column 
 
 ## Using CSS generated content
 
-One of the important advantages of CSS is that it helps you to separate a document's style from its content. However, there are situations where it makes sense to specify certain content as part of the stylesheet, not as part of the document. You can specify text or image content within a stylesheet when that content is closely linked to the document's structure. 
+One of the important advantages of CSS is that it helps you to separate a document's style from its content. However, there are situations where it makes sense to specify certain content as part of the stylesheet, not as part of the document. You can specify text or image content within a stylesheet when that content is closely linked to the document's structure.&#x20;
 
 {% hint style="info" %}
 Content specified in a stylesheet does not become part of the DOM.
 {% endhint %}
 
-#### Text content <a id="Text_content"></a>
+#### Text content <a href="#text_content" id="text_content"></a>
 
 CSS can insert text content before or after an element. To specify this, make a rule and add [`::before`](https://developer.mozilla.org/en-US/docs/Web/CSS/::before) or [`::after`](https://developer.mozilla.org/en-US/docs/Web/CSS/::after) to the selector. In the declaration, specify the [`content`](https://developer.mozilla.org/en-US/docs/Web/CSS/content) property with the text content as its value.
 
@@ -265,4 +269,3 @@ To add an image before or after an element, you can specify the URL of an image 
 ## Useful Layout Solution
 
 {% embed url="https://web.dev/one-line-layouts/" %}
-

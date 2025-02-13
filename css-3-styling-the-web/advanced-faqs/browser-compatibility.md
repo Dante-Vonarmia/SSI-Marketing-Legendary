@@ -43,7 +43,7 @@ Think about it:
 2. what level of support are you giving?
 3. is it worth the resources you’ve allocated?
 
-#### Supporting Older Browsers — CSS <a id="supporting-older-browsers-css"></a>
+#### Supporting Older Browsers — CSS <a href="#supporting-older-browsers-css" id="supporting-older-browsers-css"></a>
 
 There are two ways to provide fallbacks for CSS features:
 
@@ -68,7 +68,9 @@ Here’s an example:
 
 In this example, browsers that support CSS Grid will use `display: grid`. A browser that doesn’t support CSS Grid will fall back to `display: block`.
 
-{% embed url="https://www.freecodecamp.org/news/why-you-should-care-about-supporting-older-browsers-39bbc28fb7fd/" caption="Check this for more detail" %}
+{% embed url="https://www.freecodecamp.org/news/why-you-should-care-about-supporting-older-browsers-39bbc28fb7fd/" %}
+Check this for more detail
+{% endembed %}
 
 ## Have you ever worked with retina graphics? If so, when and what techniques did you use?
 
@@ -97,7 +99,7 @@ To overcome this problem, we can use responsive images, as specified in HTML5. I
 </div>
 ```
 
-It is important to note that browsers which don't support HTML5's `srcset` \(i.e. IE11\) will ignore it and use `src` instead. If we really need to support IE11 and we want to provide this feature for performance reasons, we can use a JavaScript polyfill, e.g. Picturefill \(link in the references\).
+It is important to note that browsers which don't support HTML5's `srcset` (i.e. IE11) will ignore it and use `src` instead. If we really need to support IE11 and we want to provide this feature for performance reasons, we can use a JavaScript polyfill, e.g. Picturefill (link in the references).
 
 For icons, I would also opt to use SVGs and icon fonts where possible, as they render very crisply regardless of resolution.
 
@@ -116,5 +118,4 @@ For icons, I would also opt to use SVGs and icon fonts where possible, as they r
 * Use libraries like Bootstrap that already handles these styling issues for you.
 * Use `autoprefixer` to automatically add vendor prefixes to your code.
 * Use Reset CSS or Normalize.css.
-* If you're using Postcss \(or a similar transpiling library\), there may be plugins which allow you to opt in for using modern CSS syntax \(and even W3C proposals\) that will transform those sections of your code into corresponding safe code that will work in the targets you've used.
-
+* If you're using Postcss (or a similar transpiling library), there may be plugins which allow you to opt in for using modern CSS syntax (and even W3C proposals) that will transform those sections of your code into corresponding safe code that will work in the targets you've used.

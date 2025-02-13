@@ -90,7 +90,7 @@ new Promise(resolve => resolve(value));
 
 ### Thenable
 
-`Promise.resolve` --&gt; thenable object --&gt; promise object 
+`Promise.resolve` --> thenable object --> promise object&#x20;
 
 thenable object: function with `.then` method
 
@@ -249,7 +249,7 @@ main((error, results) => {
 
 * Using the JSON.parse function directly may throw an exception, so a wrapper function is used here
 * If multiple XHR processes are nested, it will be deeper, so the allRequest function is used and the request is called in it.
-* The callback function uses the callback \(error, value\) method. The first parameter indicates the error message, and the second parameter is the return value.
+* The callback function uses the callback (error, value) method. The first parameter indicates the error message, and the second parameter is the return value.
 * Using bind to reduce the times of using anonymous functions
 
 **cons**
@@ -304,7 +304,7 @@ main().then(value => { console.log(value) }).catch(error => { console.error(erro
 #### pros
 
 * You can use the JSON.parse function directly
-* function main \(\) returns the promise object
+* function main () returns the promise object
 * Handle the returned promise object directly in the place of error handling
 
 #### cons
@@ -314,9 +314,9 @@ main().then(value => { console.log(value) }).catch(error => { console.error(erro
 
 ### promise-all-xhr
 
-#### `Promise.all` 
+#### `Promise.all`&#x20;
 
-* Receive array of promise objects as parameters 
+* Receive array of promise objects as parameters&#x20;
 * All promise objects are run in sync
 
 ```javascript
@@ -375,15 +375,15 @@ Promise.race([winnerPromise, loserPromise]).then((value) => { console.log(value)
 
 ## Recap
 
-1. Use `promise.then(onFulfilled, onRejected)`
+1.  Use `promise.then(onFulfilled, onRejected)`
 
-   If an exception occurs in onFulfilled, the exception cannot be caught in onRejected.  
+    If an exception occurs in onFulfilled, the exception cannot be caught in onRejected.\
 
-2. In the case of `promise.then(onFulfilled).catch(onRejected)`
+2.  In the case of `promise.then(onFulfilled).catch(onRejected)`
 
-   Exceptions generated in then can be caught in `.catch()`
+    Exceptions generated in then can be caught in `.catch()`
 
-3. `.then()` and `.catch()` are essentially the same
 
-   It needs to be used in different occasions
+3.  `.then()` and `.catch()` are essentially the same
 
+    It needs to be used in different occasions

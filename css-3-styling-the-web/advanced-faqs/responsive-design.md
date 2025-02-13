@@ -2,7 +2,7 @@
 
 ## Can you give an example of an @media property other than screen?
 
-Yes, there are four types of @media properties \(including _screen_\):
+Yes, there are four types of @media properties (including _screen_):
 
 * `all` - for all media type devices
 * `print` - for printers
@@ -21,13 +21,13 @@ Here is an example of `print` media type's usage:
 
 ## Have you ever used a grid system, and if so, what do you prefer?
 
-Before Flex became popular \(around 2014\), the `float`-based grid system was the most reliable because it still has the most browser support among the alternative existing systems \(flex, grid\). Bootstrap was using the `float` approach until Bootstrap 4 which switched to the `flex`-based approach. As of writing \(2020\), `flex` is the recommended approach for building grid systems and has [decent browser support](https://caniuse.com/#search=flex).
+Before Flex became popular (around 2014), the `float`-based grid system was the most reliable because it still has the most browser support among the alternative existing systems (flex, grid). Bootstrap was using the `float` approach until Bootstrap 4 which switched to the `flex`-based approach. As of writing (2020), `flex` is the recommended approach for building grid systems and has [decent browser support](https://caniuse.com/#search=flex).
 
 For the adventurous, they can look into [CSS Grid Layout](https://css-tricks.com/snippets/css/complete-guide-grid/), which uses the shiny new `grid` property; it is even better than `flex` for building grid layouts and will be the de facto way to do so in the future.
 
 ## Have you used or implemented media queries or mobile-specific layouts/CSS?
 
-Yes. An example would be transforming a stacked pill navigation into a fixed-bottom tab navigation beyond a certain breakpoint.  
+Yes. An example would be transforming a stacked pill navigation into a fixed-bottom tab navigation beyond a certain breakpoint.\
 
 
 #### Can you explain the difference between coding a website to be responsive versus using a mobile-first strategy?
@@ -81,4 +81,3 @@ Both have these methods have some issues that need to be weighed:
 
 * Responsive design can be quite challenging, as you're essentially using a single albeit responsive layout to fit all situations. How to set the media query breakpoints is one such challenge. Do you use standardized breakpoint values? Or, do you use breakpoints that make sense to your particular layout? What if that layout changes?
 * Adaptive design generally requires user agent sniffing, or DPI detection, etc., all of which can prove unreliable.
-

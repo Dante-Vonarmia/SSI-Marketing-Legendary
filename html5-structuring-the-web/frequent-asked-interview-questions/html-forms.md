@@ -6,14 +6,14 @@
 
 #### `meter`
 
-The `meter` element provides for a gauge, displaying a general value within a range.   
-It provide minimum \(`min`\) and maximum \(`max`\) values, and the required `value` that falls between those minimum and maximum values.   
+The `meter` element provides for a gauge, displaying a general value within a range. \
+It provide minimum (`min`) and maximum (`max`) values, and the required `value` that falls between those minimum and maximum values. \
 While many think it’s a form control with attributes similar to some numeric input types, it has no `name` attribute and won’t be submitted on form submission.
 
 #### `Progress`
 
-The `meter` element should not be used to indicate progress; instead, use a `progress` bar to indicate the percentage of how complete a task is.  
-Unlike `meter`, `progress` heads only in the direction of 100% of the `max` value. The presentation defaults to inline-block so you can set `width` and `height` on `progress` elements. Height will not change the actual height of the stylized bar \(unlike `meter`\) but will add space below it.
+The `meter` element should not be used to indicate progress; instead, use a `progress` bar to indicate the percentage of how complete a task is.\
+Unlike `meter`, `progress` heads only in the direction of 100% of the `max` value. The presentation defaults to inline-block so you can set `width` and `height` on `progress` elements. Height will not change the actual height of the stylized bar (unlike `meter`) but will add space below it.
 
 {% hint style="info" %}
 If no `value` is included, the progress bar is indeterminate. Chrome, Opera, Safari, and Firefox display indeterminate progress as animated bars, with IE styling it as animated dots.
@@ -21,9 +21,9 @@ If no `value` is included, the progress bar is indeterminate. Chrome, Opera, Saf
 
 ### **The `output` Element**
 
-The purpose of the `output` element is to accept and display the result of a calculation. The `output` element should be used when the user can see the value, but not directly manipulate it, and when the value can be derived from other values entered in the form. 
+The purpose of the `output` element is to accept and display the result of a calculation. The `output` element should be used when the user can see the value, but not directly manipulate it, and when the value can be derived from other values entered in the form.&#x20;
 
-An example use might be the total cost calculated after shipping and taxes in a shopping cart.  
+An example use might be the total cost calculated after shipping and taxes in a shopping cart.\
 
 
 ### **The "`contenteditable`" Attribute**
@@ -62,7 +62,7 @@ In HTML 4, we were required to specify a `textarea` element’s size by specifyi
 
 ## **The miserable of submit and alter the value of a Radio Box and a Check box.**
 
-> This problem could be the top 3 confusing problem happens to any beginner.  
+> This problem could be the top 3 confusing problem happens to any beginner.\
 > Anyway, my experience to you is simple.
 
 Whenever **submitting** a checkbox or radio box. There are two part  need to be done if you wish to successful alter the **REAL** value of your input.
@@ -75,7 +75,7 @@ Second, make sure you do alter the attribute `checked` in either this way:
 <input type="radio" name="test-name2" checked>
 ```
 
- , or this way:
+&#x20;, or this way:
 
 ```markup
 <input type="checkbox" name="test-name2" checked="checked">
@@ -122,9 +122,9 @@ You can set a checkbox or radio button to be checked by default using the checke
 
 ## What is a Boolean attribution of an `<input>` tag?
 
-Some content attributes \(e.g. `required`, `readonly`, `disabled`\) are called [boolean attributes](https://www.w3.org/TR/html52/infrastructure.html#sec-boolean-attributes). If a boolean attribute is present, its value is **true**, and if it’s absent, its value is **false**.
+Some content attributes (e.g. `required`, `readonly`, `disabled`) are called [boolean attributes](https://www.w3.org/TR/html52/infrastructure.html#sec-boolean-attributes). If a boolean attribute is present, its value is **true**, and if it’s absent, its value is **false**.
 
-HTML5 defines restrictions on the allowed values of boolean attributes: If the attribute is present, its value must either be the empty string \(equivalently, the attribute may have an unassigned value\), or a value that is an ASCII case-insensitive match for the attribute’s canonical name, with no leading or trailing whitespace. The following examples are valid ways to mark up a boolean attribute:
+HTML5 defines restrictions on the allowed values of boolean attributes: If the attribute is present, its value must either be the empty string (equivalently, the attribute may have an unassigned value), or a value that is an ASCII case-insensitive match for the attribute’s canonical name, with no leading or trailing whitespace. The following examples are valid ways to mark up a boolean attribute:
 
 ```markup
 <div itemscope> This is valid HTML but invalid XML. </div>
@@ -133,6 +133,4 @@ HTML5 defines restrictions on the allowed values of boolean attributes: If the a
 <div itemscope="itemscope"> This is also valid HTML and XML, but perhaps a bit verbose. </div>
 ```
 
-To be clear, the values "`true`" and "`false`" are not allowed on boolean attributes. To represent a false value, the attribute has to be omitted altogether. This restriction clears up some common misunderstandings: With `checked="false"` for example, the element’s `checked` attribute would be interpreted as **true** because the attribute is present.  
-
-
+To be clear, the values "`true`" and "`false`" are not allowed on boolean attributes. To represent a false value, the attribute has to be omitted altogether. This restriction clears up some common misunderstandings: With `checked="false"` for example, the element’s `checked` attribute would be interpreted as **true** because the attribute is present.\

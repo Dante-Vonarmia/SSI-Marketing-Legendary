@@ -2,11 +2,11 @@
 
 ## What is HTML Stand for?
 
-**HTML** \(HyperText Markup Language\) is the most basic building block of the Web. It defines the meaning and structure of web content. 
+**HTML** (HyperText Markup Language) is the most basic building block of the Web. It defines the meaning and structure of web content.&#x20;
 
 ## What does a doctype do? Explain DOCTYPE and why need it?
 
-In HTML, the doctype is the required "`<!DOCTYPE html>`" preamble found at the top of all documents. 
+In HTML, the doctype is the required "`<!DOCTYPE html>`" preamble found at the top of all documents.&#x20;
 
 Its sole purpose is to prevent a browser from switching into so-called “quirks mode” when rendering a document.
 
@@ -14,27 +14,27 @@ The "`<!DOCTYPE html>`" doctype ensures that the browser makes a best-effort att
 
 ## What is the difference between HTML elements and tags?
 
-![The anatomy of the element](../../.gitbook/assets/image.png)
+![The anatomy of the element](<../../.gitbook/assets/image (3).png>)
 
 The [element](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started#Anatomy_of_an_HTML_element) is the **opening tag**, followed by **content**, followed by the **closing tag**.
 
-![Elements can also have attributes](../../.gitbook/assets/image%20%282%29.png)
+![Elements can also have attributes](<../../.gitbook/assets/image (5).png>)
 
 [Attributes](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started#Attributes) contain extra information about the element that won't appear in the content. In this example, the **`class`** attribute is an identifying name used to target the element with style information.
 
 An attribute should have:
 
-* A space between it and the element name. \(For an element with more than one attribute, the attributes should be separated by spaces too.\)
+* A space between it and the element name. (For an element with more than one attribute, the attributes should be separated by spaces too.)
 * The attribute name, followed by an equal sign.
 * An attribute value, wrapped with opening and closing quote marks.
 
 ## What are self-closing tags / void tags / empty elements / singleton tags?
 
-An empty element is an element from HTML, SVG, or MathML that cannot have any child nodes \(i.e., nested elements or text nodes\).
+An empty element is an element from HTML, SVG, or MathML that cannot have any child nodes (i.e., nested elements or text nodes).
 
 ## What is the difference between attributions and properties?
 
-Attributes are defined by HTML. Properties are defined by the DOM \(Document Object Model\).
+Attributes are defined by HTML. Properties are defined by the DOM (Document Object Model).
 
 ## What’s the difference between a block-level element and an inline element?
 
@@ -42,13 +42,13 @@ Block-level elements form a visible block on a page — they will appear on a ne
 
 A block-level element wouldn't be nested inside an inline element, but it might be nested inside another block-level element.
 
-Inline elements are those that are contained within block-level elements and surround only small parts of the document’s content, not entire paragraphs and groupings of content. 
+Inline elements are those that are contained within block-level elements and surround only small parts of the document’s content, not entire paragraphs and groupings of content.&#x20;
 
-An inline element will not cause a new line to appear in the document; they would normally appear inside a paragraph of text, for example an &lt;a&gt; element \(hyperlink\) or emphasis elements such as &lt;em&gt; or &lt;strong&gt;.
+An inline element will not cause a new line to appear in the document; they would normally appear inside a paragraph of text, for example an \<a> element (hyperlink) or emphasis elements such as \<em> or \<strong>.
 
-## How is an HTML document structured? \(hint: What is DOCTYPE tag; HTML tag; Head tag; Body tag\)
+## How is an HTML document structured? (hint: What is DOCTYPE tag; HTML tag; Head tag; Body tag)
 
-1. `<!DOCTYPE html>`: The doctype. When HTML was young \(1991-1992\), doctype were meant to act as links to a set of rules that the HTML page had to follow to be considered good HTML. Doctype's used to look something like this:
+1. `<!DOCTYPE html>`: The doctype. When HTML was young (1991-1992), doctype were meant to act as links to a set of rules that the HTML page had to follow to be considered good HTML. Doctype's used to look something like this:
 
 ```markup
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
@@ -67,7 +67,7 @@ More recently, the doctype is a historical artifact that needs to be included fo
 
 Meta tags represent the beginning of most SEO training, for better or for worse. Meta tags are some of the best tools in a search marketer's repertoire.
 
-There are meta tags beyond just _description_ and _keywords_, though those two are picked on the most. 
+There are meta tags beyond just _description_ and _keywords_, though those two are picked on the most.&#x20;
 
 * **Meta content type** – This tag is necessary to declare your character set for the page and should be present on every page. Leaving this out could impact how your page renders in the browser. A few options are listed below, but your web designer should know what's best for your site.
 
@@ -90,4 +90,3 @@ There are meta tags beyond just _description_ and _keywords_, though those two a
 ## Explain Document Flow of HTML.
 
 Document flow is the arrangement of page elements as defined by positioning statements and the order of html statements; that is, how the different elements take up space and arrange themselves around each other.
-

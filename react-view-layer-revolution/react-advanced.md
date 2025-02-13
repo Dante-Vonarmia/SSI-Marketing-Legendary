@@ -8,17 +8,17 @@
 
 * _Hooks_ are a new addition in React 16.8. They let you use state and other React features without writing a class.
 * **Hooks allow you to reuse stateful logic without changing your component hierarchy.**
-* Complex components become hard to understand, **Hooks let you split one component into smaller functions based on what pieces are related \(such as setting up a subscription or fetching data\)**, rather than forcing a split based on lifecycle methods.
+* Complex components become hard to understand, **Hooks let you split one component into smaller functions based on what pieces are related (such as setting up a subscription or fetching data)**, rather than forcing a split based on lifecycle methods.
 * Classes confuse both people and machines, **hooks let you use more of React’s features without classes.**
 * **Return to functional programming.**
 
-\*\*\*\*
+
 
 > React Perfomance
 
 ## How do you handle bundling performance?
 
-#### Good to hear 
+#### Good to hear&#x20;
 
 * "There are loaders for it but mostly I try to reduce the bundling process"
 * "I try to use a task runner and Webpack for bundling"
@@ -67,7 +67,7 @@ By preventing a page refresh, and using Router or Link, which is explained in mo
 
 [ReactJS](https://facebook.github.io/react/) is a JavaScript library, supporting both front-end web and being run on a server, for building user interfaces and web applications. It follows the concept of reusable components.
 
-[React Native](https://facebook.github.io/react-native/) is a mobile framework that makes use of JavaScript engine available on the host, allowing you to build mobile applications for different platforms \(iOS, Android, and Windows Mobile\) in JavaScript that allows you to use ReactJS to build reusable components and communicate with native components [further explanation](https://stackoverflow.com/questions/41124338/does-react-native-compile-javascript-into-java-for-android)
+[React Native](https://facebook.github.io/react-native/) is a mobile framework that makes use of JavaScript engine available on the host, allowing you to build mobile applications for different platforms (iOS, Android, and Windows Mobile) in JavaScript that allows you to use ReactJS to build reusable components and communicate with native components [further explanation](https://stackoverflow.com/questions/41124338/does-react-native-compile-javascript-into-java-for-android)
 
 Both follow the JSX syntax extension to JavaScript. Which compiles to `React.createElement` calls under the hood. [JSX in-depth](https://reactjs.org/docs/jsx-in-depth.html)
 
@@ -87,11 +87,10 @@ Both are open-sourced by Facebook.
 
 ## How do you make an API call from React?
 
-#### How can I make an AJAX call? <a id="how-can-i-make-an-ajax-call"></a>
+#### How can I make an AJAX call? <a href="#how-can-i-make-an-ajax-call" id="how-can-i-make-an-ajax-call"></a>
 
 You can use any AJAX library you like with React. Some popular ones are [Axios](https://github.com/axios/axios), [jQuery AJAX](https://api.jquery.com/jQuery.ajax/), and the browser built-in [window.fetch](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API).
 
-#### Where in the component lifecycle should I make an AJAX call? <a id="where-in-the-component-lifecycle-should-i-make-an-ajax-call"></a>
+#### Where in the component lifecycle should I make an AJAX call? <a href="#where-in-the-component-lifecycle-should-i-make-an-ajax-call" id="where-in-the-component-lifecycle-should-i-make-an-ajax-call"></a>
 
 You should populate data with AJAX calls in the [`componentDidMount`](https://reactjs.org/docs/react-component.html#mounting) lifecycle method. This is so you can use `setState` to update your component when the data is retrieved.
-

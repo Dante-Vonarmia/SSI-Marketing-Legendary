@@ -19,9 +19,9 @@ This is important in JavaScript, because it is a very natural fit for user inter
 
 ## What's the difference between a promise-based object and a generator-based object?
 
-### Promise-based object 
+### Promise-based object&#x20;
 
-The **`Promise`** object represents the eventual completion \(or failure\) of an asynchronous operation, and its resulting value.
+The **`Promise`** object represents the eventual completion (or failure) of an asynchronous operation, and its resulting value.
 
 A `Promise` is in one of these states:
 
@@ -39,11 +39,10 @@ Async/await basically act as syntactic sugar on top of promises, making asynchro
 
 _Generator functions/yield_ and _Async functions/await_ can both be used to write asynchronous code that “waits”, which means code that looks as if it was synchronous, even though it really is asynchronous.
 
-_A generator function_ is executed **yield by yield** i.e one yield-expression at a time by its iterator \(the `next` method\) whereas a_sync-await_, they are executed sequential **await by await**.
+_A generator function_ is executed **yield by yield** i.e one yield-expression at a time by its iterator (the `next` method) whereas &#x61;_&#x73;ync-await_, they are executed sequential **await by await**.
 
 _Async/await_ makes it easier to implement a particular use case of _Generators_.
 
-The return value of the g_enerator_ is always **`{value: X, done: Boolean}`** whereas for a_sync functions,_ it will always be a **promise** that will either resolve to the value X or throw an error.
+The return value of the &#x67;_&#x65;nerator_ is always **`{value: X, done: Boolean}`** whereas for &#x61;_&#x73;ync functions,_ it will always be a **promise** that will either resolve to the value X or throw an error.
 
 An `async` function can be decomposed into a generator and promise implementation which is good to know stuff.
-

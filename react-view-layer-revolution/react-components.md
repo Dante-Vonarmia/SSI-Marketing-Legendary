@@ -4,7 +4,7 @@
 
 Everything is a component in React. We usually break up the entire logic of the application into small individual pieces. We call each individual piece as a component. In general, A component is a javascript function which takes the input, process it and returns React element which renders in the UI.
 
-### Functional/Stateless/Presentational Components <a id="b498"></a>
+### Functional/Stateless/Presentational Components <a href="#b498" id="b498"></a>
 
 A functional or stateless component is a pure function which takes props or no props and returns the react element. These are pure functions which don’t have any side effects. These components don’t have state or lifecycle methods. Here is an example.
 
@@ -21,7 +21,7 @@ export const Header = () => {
 }
 ```
 
-### Class/Stateful Components <a id="e024"></a>
+### Class/Stateful Components <a href="#e024" id="e024"></a>
 
 Class or Stateful components have state and lifecycle methods and it can change the state of the component with the help of `this.setState()`. Class components are created by extending the `React.Component` and it is initialized in the constructor and might have child components as well. Here is an example.
 
@@ -56,7 +56,7 @@ export class Dashboard extends React.Component {
 
 `PureComponent` is exactly the same as Component except that it handles the `shouldComponentUpdate` method for us. When `props` or `state` changes, `PureComponent` will do a shallow comparison on both `props` and `state`. `Component` on the other hand won't compare current props and state to next out of the box. Thus, the component will re-render by default whenever `shouldComponentUpdate` is called.
 
-When comparing previous `props` and `state` to next, a shallow comparison will check that primitives have the same value \(eg, 1 equals 1 or that true equals true\) and that the references are the same between more complex javascript values like objects and arrays.
+When comparing previous `props` and `state` to next, a shallow comparison will check that primitives have the same value (eg, 1 equals 1 or that true equals true) and that the references are the same between more complex javascript values like objects and arrays.
 
 It is good to prefer `PureComponent` over `Component` whenever we never mutate our objects.
 
@@ -127,12 +127,12 @@ React Components are a great way of writing reusable code. We can simply create 
 
 ## What are controlled and uncontrolled components in React?
 
-This relates to stateful DOM components \(form elements\) and the difference:
+This relates to stateful DOM components (form elements) and the difference:
 
 * A **Controlled Component** is one that takes its current value through props and notifies changes through callbacks like onChange. A parent component “controls” it by handling the callback and managing its own state and passing the new values as props to the controlled component. You could also call this a “dumb component”.
 * A Uncontrolled Component is one that stores its own state internally, and you query the DOM using a ref to find its current value when you need it. This is a bit more like traditional HTML.
 
-In most \(or all\) cases we should use controlled components.
+In most (or all) cases we should use controlled components.
 
 ## How do you handle multiple component variants in the same codebase?
 
@@ -142,7 +142,7 @@ In most \(or all\) cases we should use controlled components.
 
 #### From Child to Parent with Callbacks
 
-For a child to talk back to a parent \(unacceptable, I know!\), it must first receive a mechanism to communicate back from its parent. As we learned, parents pass data to children through `props`. A "special" prop of type `function` can be passed down to a child. At the time of a relevant event \(eg, user interaction\) the child can then call this function as a callback.
+For a child to talk back to a parent (unacceptable, I know!), it must first receive a mechanism to communicate back from its parent. As we learned, parents pass data to children through `props`. A "special" prop of type `function` can be passed down to a child. At the time of a relevant event (eg, user interaction) the child can then call this function as a callback.
 
 Let's say that a book can be edited from a `BookTitle` component:
 
@@ -179,14 +179,14 @@ function BookEditForm(props) {
 
 In this case, the parent passed `handleTitleChange`, and when it's called, it sets the internal state based on the value of `evt.target.value` -- a value that has come as a callback argument from the child component.
 
-There are some cases, however, when data sent through `props` might not be the best option for communicating between components. For these cases, React provides a mechanism called context.  
+There are some cases, however, when data sent through `props` might not be the best option for communicating between components. For these cases, React provides a mechanism called context.\
 
 
 ## Which life cycle event is the most common from your perspective?
 
 {% embed url="https://blog.bitsrc.io/react-16-lifecycle-methods-how-and-when-to-use-them-f4ad31fb2282?source=bookmarks---------5------------------" %}
 
-## What is render\(\) in React? And explain its purpose? Explain it in your own terms.
+## What is render() in React? And explain its purpose? Explain it in your own terms.
 
 Each React component must have a `render()` mandatorily. It returns a single React element which is the representation of the native DOM component. If more than one HTML element needs to be rendered, then they must be grouped together inside one enclosing tag such as `<form>`, `<group>`, `<div>` etc. This function must be kept pure i.e., it must return the same result each time it is invoked.
 
@@ -239,4 +239,3 @@ function CustomForm ({handleSubmit}) {
     )
 }
 ```
-

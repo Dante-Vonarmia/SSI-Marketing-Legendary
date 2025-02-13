@@ -6,32 +6,31 @@ ES6+ has a total of **6 ways** to declare variables.
 
 ES5 has only **two ways** to declare variables:
 
-* The `var` command 
+* The `var` command&#x20;
 * The `function` command.
 
 ES6+ has added four more declare variables:
 
 * the `let` and `const` commands
 * the module command
-  * `import`
+  *   `import`
 
-    ```javascript
-    import moduleName from 'module'
-    import { originalName as alias } from 'module'
-    ```
+      ```javascript
+      import moduleName from 'module'
+      import { originalName as alias } from 'module'
+      ```
+  *   `export`
 
-  * `export`
-
-    ```javascript
-    export default moduleName
-    ```
+      ```javascript
+      export default moduleName
+      ```
 * the `class` command
 
 ## Deconstructing
 
 ### Explanation
 
-In essence, this writing belongs to "pattern matching".   
+In essence, this writing belongs to "pattern matching". \
 As long as the pattern on both sides of the equal sign is the same, the variable on the left will be assigned a corresponding value.
 
 ### Usage
@@ -102,7 +101,7 @@ console.log(1, ...[2, 3, 4], 5, ...)
 // error
 ```
 
-### Usage	
+### Usage&#x9;
 
 ```javascript
 	// 1. Find out the maximum number
@@ -248,7 +247,7 @@ it.next() // { value: "b", done: false }
 it.next() // { value: undefined, done: true }
 ```
 
- The data structure of the **Iterator interface** is as follows:
+&#x20;The data structure of the **Iterator interface** is as follows:
 
 * Array
 * String
@@ -328,10 +327,11 @@ var newArr= [...new Set(arr)]; // [1, 2, 3]
 
 ### Map Explanation
 
-* JavaScript objects are essentially collections of key-value pairs \(Hash structures\).  `'key' ==> data[element] = 'metadata'`
-* But traditionally only strings can be used as keys. This puts a lot of restrictions on its use.
+* JavaScript objects are essentially collections of key-value pairs (Hash structures). \
+  `'key' ==> data[element] = 'metadata'`
+*   But traditionally only strings can be used as keys. This puts a lot of restrictions on its use.
 
-  `'key' : value`
+    `'key' : value`
 
 ### Basic Syntax
 
@@ -393,7 +393,7 @@ foo.classMethod()
 // TypeError: foo.classMethod is not a function
 ```
 
-### `extends` 
+### `extends`&#x20;
 
 Class can be inherited through the extends keyword, which is much clearer and more convenient than ES5's inheritance by modifying the prototype chain.
 
@@ -426,23 +426,25 @@ new Parent() // Parent
 new Child() // Child
 ```
 
-### Inheritance of native constructor 
+### Inheritance of native constructor&#x20;
 
 Native constructor refers to the built-in constructor of the language, usually used to generate data structures. ECMAScript's native constructors are roughly the following.
 
-* `Boolean()` 
-* `Number()` 
-* `String()` 
-* `Array()` 
-* `Date()` 
-* `Function()` 
-* `RegExp()` 
-* `Error()` 
+* `Boolean()`&#x20;
+* `Number()`&#x20;
+* `String()`&#x20;
+* `Array()`&#x20;
+* `Date()`&#x20;
+* `Function()`&#x20;
+* `RegExp()`&#x20;
+* `Error()`&#x20;
 * `Object()`
 
 ## Promise
 
-{% page-ref page="promise.md" %}
+{% content-ref url="promise.md" %}
+[promise.md](promise.md)
+{% endcontent-ref %}
 
 ## Generator
 
@@ -454,7 +456,7 @@ Native constructor refers to the built-in constructor of the language, usually u
 * Formally
   * The Generator function is a normal function, but has two characteristics.
   * First, there is an asterisk between the function keyword and the function name.
-  * Second, the yield expression is used inside the function body to define different internal states \(yield means "output" in English\).
+  * Second, the yield expression is used inside the function body to define different internal states (yield means "output" in English).
 
 ```javascript
 // aka, Pausable Function
@@ -470,4 +472,3 @@ function* f() {
 const run_f = f();
 run_f.next();
 ```
-

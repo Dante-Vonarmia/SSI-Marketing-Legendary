@@ -26,7 +26,7 @@ When writing React, it’s often good not to think of _how_ you want to accompli
 
 React creates a virtual DOM. When state changes in a component it firstly runs a “diffing” algorithm, which identifies what has changed in the virtual DOM. The second step is reconciliation, where it updates the DOM with the results of diff.
 
-The HTML DOM is always tree-structured — which is allowed by the structure of HTML document. The DOM trees are huge nowadays because of large apps. Since we are more and more pushed towards dynamic web apps \(Single Page Applications — SPAs\), we need to modify the DOM tree incessantly and a lot. And this is a real performance and development pain.
+The HTML DOM is always tree-structured — which is allowed by the structure of HTML document. The DOM trees are huge nowadays because of large apps. Since we are more and more pushed towards dynamic web apps (Single Page Applications — SPAs), we need to modify the DOM tree incessantly and a lot. And this is a real performance and development pain.
 
 ### Virtual-DOM work principles
 
@@ -46,7 +46,7 @@ We aim to re-render the virtual tree only when the state changes. So using an ob
 
 ### **Definition**
 
-**JSX is a syntax extension to JavaScript and comes with the full power of JavaScript.** 
+**JSX is a syntax extension to JavaScript and comes with the full power of JavaScript.**&#x20;
 
 JSX produces React “elements”. You can embed any JavaScript expression in JSX by wrapping it in curly braces. After compilation, JSX expressions become regular JavaScript objects. This means that you can use JSX inside of if statements and for loops, assign it to variables, accept it as arguments, and return it from functions. Even though React does not require JSX, it is the recommended way of describing our UI in React app.
 
@@ -54,7 +54,7 @@ JSX produces React “elements”. You can embed any JavaScript expression in JS
 
 JSX is not valid JavaScript, web browsers cant read it directly. So, if JavaScript files contains JSX, that that file will have to be transpiled. That means that before the file gets to the web browser, a JSX compiler will translate any JSX into regular JavaScript.
 
-JSX produces React “elements”. A React element is simply an object representation of a DOM node. A React element isn’t actually the thing we see on our screen, instead, it’s just an object representation of it. We can embed any JavaScript expression in JSX by wrapping it in curly braces.  
+JSX produces React “elements”. A React element is simply an object representation of a DOM node. A React element isn’t actually the thing we see on our screen, instead, it’s just an object representation of it. We can embed any JavaScript expression in JSX by wrapping it in curly braces.\
 
 
 ## What is the difference between state and props?
@@ -111,7 +111,7 @@ this.setState((state, props) => {
 });
 ```
 
-## Is setState\(\) is async? If yes, why is setState\(\) in React Async instead of Sync?
+## Is setState() is async? If yes, why is setState() in React Async instead of Sync?
 
 `setState()` actions are asynchronous and are batched for performance gains. This is explained in documentation as below.
 
@@ -159,7 +159,7 @@ handleEvent = e => {
 
 ## What is the HOC? Why do we need this in the react?
 
-A higher-order component \(HOC\) is an advanced technique in React for reusing component logic. HOCs are not part of the React API. They are a pattern that emerges from React’s compositional nature.
+A higher-order component (HOC) is an advanced technique in React for reusing component logic. HOCs are not part of the React API. They are a pattern that emerges from React’s compositional nature.
 
 A higher-order component is a function that takes a component and returns a new component.
 
@@ -173,8 +173,8 @@ Because performance is an important aspect, when you are using lists you need to
 
 1. Lists are performant heavy and need to be used carefully.
 2. Make sure every item in the list has a unique key.
-3. It is prefered to not use indexes as a key unless you know for sure that the list is a static list \(no additions/re-ordering/removal to the list\).
-4. Never use unstable keys like _Math.random\(\)_ to generate a key.
+3. It is prefered to not use indexes as a key unless you know for sure that the list is a static list (no additions/re-ordering/removal to the list).
+4. Never use unstable keys like _Math.random()_ to generate a key.
 5. React will run into performance degradation and unexpected behavior if unstable keys are used.
 
 ## What data flow does React follow?
@@ -309,4 +309,3 @@ return (
 * Prop type is a way for you to know what types a component is expecting.
 * They are great for when you want to know what a component needs to work!
 * They often become legacy documentation and people forget to keep them updated or they put `.required` on the wrong things and often I see people use `.object` instead of `.shapeOf`
-

@@ -8,11 +8,11 @@ They came into existence when the principle of least privilege was applied in pr
 
 ## Why
 
-1. Security 
+1\. Security&#x20;
 
-2. Efficiency principle, Easy to Track 
+2\. Efficiency principle, Easy to Track&#x20;
 
-3. Reduce namespace collision
+3\. Reduce namespace collision
 
 ## Types
 
@@ -39,7 +39,7 @@ test2();
 console.log(name);
 ```
 
-### Lexical 
+### Lexical&#x20;
 
 * When a function within another function, the inner function has access to the scope in the outer function, this is called Lexical Scope — also referred to as Static Scope as it may only be referenced from within the block of code in which it is defined.
 * JavaScript starts at the innermost scope and searches outwards until it finds the variable/object/function it was looking for.
@@ -59,7 +59,7 @@ function SocialMedia() {
 }
 ```
 
-### Block 
+### Block&#x20;
 
 ```javascript
 (function function_name(argument) {
@@ -67,12 +67,12 @@ function SocialMedia() {
 })() // IIFE
 ```
 
-* The first is the anonymous function with lexical scope enclosed within the Grouping Operator `()`. This prevents accessing variables within the IIFE idiom as well as polluting the global scope. 
+* The first is the anonymous function with lexical scope enclosed within the Grouping Operator `()`. This prevents accessing variables within the IIFE idiom as well as polluting the global scope.&#x20;
 * The second part creates the immediately invoked function expression `()` through which the JavaScript engine will directly interpret the function.
 
-###  Public and Private
+### &#x20;Public and Private
 
-Wrapping functions from the public \(global\) scope save them from vulnerable attacks. 
+Wrapping functions from the public (global) scope save them from vulnerable attacks.&#x20;
 
 ```javascript
 // A Singleton example
@@ -91,4 +91,3 @@ const modulePattern = (function() {
 modulePattern.publicMethod() // public
 modulePattern.privateMethod() // ​​modulePattern.privateMethod is not a function​​
 ```
-

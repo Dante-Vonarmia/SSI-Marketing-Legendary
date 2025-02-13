@@ -44,7 +44,7 @@
 
 ## JS ES6+ - Dynamic Client-side Scripting
 
-* [Author's Notes](js-es6+-dynamic-client-side-scripting/authors-notes/README.md)
+* [JavaScript Runtime](js-es6+-dynamic-client-side-scripting/authors-notes/README.md)
   * [THE Context](js-es6+-dynamic-client-side-scripting/authors-notes/the-context.md)
   * [Context Coding Part](js-es6+-dynamic-client-side-scripting/authors-notes/context-coding-part.md)
   * [Scope](js-es6+-dynamic-client-side-scripting/authors-notes/scope.md)
@@ -101,4 +101,3 @@
 * [Contributors List](misc/contributors-list.md)
 * [Reference](misc/reference.md)
 * [Light Survey - An Ant Design based React App](misc/light-survey-an-ant-design-based-react-app.md)
-

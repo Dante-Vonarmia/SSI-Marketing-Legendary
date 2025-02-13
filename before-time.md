@@ -15,24 +15,24 @@ _"As things come too easy, folks won't cherish them. Cuz there is something to g
 
 ## Be a Programmer - Principle
 
-Let's not rush to diving in some "code".   
+Let's not rush to diving in some "code". \
 There are some inevitable rules that I have been followed for many years, and I hope that you could remember these rules because they are extremely beneficial.
 
 ### **Will the Cycle, be unbroken**
 
 Whenever you lost in the ocean of the programming, these questions could always be your lighthouse to guide your way.
 
-_‌So, what is coding anyway?  \(The essence\)_
+_‌So, what is coding anyway?  (The essence)_
 
-_What do we use coding for? \(The aim\)_
+_What do we use coding for? (The aim)_
 
-_Where do we get started? \(The solution\)_
+_Where do we get started? (The solution)_
 
-_How coding affect us? \(The Causality\)_
+_How coding affect us? (The Causality)_
 
-_How do we manage them? \(The_ maintenance_\)_
+_How do we manage them? (The_ maintenanc&#x65;_)_
 
-_Why we use it? Can we improve it? \(The future\)_
+_Why we use it? Can we improve it? (The future)_
 
 ### Tools & Habits
 
@@ -46,9 +46,9 @@ _Why we use it? Can we improve it? \(The future\)_
 
 ### **Road-map**
 
-A well planned learning path is essential for a systematic study.  
-It helps to get the specific title step by step without deviation.  
-[\(see here\)](https://roadmap.sh)
+A well planned learning path is essential for a systematic study.\
+It helps to get the specific title step by step without deviation.\
+[(see here)](https://roadmap.sh)
 
 Explanation: [Complete Learning Path](https://levelup.gitconnected.com/the-2020-web-developer-roadmap-76503ddfb327)
 
@@ -146,7 +146,7 @@ Explanation: [Complete Learning Path](https://levelup.gitconnected.com/the-2020-
 #### **Notification /** **Task Management**
 
 * It’s all about feedback.
-* \*\*\*\*[**Slack**](https://slack.com) **brings the team together, wherever you are.**
+* [**Slack**](https://slack.com) **brings the team together, wherever you are.**
 * Task Management Tool, not only help you maintain your works, but also record everything you might need in the future.
 * You can also regard this as a proof or your promotion. 💰
 
@@ -157,7 +157,7 @@ Explanation: [Complete Learning Path](https://levelup.gitconnected.com/the-2020-
 
 #### Design prototype **/** Prototype Tool
 
-* [**YAGNI** principle](https://en.wikipedia.org/wiki/You_aren%27t_gonna_need_it): don’t codify more than you’ve been asked to. Don’t anticipate the future, and just create something that works as soon as possible. Code only the necessary parts to solve the current problem.
+* [**YAGNI** principle](https://en.wikipedia.org/wiki/You_aren't_gonna_need_it): don’t codify more than you’ve been asked to. Don’t anticipate the future, and just create something that works as soon as possible. Code only the necessary parts to solve the current problem.
 * [**KISS**](https://en.wikipedia.org/wiki/KISS_principle): “Keep it simple, stupid” or “keep it stupid simple” is a design principle that states that most systems work best if they are kept simple rather than made complicated. And while this is logical, it is sometimes difficult to achieve.
 * Don’t Reinvent The Wheel.
 * Users are not technical people. Think about it when you develop your UI.
@@ -207,28 +207,28 @@ Explanation: [Complete Learning Path](https://levelup.gitconnected.com/the-2020-
 
 ### Behavior and Performance
 
-> TAKING notes seriously!
+> TAKING notes seriously!&#x20;
 
-> No AWOL \(Absent without official leaving\)
+> No AWOL (Absent without official leaving)&#x20;
 
-> Good Tools, Good Habits, Good Mood, & Practice a lot.
+> Good Tools, Good Habits, Good Mood, & Practice a lot.&#x20;
 
-> Practice is the only shortcut.
+> Practice is the only shortcut.&#x20;
 
 > Expose Your Ignorance Daily
 
 ## Start Interview Questions
 
-In our interview question, we'll cover:   
-**HTML5, CSS3, JavaScript, React, React Native, and common Behavior questions.**   
+In our interview question, we'll cover: \
+**HTML5, CSS3, JavaScript, React, React Native, and common Behavior questions.** \
 You don't have to go through all of these questions, but remember whenever you feel like to challenge, this is exactly the right place for you. And it is always encouraged to [contribute](misc/contributors-list.md) your own questions to us.
 
 Lets' build our empire together!
 
-GL;HF   
-:\)
+GL;HF \
+:)
 
-{% page-ref page="content.md" %}
-
-
+{% content-ref url="content.md" %}
+[content.md](content.md)
+{% endcontent-ref %}
 
